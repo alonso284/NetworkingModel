@@ -1,0 +1,24 @@
+May 18 19:51:59.615 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+May 18 19:51:59.615 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 61719.
+May 18 19:51:59.629 HYPERVISOR: exec_cmd: hypervisor version 
+May 18 19:51:59.629 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips 
+May 18 19:51:59.629 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips
+May 18 19:51:59.630 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips/d49efa73-717d-406d-8328-c01f3123cec6 
+May 18 19:51:59.630 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips/d49efa73-717d-406d-8328-c01f3123cec6
+May 18 19:51:59.630 HYPERVISOR: exec_cmd: vm create ARC-SUN-RT1 8 c2691 
+May 18 19:51:59.631 VM: VM ARC-SUN-RT1 created.
+May 18 19:51:59.631 HYPERVISOR: exec_cmd: vm set_con_tcp_port ARC-SUN-RT1 5014 
+May 18 19:51:59.631 HYPERVISOR: exec_cmd: c2691 get_mac_addr ARC-SUN-RT1 
+May 18 19:51:59.632 HYPERVISOR: exec_cmd: vm set_ios ARC-SUN-RT1 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 18 19:51:59.632 HYPERVISOR: exec_cmd: vm set_ram ARC-SUN-RT1 192 
+May 18 19:51:59.632 HYPERVISOR: exec_cmd: vm set_nvram ARC-SUN-RT1 256 
+May 18 19:51:59.632 HYPERVISOR: exec_cmd: vm set_disk0 ARC-SUN-RT1 64 
+May 18 19:51:59.632 HYPERVISOR: exec_cmd: vm set_disk1 ARC-SUN-RT1 64 
+May 18 19:51:59.634 HYPERVISOR: exec_cmd: vm set_con_tcp_port ARC-SUN-RT1 5014 
+May 18 19:51:59.646 HYPERVISOR: exec_cmd: vm rename ARC-SUN-RT1 ARC-SUN-RT01 
+May 18 19:51:59.649 HYPERVISOR: exec_cmd: vm rename ARC-SUN-RT01 ARC-SUN-RT1 
+May 18 19:52:00.970 HYPERVISOR: exec_cmd: vm set_ios ARC-SUN-RT1 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 18 19:52:03.483 HYPERVISOR: exec_cmd: vm set_ios ARC-SUN-RT1 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 18 19:52:22.797 HYPERVISOR: exec_cmd: vm set_ios ARC-SUN-RT1 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 18 19:52:22.798 HYPERVISOR: exec_cmd: vm rename ARC-SUN-RT1 ARC-GDA-RT01 
+May 18 19:52:22.826 HYPERVISOR: exec_cmd: vm set_ios ARC-GDA-RT01 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 

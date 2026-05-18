@@ -1,1 +1,0 @@
-May 18 19:43:13.805 VM: renamed from 'ARC-FSJ-AP1' to 'ARC-FSJ-AP01'May 18 19:43:13.809 VM: renamed from 'ARC-FSJ-AP01' to 'ARC-FSJ-AP1'May 18 19:43:18.457 VM: renamed from 'ARC-FSJ-AP1' to 'ARC-ATT-RT01'

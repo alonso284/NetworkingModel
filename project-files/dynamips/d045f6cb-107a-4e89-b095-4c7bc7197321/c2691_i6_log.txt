@@ -1,1 +1,0 @@
-May 18 19:42:20.606 VM: renamed from 'ARC-FSJ-CORE1' to 'ARC-FSJ-CORE01'May 18 19:42:20.611 VM: renamed from 'ARC-FSJ-CORE01' to 'ARC-FSJ-CORE1'May 18 19:42:30.250 VM: renamed from 'ARC-FSJ-CORE1' to 'ARC-FSJ-CORE02'

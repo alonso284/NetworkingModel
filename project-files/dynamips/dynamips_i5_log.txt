@@ -1,23 +1,20 @@
-May 18 19:42:10.621 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
-May 18 19:42:10.622 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53741.
-May 18 19:42:10.628 HYPERVISOR: exec_cmd: hypervisor version 
-May 18 19:42:10.628 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/NetworkingModel/project-files/dynamips 
-May 18 19:42:10.628 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/NetworkingModel/project-files/dynamips
-May 18 19:42:10.629 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/NetworkingModel/project-files/dynamips/9b347355-eef1-4f85-8a8c-54858266d2e1 
-May 18 19:42:10.629 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/NetworkingModel/project-files/dynamips/9b347355-eef1-4f85-8a8c-54858266d2e1
-May 18 19:42:10.629 HYPERVISOR: exec_cmd: vm create ARC-FSJ-FW1 5 c2691 
-May 18 19:42:10.630 VM: VM ARC-FSJ-FW1 created.
-May 18 19:42:10.630 HYPERVISOR: exec_cmd: vm set_con_tcp_port ARC-FSJ-FW1 5005 
-May 18 19:42:10.630 HYPERVISOR: exec_cmd: c2691 get_mac_addr ARC-FSJ-FW1 
-May 18 19:42:10.631 HYPERVISOR: exec_cmd: vm set_ios ARC-FSJ-FW1 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
-May 18 19:42:10.631 HYPERVISOR: exec_cmd: vm set_ram ARC-FSJ-FW1 192 
-May 18 19:42:10.631 HYPERVISOR: exec_cmd: vm set_nvram ARC-FSJ-FW1 256 
-May 18 19:42:10.632 HYPERVISOR: exec_cmd: vm set_disk0 ARC-FSJ-FW1 64 
-May 18 19:42:10.632 HYPERVISOR: exec_cmd: vm set_disk1 ARC-FSJ-FW1 64 
-May 18 19:42:10.633 HYPERVISOR: exec_cmd: vm set_con_tcp_port ARC-FSJ-FW1 5005 
-May 18 19:42:10.645 HYPERVISOR: exec_cmd: vm rename ARC-FSJ-FW1 ARC-FSJ-FW01 
-May 18 19:42:10.646 HYPERVISOR: exec_cmd: vm rename ARC-FSJ-FW01 ARC-FSJ-FW1 
-May 18 19:42:11.561 HYPERVISOR: exec_cmd: vm set_ios ARC-FSJ-FW1 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
-May 18 19:42:16.139 HYPERVISOR: exec_cmd: vm set_ios ARC-FSJ-FW1 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
-May 18 19:42:16.139 HYPERVISOR: exec_cmd: vm rename ARC-FSJ-FW1 ARC-FSJ-CORE01 
-May 18 19:42:16.157 HYPERVISOR: exec_cmd: vm set_ios ARC-FSJ-CORE01 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 18 19:47:10.525 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+May 18 19:47:10.525 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56997.
+May 18 19:47:10.526 HYPERVISOR: exec_cmd: hypervisor version 
+May 18 19:47:10.526 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips 
+May 18 19:47:10.526 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips
+May 18 19:47:10.526 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips/9b347355-eef1-4f85-8a8c-54858266d2e1 
+May 18 19:47:10.527 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips/9b347355-eef1-4f85-8a8c-54858266d2e1
+May 18 19:47:10.527 HYPERVISOR: exec_cmd: vm create ARC-FSJ-CORE01 5 c2691 
+May 18 19:47:10.527 VM: VM ARC-FSJ-CORE01 created.
+May 18 19:47:10.528 HYPERVISOR: exec_cmd: vm set_con_tcp_port ARC-FSJ-CORE01 5005 
+May 18 19:47:10.528 HYPERVISOR: exec_cmd: c2691 get_mac_addr ARC-FSJ-CORE01 
+May 18 19:47:10.528 HYPERVISOR: exec_cmd: vm set_disk0 ARC-FSJ-CORE01 64 
+May 18 19:47:10.528 HYPERVISOR: exec_cmd: vm set_disk1 ARC-FSJ-CORE01 64 
+May 18 19:47:10.528 HYPERVISOR: exec_cmd: vm set_ios ARC-FSJ-CORE01 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 18 19:47:10.529 HYPERVISOR: exec_cmd: c2691 set_mac_addr ARC-FSJ-CORE01 c005.eb93.0000 
+May 18 19:47:10.529 HYPERVISOR: exec_cmd: vm set_nvram ARC-FSJ-CORE01 256 
+May 18 19:47:10.529 HYPERVISOR: exec_cmd: vm set_ram ARC-FSJ-CORE01 192 
+May 18 19:47:27.096 HYPERVISOR: exec_cmd: vm set_ios ARC-FSJ-CORE01 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 18 19:47:27.115 HYPERVISOR: exec_cmd: vm set_ios ARC-FSJ-CORE01 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 18 19:54:44.507 HYPERVISOR: exec_cmd: vm set_ios ARC-FSJ-CORE01 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 

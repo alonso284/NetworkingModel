@@ -1,1 +1,0 @@
-May 18 19:41:19.092 VM: renamed from 'ARC-FSJ-EDGE1' to 'ARC-FSJ-EDGE01'May 18 19:41:19.096 VM: renamed from 'ARC-FSJ-EDGE01' to 'ARC-FSJ-EDGE1'May 18 19:41:24.414 VM: renamed from 'ARC-FSJ-EDGE1' to 'ARC-FSJ-EDGE02'

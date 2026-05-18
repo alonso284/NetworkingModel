@@ -1,0 +1,1 @@
+May 18 19:51:15.980 VM: renamed from 'R1' to 'ARC-SUN-RT01'
