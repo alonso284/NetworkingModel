@@ -1,0 +1,10 @@
+May 18 20:09:19.687 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+May 18 20:09:19.688 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54117.
+May 18 20:09:19.689 HYPERVISOR: exec_cmd: hypervisor version 
+May 18 20:09:19.690 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/sergiogzz/LocalDocs/GitHub/NetworkingModel/project-files/dynamips 
+May 18 20:09:19.690 GENERAL: working_dir=/Users/sergiogzz/LocalDocs/GitHub/NetworkingModel/project-files/dynamips
+May 18 20:09:19.690 HYPERVISOR: exec_cmd: ethsw create ARC-ATT-AP01 
+May 18 20:34:47.741 HYPERVISOR: exec_cmd: ethsw delete ARC-ATT-AP01 
+May 18 20:34:47.745 HYPERVISOR: exec_cmd: hypervisor stop 
+May 18 20:34:47.986 HYPERVISOR: Stopped.
+May 18 20:34:47.986 GENERAL: reset done.

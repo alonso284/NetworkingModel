@@ -1,7 +1,0 @@
-May 18 19:52:43.933 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
-May 18 19:52:43.933 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 61789.
-May 18 19:52:43.941 HYPERVISOR: exec_cmd: hypervisor version 
-May 18 19:52:43.942 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips 
-May 18 19:52:43.942 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips
-May 18 19:52:43.942 HYPERVISOR: exec_cmd: ethsw create ARC-GDA-SW1 
-May 18 19:52:57.616 HYPERVISOR: exec_cmd: ethsw rename ARC-GDA-SW1 ARC-SSN-SW01 

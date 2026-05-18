@@ -1,1 +1,0 @@
-May 18 19:51:59.646 VM: renamed from 'ARC-SUN-RT1' to 'ARC-SUN-RT01'May 18 19:51:59.649 VM: renamed from 'ARC-SUN-RT01' to 'ARC-SUN-RT1'May 18 19:52:22.798 VM: renamed from 'ARC-SUN-RT1' to 'ARC-GDA-RT01'

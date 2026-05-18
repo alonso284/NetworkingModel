@@ -1,7 +1,0 @@
-May 18 19:48:14.407 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
-May 18 19:48:14.408 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58379.
-May 18 19:48:14.416 HYPERVISOR: exec_cmd: hypervisor version 
-May 18 19:48:14.417 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips 
-May 18 19:48:14.417 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips
-May 18 19:48:14.417 HYPERVISOR: exec_cmd: ethsw create Switch1 
-May 18 19:48:30.037 HYPERVISOR: exec_cmd: ethsw rename Switch1 ARC-FSJ-ACC01 

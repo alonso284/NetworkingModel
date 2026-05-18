@@ -1,0 +1,26 @@
+May 18 20:34:59.877 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+May 18 20:34:59.878 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55072.
+May 18 20:34:59.880 HYPERVISOR: exec_cmd: hypervisor version 
+May 18 20:34:59.880 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/sergiogzz/LocalDocs/GitHub/NetworkingModel/project-files/dynamips 
+May 18 20:34:59.880 GENERAL: working_dir=/Users/sergiogzz/LocalDocs/GitHub/NetworkingModel/project-files/dynamips
+May 18 20:34:59.880 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/sergiogzz/LocalDocs/GitHub/NetworkingModel/project-files/dynamips/75ef229f-399e-4683-953d-576ebe740588 
+May 18 20:34:59.880 GENERAL: working_dir=/Users/sergiogzz/LocalDocs/GitHub/NetworkingModel/project-files/dynamips/75ef229f-399e-4683-953d-576ebe740588
+May 18 20:34:59.880 HYPERVISOR: exec_cmd: vm create SHL-FSJ-EDGE02 12 c2691 
+May 18 20:34:59.881 VM: VM SHL-FSJ-EDGE02 created.
+May 18 20:34:59.881 HYPERVISOR: exec_cmd: vm set_con_tcp_port SHL-FSJ-EDGE02 5019 
+May 18 20:34:59.881 HYPERVISOR: exec_cmd: c2691 get_mac_addr SHL-FSJ-EDGE02 
+May 18 20:34:59.881 HYPERVISOR: exec_cmd: vm set_disk0 SHL-FSJ-EDGE02 64 
+May 18 20:34:59.881 HYPERVISOR: exec_cmd: vm set_disk1 SHL-FSJ-EDGE02 64 
+May 18 20:34:59.882 HYPERVISOR: exec_cmd: vm set_ios SHL-FSJ-EDGE02 /Users/sergiogzz/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 18 20:34:59.882 HYPERVISOR: exec_cmd: c2691 set_mac_addr SHL-FSJ-EDGE02 c00c.47aa.0000 
+May 18 20:34:59.882 HYPERVISOR: exec_cmd: vm set_nvram SHL-FSJ-EDGE02 256 
+May 18 20:34:59.882 HYPERVISOR: exec_cmd: vm set_ram SHL-FSJ-EDGE02 192 
+May 18 20:35:03.745 HYPERVISOR: exec_cmd: vm get_status SHL-FSJ-EDGE02 
+May 18 20:35:03.747 HYPERVISOR: exec_cmd: vm extract_config SHL-FSJ-EDGE02 
+May 18 20:35:03.762 HYPERVISOR: exec_cmd: vm get_status SHL-FSJ-EDGE02 
+May 18 20:35:03.765 HYPERVISOR: exec_cmd: vm extract_config SHL-FSJ-EDGE02 
+May 18 20:35:03.767 HYPERVISOR: exec_cmd: vm delete SHL-FSJ-EDGE02 
+May 18 20:35:03.767 VM: VM SHL-FSJ-EDGE02 destroyed.
+May 18 20:35:03.770 HYPERVISOR: exec_cmd: hypervisor stop 
+May 18 20:35:03.913 HYPERVISOR: Stopped.
+May 18 20:35:03.913 GENERAL: reset done.

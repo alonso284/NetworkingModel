@@ -1,0 +1,26 @@
+May 18 20:05:46.154 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+May 18 20:05:46.154 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53666.
+May 18 20:05:46.164 HYPERVISOR: exec_cmd: hypervisor version 
+May 18 20:05:46.165 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/sergiogzz/LocalDocs/GitHub/NetworkingModel/project-files/dynamips 
+May 18 20:05:46.165 GENERAL: working_dir=/Users/sergiogzz/LocalDocs/GitHub/NetworkingModel/project-files/dynamips
+May 18 20:05:46.165 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/sergiogzz/LocalDocs/GitHub/NetworkingModel/project-files/dynamips/062ff6d8-988b-4c22-af4e-9d1f2ee29439 
+May 18 20:05:46.165 GENERAL: working_dir=/Users/sergiogzz/LocalDocs/GitHub/NetworkingModel/project-files/dynamips/062ff6d8-988b-4c22-af4e-9d1f2ee29439
+May 18 20:05:46.165 HYPERVISOR: exec_cmd: vm create ARC-ATT-RT01 9 c2691 
+May 18 20:05:46.165 VM: VM ARC-ATT-RT01 created.
+May 18 20:05:46.165 HYPERVISOR: exec_cmd: vm set_con_tcp_port ARC-ATT-RT01 5009 
+May 18 20:05:46.165 HYPERVISOR: exec_cmd: c2691 get_mac_addr ARC-ATT-RT01 
+May 18 20:05:46.166 HYPERVISOR: exec_cmd: vm set_disk0 ARC-ATT-RT01 64 
+May 18 20:05:46.166 HYPERVISOR: exec_cmd: vm set_disk1 ARC-ATT-RT01 64 
+May 18 20:05:46.166 HYPERVISOR: exec_cmd: vm set_ios ARC-ATT-RT01 /Users/sergiogzz/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 18 20:05:46.167 HYPERVISOR: exec_cmd: c2691 set_mac_addr ARC-ATT-RT01 c009.eb9e.0000 
+May 18 20:05:46.167 HYPERVISOR: exec_cmd: vm set_nvram ARC-ATT-RT01 256 
+May 18 20:05:46.167 HYPERVISOR: exec_cmd: vm set_ram ARC-ATT-RT01 192 
+May 18 20:09:05.953 HYPERVISOR: exec_cmd: vm get_status ARC-ATT-RT01 
+May 18 20:09:05.954 HYPERVISOR: exec_cmd: vm extract_config ARC-ATT-RT01 
+May 18 20:09:05.973 HYPERVISOR: exec_cmd: vm get_status ARC-ATT-RT01 
+May 18 20:09:05.974 HYPERVISOR: exec_cmd: vm extract_config ARC-ATT-RT01 
+May 18 20:09:05.976 HYPERVISOR: exec_cmd: vm delete ARC-ATT-RT01 
+May 18 20:09:05.976 VM: VM ARC-ATT-RT01 destroyed.
+May 18 20:09:05.979 HYPERVISOR: exec_cmd: hypervisor stop 
+May 18 20:09:05.982 HYPERVISOR: Stopped.
+May 18 20:09:05.983 GENERAL: reset done.
