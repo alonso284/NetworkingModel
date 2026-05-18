@@ -1,0 +1,1 @@
+May 18 19:43:42.041 VM: renamed from 'ARC-ATT-SW1' to 'ARC-ATT-SW01'May 18 19:43:42.044 VM: renamed from 'ARC-ATT-SW01' to 'ARC-ATT-SW1'May 18 19:43:44.848 VM: renamed from 'ARC-ATT-SW1' to 'ARC-ATT-AP01'

@@ -1,0 +1,23 @@
+May 18 19:43:42.012 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+May 18 19:43:42.012 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53885.
+May 18 19:43:42.020 HYPERVISOR: exec_cmd: hypervisor version 
+May 18 19:43:42.020 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/NetworkingModel/project-files/dynamips 
+May 18 19:43:42.020 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/NetworkingModel/project-files/dynamips
+May 18 19:43:42.021 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/NetworkingModel/project-files/dynamips/03f074ea-4a4b-4d01-bf94-b55f0ffb78fe 
+May 18 19:43:42.021 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/NetworkingModel/project-files/dynamips/03f074ea-4a4b-4d01-bf94-b55f0ffb78fe
+May 18 19:43:42.021 HYPERVISOR: exec_cmd: vm create ARC-ATT-SW1 11 c2691 
+May 18 19:43:42.021 VM: VM ARC-ATT-SW1 created.
+May 18 19:43:42.022 HYPERVISOR: exec_cmd: vm set_con_tcp_port ARC-ATT-SW1 5011 
+May 18 19:43:42.022 HYPERVISOR: exec_cmd: c2691 get_mac_addr ARC-ATT-SW1 
+May 18 19:43:42.022 HYPERVISOR: exec_cmd: vm set_ios ARC-ATT-SW1 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 18 19:43:42.023 HYPERVISOR: exec_cmd: vm set_ram ARC-ATT-SW1 192 
+May 18 19:43:42.023 HYPERVISOR: exec_cmd: vm set_nvram ARC-ATT-SW1 256 
+May 18 19:43:42.023 HYPERVISOR: exec_cmd: vm set_disk0 ARC-ATT-SW1 64 
+May 18 19:43:42.023 HYPERVISOR: exec_cmd: vm set_disk1 ARC-ATT-SW1 64 
+May 18 19:43:42.025 HYPERVISOR: exec_cmd: vm set_con_tcp_port ARC-ATT-SW1 5011 
+May 18 19:43:42.041 HYPERVISOR: exec_cmd: vm rename ARC-ATT-SW1 ARC-ATT-SW01 
+May 18 19:43:42.044 HYPERVISOR: exec_cmd: vm rename ARC-ATT-SW01 ARC-ATT-SW1 
+May 18 19:43:44.848 HYPERVISOR: exec_cmd: vm set_ios ARC-ATT-SW1 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 18 19:43:44.848 HYPERVISOR: exec_cmd: vm rename ARC-ATT-SW1 ARC-ATT-AP01 
+May 18 19:43:44.878 HYPERVISOR: exec_cmd: vm set_ios ARC-ATT-AP01 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 18 19:43:45.787 HYPERVISOR: exec_cmd: vm set_ios ARC-ATT-AP01 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
