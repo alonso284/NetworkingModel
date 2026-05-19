@@ -1,0 +1,31 @@
+May 19 13:33:00.121 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+May 19 13:33:00.122 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56710.
+May 19 13:33:00.123 HYPERVISOR: exec_cmd: hypervisor version 
+May 19 13:33:00.123 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips 
+May 19 13:33:00.123 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips
+May 19 13:33:00.123 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips/b0ef4185-2244-4ad3-b12e-8b009426f4a0 
+May 19 13:33:00.123 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips/b0ef4185-2244-4ad3-b12e-8b009426f4a0
+May 19 13:33:00.124 HYPERVISOR: exec_cmd: vm create ISP-B-SHL01 21 c2691 
+May 19 13:33:00.124 VM: VM ISP-B-SHL01 created.
+May 19 13:33:00.124 HYPERVISOR: exec_cmd: vm set_con_tcp_port ISP-B-SHL01 5031 
+May 19 13:33:00.124 HYPERVISOR: exec_cmd: c2691 get_mac_addr ISP-B-SHL01 
+May 19 13:33:00.125 HYPERVISOR: exec_cmd: vm set_disk0 ISP-B-SHL01 64 
+May 19 13:33:00.125 HYPERVISOR: exec_cmd: vm set_disk1 ISP-B-SHL01 64 
+May 19 13:33:00.125 HYPERVISOR: exec_cmd: vm set_ios ISP-B-SHL01 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 19 13:33:00.125 HYPERVISOR: exec_cmd: c2691 set_mac_addr ISP-B-SHL01 c015.48a3.0000 
+May 19 13:33:00.126 HYPERVISOR: exec_cmd: vm set_nvram ISP-B-SHL01 256 
+May 19 13:33:00.126 HYPERVISOR: exec_cmd: vm set_ram ISP-B-SHL01 192 
+May 19 13:33:00.126 HYPERVISOR: exec_cmd: vm get_status ISP-B-SHL01 
+May 19 13:33:00.126 HYPERVISOR: exec_cmd: vm slot_add_binding ISP-B-SHL01 0 16 WIC-2T 
+May 19 13:33:03.431 HYPERVISOR: exec_cmd: nio create_udp udp-c04e82ee-b2ea-433a-b40f-cfd3f68eedd0 10074 127.0.0.1 10075 
+May 19 13:33:03.655 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP-B-SHL01 0 0 udp-c04e82ee-b2ea-433a-b40f-cfd3f68eedd0 
+May 19 13:33:03.656 HYPERVISOR: exec_cmd: vm get_status ISP-B-SHL01 
+May 19 13:33:03.738 HYPERVISOR: exec_cmd: nio create_udp udp-0572d75b-47b1-4ccd-9d12-d5fecfedf0ba 10086 127.0.0.1 10087 
+May 19 13:33:03.740 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP-B-SHL01 0 1 udp-0572d75b-47b1-4ccd-9d12-d5fecfedf0ba 
+May 19 13:33:03.740 HYPERVISOR: exec_cmd: vm get_status ISP-B-SHL01 
+May 19 13:33:04.266 HYPERVISOR: exec_cmd: nio create_udp udp-8b4381b1-e9f0-4e8d-9394-c48dac14aca4 10098 127.0.0.1 10099 
+May 19 13:33:04.269 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP-B-SHL01 0 17 udp-8b4381b1-e9f0-4e8d-9394-c48dac14aca4 
+May 19 13:33:04.269 HYPERVISOR: exec_cmd: vm get_status ISP-B-SHL01 
+May 19 13:33:57.826 HYPERVISOR: exec_cmd: vm set_ios ISP-B-SHL01 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 19 13:33:57.859 HYPERVISOR: exec_cmd: vm set_ios ISP-B-SHL01 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 19 13:34:46.654 HYPERVISOR: exec_cmd: vm set_ios ISP-B-SHL01 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 

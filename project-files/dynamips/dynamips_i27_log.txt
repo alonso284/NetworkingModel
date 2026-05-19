@@ -1,0 +1,25 @@
+May 19 13:32:59.917 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+May 19 13:32:59.917 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56692.
+May 19 13:32:59.920 HYPERVISOR: exec_cmd: hypervisor version 
+May 19 13:32:59.920 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips 
+May 19 13:32:59.920 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips
+May 19 13:32:59.920 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips/2c0d9eef-f11a-40ab-86d3-5c979b245709 
+May 19 13:32:59.920 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips/2c0d9eef-f11a-40ab-86d3-5c979b245709
+May 19 13:32:59.920 HYPERVISOR: exec_cmd: vm create SHL-DAW-EDGE01 19 c2691 
+May 19 13:32:59.921 VM: VM SHL-DAW-EDGE01 created.
+May 19 13:32:59.921 HYPERVISOR: exec_cmd: vm set_con_tcp_port SHL-DAW-EDGE01 5029 
+May 19 13:32:59.921 HYPERVISOR: exec_cmd: c2691 get_mac_addr SHL-DAW-EDGE01 
+May 19 13:32:59.921 HYPERVISOR: exec_cmd: vm set_disk0 SHL-DAW-EDGE01 64 
+May 19 13:32:59.921 HYPERVISOR: exec_cmd: vm set_disk1 SHL-DAW-EDGE01 64 
+May 19 13:32:59.922 HYPERVISOR: exec_cmd: vm set_ios SHL-DAW-EDGE01 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 19 13:32:59.922 HYPERVISOR: exec_cmd: c2691 set_mac_addr SHL-DAW-EDGE01 c013.4881.0000 
+May 19 13:32:59.922 HYPERVISOR: exec_cmd: vm set_nvram SHL-DAW-EDGE01 256 
+May 19 13:32:59.922 HYPERVISOR: exec_cmd: vm set_ram SHL-DAW-EDGE01 192 
+May 19 13:32:59.923 HYPERVISOR: exec_cmd: vm get_status SHL-DAW-EDGE01 
+May 19 13:32:59.923 HYPERVISOR: exec_cmd: vm slot_add_binding SHL-DAW-EDGE01 0 16 WIC-2T 
+May 19 13:33:02.305 HYPERVISOR: exec_cmd: nio create_udp udp-b82a55bd-5580-4d44-b9db-11a4bae028a8 10046 127.0.0.1 10047 
+May 19 13:33:02.528 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SHL-DAW-EDGE01 0 17 udp-b82a55bd-5580-4d44-b9db-11a4bae028a8 
+May 19 13:33:02.529 HYPERVISOR: exec_cmd: vm get_status SHL-DAW-EDGE01 
+May 19 13:33:02.571 HYPERVISOR: exec_cmd: nio create_udp udp-194459f1-c333-46c9-9de1-9734a7fe99a4 10050 127.0.0.1 10051 
+May 19 13:33:02.573 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SHL-DAW-EDGE01 0 0 udp-194459f1-c333-46c9-9de1-9734a7fe99a4 
+May 19 13:33:02.573 HYPERVISOR: exec_cmd: vm get_status SHL-DAW-EDGE01 

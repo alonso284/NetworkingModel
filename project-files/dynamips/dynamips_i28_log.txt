@@ -1,0 +1,25 @@
+May 19 13:32:59.951 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+May 19 13:32:59.951 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56695.
+May 19 13:32:59.953 HYPERVISOR: exec_cmd: hypervisor version 
+May 19 13:32:59.954 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips 
+May 19 13:32:59.954 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips
+May 19 13:32:59.954 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips/3fc968a8-722e-42a5-a8ed-6f709b690bac 
+May 19 13:32:59.954 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips/3fc968a8-722e-42a5-a8ed-6f709b690bac
+May 19 13:32:59.954 HYPERVISOR: exec_cmd: vm create SHL-DAW-CORE01 18 c2691 
+May 19 13:32:59.954 VM: VM SHL-DAW-CORE01 created.
+May 19 13:32:59.954 HYPERVISOR: exec_cmd: vm set_con_tcp_port SHL-DAW-CORE01 5027 
+May 19 13:32:59.955 HYPERVISOR: exec_cmd: c2691 get_mac_addr SHL-DAW-CORE01 
+May 19 13:32:59.955 HYPERVISOR: exec_cmd: vm set_disk0 SHL-DAW-CORE01 64 
+May 19 13:32:59.955 HYPERVISOR: exec_cmd: vm set_disk1 SHL-DAW-CORE01 64 
+May 19 13:32:59.955 HYPERVISOR: exec_cmd: vm set_ios SHL-DAW-CORE01 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 19 13:32:59.956 HYPERVISOR: exec_cmd: c2691 set_mac_addr SHL-DAW-CORE01 c012.4883.0000 
+May 19 13:32:59.956 HYPERVISOR: exec_cmd: vm set_nvram SHL-DAW-CORE01 256 
+May 19 13:32:59.956 HYPERVISOR: exec_cmd: vm set_ram SHL-DAW-CORE01 192 
+May 19 13:32:59.956 HYPERVISOR: exec_cmd: vm get_status SHL-DAW-CORE01 
+May 19 13:32:59.956 HYPERVISOR: exec_cmd: vm slot_add_binding SHL-DAW-CORE01 1 0 NM-16ESW 
+May 19 13:33:02.844 HYPERVISOR: exec_cmd: nio create_udp udp-620c070c-b00a-40a5-a8c1-e3a2018bb6f0 10058 127.0.0.1 10059 
+May 19 13:33:03.069 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SHL-DAW-CORE01 1 0 udp-620c070c-b00a-40a5-a8c1-e3a2018bb6f0 
+May 19 13:33:03.069 HYPERVISOR: exec_cmd: vm get_status SHL-DAW-CORE01 
+May 19 13:33:03.118 HYPERVISOR: exec_cmd: nio create_udp udp-23e3983d-4883-40ec-b8ea-a556227e58db 10062 127.0.0.1 10063 
+May 19 13:33:03.119 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SHL-DAW-CORE01 1 1 udp-23e3983d-4883-40ec-b8ea-a556227e58db 
+May 19 13:33:03.119 HYPERVISOR: exec_cmd: vm get_status SHL-DAW-CORE01 

@@ -1,0 +1,23 @@
+May 19 13:32:59.812 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+May 19 13:32:59.812 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56683.
+May 19 13:32:59.814 HYPERVISOR: exec_cmd: hypervisor version 
+May 19 13:32:59.815 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips 
+May 19 13:32:59.815 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips
+May 19 13:32:59.815 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips/a0c9182e-2d06-4369-aa6c-3985985689fc 
+May 19 13:32:59.815 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips/a0c9182e-2d06-4369-aa6c-3985985689fc
+May 19 13:32:59.815 HYPERVISOR: exec_cmd: vm create SHL-FSJ-FW01 15 c2691 
+May 19 13:32:59.815 VM: VM SHL-FSJ-FW01 created.
+May 19 13:32:59.816 HYPERVISOR: exec_cmd: vm set_con_tcp_port SHL-FSJ-FW01 5023 
+May 19 13:32:59.816 HYPERVISOR: exec_cmd: c2691 get_mac_addr SHL-FSJ-FW01 
+May 19 13:32:59.816 HYPERVISOR: exec_cmd: vm set_disk0 SHL-FSJ-FW01 64 
+May 19 13:32:59.816 HYPERVISOR: exec_cmd: vm set_disk1 SHL-FSJ-FW01 64 
+May 19 13:32:59.817 HYPERVISOR: exec_cmd: vm set_ios SHL-FSJ-FW01 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 19 13:32:59.817 HYPERVISOR: exec_cmd: c2691 set_mac_addr SHL-FSJ-FW01 c00f.47d5.0000 
+May 19 13:32:59.817 HYPERVISOR: exec_cmd: vm set_nvram SHL-FSJ-FW01 256 
+May 19 13:32:59.817 HYPERVISOR: exec_cmd: vm set_ram SHL-FSJ-FW01 192 
+May 19 13:33:01.087 HYPERVISOR: exec_cmd: nio create_udp udp-9f767378-3258-4d03-b911-e782a0a8f272 10016 127.0.0.1 10017 
+May 19 13:33:01.310 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SHL-FSJ-FW01 0 0 udp-9f767378-3258-4d03-b911-e782a0a8f272 
+May 19 13:33:01.310 HYPERVISOR: exec_cmd: vm get_status SHL-FSJ-FW01 
+May 19 13:33:01.634 HYPERVISOR: exec_cmd: nio create_udp udp-5e34a385-0d7a-4f77-bed4-ac1f100c1d83 10026 127.0.0.1 10027 
+May 19 13:33:01.635 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SHL-FSJ-FW01 0 1 udp-5e34a385-0d7a-4f77-bed4-ac1f100c1d83 
+May 19 13:33:01.635 HYPERVISOR: exec_cmd: vm get_status SHL-FSJ-FW01 

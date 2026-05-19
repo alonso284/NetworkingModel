@@ -1,0 +1,25 @@
+May 19 13:32:59.580 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+May 19 13:32:59.580 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56662.
+May 19 13:32:59.582 HYPERVISOR: exec_cmd: hypervisor version 
+May 19 13:32:59.582 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips 
+May 19 13:32:59.582 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips
+May 19 13:32:59.582 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips/2c5e1c2a-e1e4-48bd-9621-7b11911d6387 
+May 19 13:32:59.582 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips/2c5e1c2a-e1e4-48bd-9621-7b11911d6387
+May 19 13:32:59.582 HYPERVISOR: exec_cmd: vm create ARC-SSN-RT01 10 c2691 
+May 19 13:32:59.583 VM: VM ARC-SSN-RT01 created.
+May 19 13:32:59.583 HYPERVISOR: exec_cmd: vm set_con_tcp_port ARC-SSN-RT01 5017 
+May 19 13:32:59.583 HYPERVISOR: exec_cmd: c2691 get_mac_addr ARC-SSN-RT01 
+May 19 13:32:59.583 HYPERVISOR: exec_cmd: vm set_disk0 ARC-SSN-RT01 64 
+May 19 13:32:59.584 HYPERVISOR: exec_cmd: vm set_disk1 ARC-SSN-RT01 64 
+May 19 13:32:59.584 HYPERVISOR: exec_cmd: vm set_ios ARC-SSN-RT01 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 19 13:32:59.584 HYPERVISOR: exec_cmd: c2691 set_mac_addr ARC-SSN-RT01 c00a.ec66.0000 
+May 19 13:32:59.584 HYPERVISOR: exec_cmd: vm set_nvram ARC-SSN-RT01 256 
+May 19 13:32:59.585 HYPERVISOR: exec_cmd: vm set_ram ARC-SSN-RT01 192 
+May 19 13:32:59.585 HYPERVISOR: exec_cmd: vm get_status ARC-SSN-RT01 
+May 19 13:32:59.585 HYPERVISOR: exec_cmd: vm slot_add_binding ARC-SSN-RT01 0 16 WIC-2T 
+May 19 13:33:07.158 HYPERVISOR: exec_cmd: nio create_udp udp-416eda6f-06fe-4001-9698-fb31ea3579ce 10164 127.0.0.1 10165 
+May 19 13:33:07.380 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ARC-SSN-RT01 0 17 udp-416eda6f-06fe-4001-9698-fb31ea3579ce 
+May 19 13:33:07.380 HYPERVISOR: exec_cmd: vm get_status ARC-SSN-RT01 
+May 19 13:33:07.688 HYPERVISOR: exec_cmd: nio create_udp udp-fe9bb776-195a-481b-8ab7-608900c826cd 10182 127.0.0.1 10183 
+May 19 13:33:07.689 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ARC-SSN-RT01 0 0 udp-fe9bb776-195a-481b-8ab7-608900c826cd 
+May 19 13:33:07.690 HYPERVISOR: exec_cmd: vm get_status ARC-SSN-RT01 

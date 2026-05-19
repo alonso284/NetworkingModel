@@ -1,0 +1,30 @@
+May 19 13:32:59.614 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+May 19 13:32:59.614 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56665.
+May 19 13:32:59.616 HYPERVISOR: exec_cmd: hypervisor version 
+May 19 13:32:59.616 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips 
+May 19 13:32:59.616 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips
+May 19 13:32:59.617 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips/aa6eb99b-b636-405e-94a5-ace7e2d697e0 
+May 19 13:32:59.617 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips/aa6eb99b-b636-405e-94a5-ace7e2d697e0
+May 19 13:32:59.617 HYPERVISOR: exec_cmd: vm create SHL-FSJ-EDGE02 12 c2691 
+May 19 13:32:59.617 VM: VM SHL-FSJ-EDGE02 created.
+May 19 13:32:59.618 HYPERVISOR: exec_cmd: vm set_con_tcp_port SHL-FSJ-EDGE02 5019 
+May 19 13:32:59.618 HYPERVISOR: exec_cmd: c2691 get_mac_addr SHL-FSJ-EDGE02 
+May 19 13:32:59.618 HYPERVISOR: exec_cmd: vm set_disk0 SHL-FSJ-EDGE02 64 
+May 19 13:32:59.618 HYPERVISOR: exec_cmd: vm set_disk1 SHL-FSJ-EDGE02 64 
+May 19 13:32:59.619 HYPERVISOR: exec_cmd: vm set_ios SHL-FSJ-EDGE02 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 19 13:32:59.619 HYPERVISOR: exec_cmd: c2691 set_mac_addr SHL-FSJ-EDGE02 c00c.47aa.0000 
+May 19 13:32:59.619 HYPERVISOR: exec_cmd: vm set_nvram SHL-FSJ-EDGE02 256 
+May 19 13:32:59.620 HYPERVISOR: exec_cmd: vm set_ram SHL-FSJ-EDGE02 192 
+May 19 13:32:59.620 HYPERVISOR: exec_cmd: vm get_status SHL-FSJ-EDGE02 
+May 19 13:32:59.620 HYPERVISOR: exec_cmd: vm slot_add_binding SHL-FSJ-EDGE02 1 0 NM-1FE-TX 
+May 19 13:32:59.620 HYPERVISOR: exec_cmd: vm get_status SHL-FSJ-EDGE02 
+May 19 13:32:59.621 HYPERVISOR: exec_cmd: vm slot_add_binding SHL-FSJ-EDGE02 0 16 WIC-2T 
+May 19 13:33:01.920 HYPERVISOR: exec_cmd: nio create_udp udp-f081152f-8839-43c6-95f7-83756fd057eb 10034 127.0.0.1 10035 
+May 19 13:33:02.148 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SHL-FSJ-EDGE02 0 0 udp-f081152f-8839-43c6-95f7-83756fd057eb 
+May 19 13:33:02.149 HYPERVISOR: exec_cmd: vm get_status SHL-FSJ-EDGE02 
+May 19 13:33:03.702 HYPERVISOR: exec_cmd: nio create_udp udp-dbb327a3-6a87-4a09-a38d-e45ee5214797 10078 127.0.0.1 10079 
+May 19 13:33:03.704 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SHL-FSJ-EDGE02 0 1 udp-dbb327a3-6a87-4a09-a38d-e45ee5214797 
+May 19 13:33:03.704 HYPERVISOR: exec_cmd: vm get_status SHL-FSJ-EDGE02 
+May 19 13:33:03.735 HYPERVISOR: exec_cmd: nio create_udp udp-8b4dd698-fcfc-479c-8211-cca6c8c08eae 10084 127.0.0.1 10085 
+May 19 13:33:03.736 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SHL-FSJ-EDGE02 1 0 udp-8b4dd698-fcfc-479c-8211-cca6c8c08eae 
+May 19 13:33:03.736 HYPERVISOR: exec_cmd: vm get_status SHL-FSJ-EDGE02 

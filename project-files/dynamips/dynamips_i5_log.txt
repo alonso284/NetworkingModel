@@ -1,0 +1,31 @@
+May 19 13:32:59.196 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+May 19 13:32:59.197 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56625.
+May 19 13:32:59.200 HYPERVISOR: exec_cmd: hypervisor version 
+May 19 13:32:59.200 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips 
+May 19 13:32:59.200 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips
+May 19 13:32:59.200 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips/5eddfadd-4058-430e-9884-a279d0c6a6a3 
+May 19 13:32:59.200 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips/5eddfadd-4058-430e-9884-a279d0c6a6a3
+May 19 13:32:59.200 HYPERVISOR: exec_cmd: vm create ARC-FSJ-CORE01 5 c2691 
+May 19 13:32:59.201 VM: VM ARC-FSJ-CORE01 created.
+May 19 13:32:59.201 HYPERVISOR: exec_cmd: vm set_con_tcp_port ARC-FSJ-CORE01 5005 
+May 19 13:32:59.201 HYPERVISOR: exec_cmd: c2691 get_mac_addr ARC-FSJ-CORE01 
+May 19 13:32:59.201 HYPERVISOR: exec_cmd: vm set_disk0 ARC-FSJ-CORE01 64 
+May 19 13:32:59.201 HYPERVISOR: exec_cmd: vm set_disk1 ARC-FSJ-CORE01 64 
+May 19 13:32:59.202 HYPERVISOR: exec_cmd: vm set_ios ARC-FSJ-CORE01 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 19 13:32:59.202 HYPERVISOR: exec_cmd: c2691 set_mac_addr ARC-FSJ-CORE01 c005.eb93.0000 
+May 19 13:32:59.202 HYPERVISOR: exec_cmd: vm set_nvram ARC-FSJ-CORE01 256 
+May 19 13:32:59.203 HYPERVISOR: exec_cmd: vm set_ram ARC-FSJ-CORE01 192 
+May 19 13:32:59.203 HYPERVISOR: exec_cmd: vm get_status ARC-FSJ-CORE01 
+May 19 13:32:59.203 HYPERVISOR: exec_cmd: vm slot_add_binding ARC-FSJ-CORE01 1 0 NM-16ESW 
+May 19 13:33:04.421 HYPERVISOR: exec_cmd: nio create_udp udp-5d71ed59-b112-4d2b-bcb7-5bc22c7b5508 10104 127.0.0.1 10105 
+May 19 13:33:04.643 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ARC-FSJ-CORE01 1 3 udp-5d71ed59-b112-4d2b-bcb7-5bc22c7b5508 
+May 19 13:33:04.644 HYPERVISOR: exec_cmd: vm get_status ARC-FSJ-CORE01 
+May 19 13:33:04.713 HYPERVISOR: exec_cmd: nio create_udp udp-2ecc7f9f-e44f-4a44-ba2b-64d1ae227948 10108 127.0.0.1 10109 
+May 19 13:33:04.714 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ARC-FSJ-CORE01 1 0 udp-2ecc7f9f-e44f-4a44-ba2b-64d1ae227948 
+May 19 13:33:04.714 HYPERVISOR: exec_cmd: vm get_status ARC-FSJ-CORE01 
+May 19 13:33:05.014 HYPERVISOR: exec_cmd: nio create_udp udp-02de497d-929c-4e99-aa45-ec1e68a469f6 10114 127.0.0.1 10115 
+May 19 13:33:05.015 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ARC-FSJ-CORE01 1 1 udp-02de497d-929c-4e99-aa45-ec1e68a469f6 
+May 19 13:33:05.015 HYPERVISOR: exec_cmd: vm get_status ARC-FSJ-CORE01 
+May 19 13:33:05.062 HYPERVISOR: exec_cmd: nio create_udp udp-aef9d2cb-5abd-4ef0-bb17-3e116194bd30 10120 127.0.0.1 10121 
+May 19 13:33:05.064 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ARC-FSJ-CORE01 1 2 udp-aef9d2cb-5abd-4ef0-bb17-3e116194bd30 
+May 19 13:33:05.064 HYPERVISOR: exec_cmd: vm get_status ARC-FSJ-CORE01 

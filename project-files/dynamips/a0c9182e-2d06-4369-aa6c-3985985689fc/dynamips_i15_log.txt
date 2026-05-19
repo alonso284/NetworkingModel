@@ -1,0 +1,25 @@
+May 19 13:32:59.516 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+May 19 13:32:59.516 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56656.
+May 19 13:32:59.517 HYPERVISOR: exec_cmd: hypervisor version 
+May 19 13:32:59.517 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips 
+May 19 13:32:59.517 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips
+May 19 13:32:59.517 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips/a8732264-6427-4e40-9e41-fc0a187aaa8e 
+May 19 13:32:59.517 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips/a8732264-6427-4e40-9e41-fc0a187aaa8e
+May 19 13:32:59.518 HYPERVISOR: exec_cmd: vm create ARC-GDA-RT01 8 c2691 
+May 19 13:32:59.518 VM: VM ARC-GDA-RT01 created.
+May 19 13:32:59.518 HYPERVISOR: exec_cmd: vm set_con_tcp_port ARC-GDA-RT01 5014 
+May 19 13:32:59.518 HYPERVISOR: exec_cmd: c2691 get_mac_addr ARC-GDA-RT01 
+May 19 13:32:59.519 HYPERVISOR: exec_cmd: vm set_disk0 ARC-GDA-RT01 64 
+May 19 13:32:59.519 HYPERVISOR: exec_cmd: vm set_disk1 ARC-GDA-RT01 64 
+May 19 13:32:59.519 HYPERVISOR: exec_cmd: vm set_ios ARC-GDA-RT01 /Users/alonso284/GNS3/images/IOS/c2691-advipservicesk9-mz.124-15.T14.extracted.bin 
+May 19 13:32:59.519 HYPERVISOR: exec_cmd: c2691 set_mac_addr ARC-GDA-RT01 c008.ec5e.0000 
+May 19 13:32:59.520 HYPERVISOR: exec_cmd: vm set_nvram ARC-GDA-RT01 256 
+May 19 13:32:59.520 HYPERVISOR: exec_cmd: vm set_ram ARC-GDA-RT01 192 
+May 19 13:32:59.520 HYPERVISOR: exec_cmd: vm get_status ARC-GDA-RT01 
+May 19 13:32:59.520 HYPERVISOR: exec_cmd: vm slot_add_binding ARC-GDA-RT01 0 16 WIC-2T 
+May 19 13:33:06.849 HYPERVISOR: exec_cmd: nio create_udp udp-ec75b496-df21-40bf-9e27-f8a5cfc15bb2 10158 127.0.0.1 10159 
+May 19 13:33:07.072 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ARC-GDA-RT01 0 17 udp-ec75b496-df21-40bf-9e27-f8a5cfc15bb2 
+May 19 13:33:07.073 HYPERVISOR: exec_cmd: vm get_status ARC-GDA-RT01 
+May 19 13:33:07.634 HYPERVISOR: exec_cmd: nio create_udp udp-6e4e1adb-dfb9-4f1c-bc18-2429e5169644 10178 127.0.0.1 10179 
+May 19 13:33:07.635 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ARC-GDA-RT01 0 0 udp-6e4e1adb-dfb9-4f1c-bc18-2429e5169644 
+May 19 13:33:07.636 HYPERVISOR: exec_cmd: vm get_status ARC-GDA-RT01 

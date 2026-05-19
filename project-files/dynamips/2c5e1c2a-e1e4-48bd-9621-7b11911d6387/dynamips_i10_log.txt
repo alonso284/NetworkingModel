@@ -1,0 +1,12 @@
+May 19 13:32:59.361 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+May 19 13:32:59.361 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56640.
+May 19 13:32:59.364 HYPERVISOR: exec_cmd: hypervisor version 
+May 19 13:32:59.364 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips 
+May 19 13:32:59.364 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips
+May 19 13:32:59.364 HYPERVISOR: exec_cmd: ethsw create ARC-ATT-SW01 
+May 19 13:33:07.450 HYPERVISOR: exec_cmd: nio create_udp udp-6e0ccd9c-d4e9-4079-b0ca-c4d079a735c6 10167 127.0.0.1 10166 
+May 19 13:33:07.451 HYPERVISOR: exec_cmd: ethsw add_nio ARC-ATT-SW01 udp-6e0ccd9c-d4e9-4079-b0ca-c4d079a735c6 
+May 19 13:33:07.462 HYPERVISOR: exec_cmd: ethsw set_access_port ARC-ATT-SW01 udp-6e0ccd9c-d4e9-4079-b0ca-c4d079a735c6 1 
+May 19 13:33:07.508 HYPERVISOR: exec_cmd: nio create_udp udp-94e91351-0627-4d89-a572-4057419ed206 10170 127.0.0.1 10171 
+May 19 13:33:07.508 HYPERVISOR: exec_cmd: ethsw add_nio ARC-ATT-SW01 udp-94e91351-0627-4d89-a572-4057419ed206 
+May 19 13:33:07.512 HYPERVISOR: exec_cmd: ethsw set_access_port ARC-ATT-SW01 udp-94e91351-0627-4d89-a572-4057419ed206 1 

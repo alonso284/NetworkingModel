@@ -1,0 +1,12 @@
+May 19 13:32:59.295 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
+May 19 13:32:59.295 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56634.
+May 19 13:32:59.298 HYPERVISOR: exec_cmd: hypervisor version 
+May 19 13:32:59.298 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips 
+May 19 13:32:59.298 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips
+May 19 13:32:59.298 HYPERVISOR: exec_cmd: ethsw create ARC-FSJ-ACC01 
+May 19 13:33:04.332 HYPERVISOR: exec_cmd: nio create_udp udp-0eec1cf0-d27e-47ed-bf38-15dbb64caf8b 10100 127.0.0.1 10101 
+May 19 13:33:04.332 HYPERVISOR: exec_cmd: ethsw add_nio ARC-FSJ-ACC01 udp-0eec1cf0-d27e-47ed-bf38-15dbb64caf8b 
+May 19 13:33:04.354 HYPERVISOR: exec_cmd: ethsw set_access_port ARC-FSJ-ACC01 udp-0eec1cf0-d27e-47ed-bf38-15dbb64caf8b 1 
+May 19 13:33:04.650 HYPERVISOR: exec_cmd: nio create_udp udp-52d4584d-2092-4c37-b773-43aa63b6f6c1 10103 127.0.0.1 10102 
+May 19 13:33:04.651 HYPERVISOR: exec_cmd: ethsw add_nio ARC-FSJ-ACC01 udp-52d4584d-2092-4c37-b773-43aa63b6f6c1 
+May 19 13:33:04.651 HYPERVISOR: exec_cmd: ethsw set_access_port ARC-FSJ-ACC01 udp-52d4584d-2092-4c37-b773-43aa63b6f6c1 1 

@@ -3223,7 +3223,7 @@
                 "console_type": "telnet",
                 "custom_adapters": [],
                 "first_port_name": null,
-                "height": 45,
+                "height": 71,
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
@@ -3265,11 +3265,11 @@
                     "wic1": null,
                     "wic2": null
                 },
-                "symbol": ":/symbols/classic/router.svg",
+                "symbol": ":/symbols/classic/cloud.svg",
                 "template_id": "dea00ebd-2e4a-4fcd-a9fd-2cb0c848cf1f",
-                "width": 66,
-                "x": -141,
-                "y": -268,
+                "width": 159,
+                "x": -175,
+                "y": -290,
                 "z": 1
             },
             {
@@ -3279,7 +3279,7 @@
                 "console_type": "telnet",
                 "custom_adapters": [],
                 "first_port_name": null,
-                "height": 45,
+                "height": 71,
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
@@ -3321,11 +3321,11 @@
                     "wic1": null,
                     "wic2": null
                 },
-                "symbol": ":/symbols/router.svg",
+                "symbol": ":/symbols/classic/cloud.svg",
                 "template_id": "dea00ebd-2e4a-4fcd-a9fd-2cb0c848cf1f",
-                "width": 66,
-                "x": -2,
-                "y": -401,
+                "width": 159,
+                "x": 36,
+                "y": -415,
                 "z": 1
             },
             {
@@ -3335,7 +3335,7 @@
                 "console_type": "telnet",
                 "custom_adapters": [],
                 "first_port_name": null,
-                "height": 45,
+                "height": 71,
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
@@ -3377,11 +3377,11 @@
                     "wic1": null,
                     "wic2": null
                 },
-                "symbol": ":/symbols/classic/router.svg",
+                "symbol": ":/symbols/classic/cloud.svg",
                 "template_id": "dea00ebd-2e4a-4fcd-a9fd-2cb0c848cf1f",
-                "width": 66,
-                "x": -141,
-                "y": -390,
+                "width": 159,
+                "x": -171,
+                "y": -410,
                 "z": 1
             },
             {
@@ -3391,7 +3391,7 @@
                 "console_type": "telnet",
                 "custom_adapters": [],
                 "first_port_name": null,
-                "height": 45,
+                "height": 71,
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
@@ -3433,11 +3433,11 @@
                     "wic1": null,
                     "wic2": null
                 },
-                "symbol": ":/symbols/classic/router.svg",
+                "symbol": ":/symbols/classic/cloud.svg",
                 "template_id": "dea00ebd-2e4a-4fcd-a9fd-2cb0c848cf1f",
-                "width": 66,
-                "x": 6,
-                "y": -266,
+                "width": 159,
+                "x": 36,
+                "y": -270,
                 "z": 1
             }
         ]
