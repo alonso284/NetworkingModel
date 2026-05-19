@@ -1,9 +1,0 @@
-May 19 13:32:59.885 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
-May 19 13:32:59.886 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56689.
-May 19 13:32:59.888 HYPERVISOR: exec_cmd: hypervisor version 
-May 19 13:32:59.888 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips 
-May 19 13:32:59.888 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips
-May 19 13:32:59.889 HYPERVISOR: exec_cmd: ethsw create SHL-DAW-ACC01 
-May 19 13:33:03.122 HYPERVISOR: exec_cmd: nio create_udp udp-6cfc9d58-a099-4be2-8753-b51cf134cf58 10061 127.0.0.1 10060 
-May 19 13:33:03.122 HYPERVISOR: exec_cmd: ethsw add_nio SHL-DAW-ACC01 udp-6cfc9d58-a099-4be2-8753-b51cf134cf58 
-May 19 13:33:03.128 HYPERVISOR: exec_cmd: ethsw set_access_port SHL-DAW-ACC01 udp-6cfc9d58-a099-4be2-8753-b51cf134cf58 1 

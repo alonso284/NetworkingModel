@@ -1,9 +1,0 @@
-May 19 13:32:59.455 HYPERVISOR: Release 0.2.23-amd64/Darwin (tag 2023010200)
-May 19 13:32:59.456 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56649.
-May 19 13:32:59.457 HYPERVISOR: exec_cmd: hypervisor version 
-May 19 13:32:59.458 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alonso284/GitHub/NetworkingModel/project-files/dynamips 
-May 19 13:32:59.458 GENERAL: working_dir=/Users/alonso284/GitHub/NetworkingModel/project-files/dynamips
-May 19 13:32:59.458 HYPERVISOR: exec_cmd: ethsw create ARC-SUN-SW01 
-May 19 13:33:07.575 HYPERVISOR: exec_cmd: nio create_udp udp-48a30242-a655-41fc-83b7-ff35da5d99f2 10173 127.0.0.1 10172 
-May 19 13:33:07.575 HYPERVISOR: exec_cmd: ethsw add_nio ARC-SUN-SW01 udp-48a30242-a655-41fc-83b7-ff35da5d99f2 
-May 19 13:33:07.593 HYPERVISOR: exec_cmd: ethsw set_access_port ARC-SUN-SW01 udp-48a30242-a655-41fc-83b7-ff35da5d99f2 1 

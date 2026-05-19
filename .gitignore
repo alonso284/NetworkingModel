@@ -1,2 +1,33 @@
+# macOS
 .DS_Store
+
+# Local editor/assistant state
+.ghost/
 .ghost
+
+# GNS3 runtime output
+project-files/**/*_log.txt
+project-files/**/*_stdout.txt
+project-files/**/*_lock
+project-files/**/ubridge.log
+project-files/**/qemu.log
+project-files/**/serial*.log
+
+# GNS3 captures and snapshots
+project-files/captures/
+project-files/snapshots/
+*.pcap
+*.pcapng
+
+# Large local VM/router disk artifacts
+project-files/**/*.qcow2
+project-files/**/*.img
+project-files/**/*.vmdk
+project-files/**/*.iso
+project-files/**/*.bin
+project-files/**/*.nvram
+project-files/**/*.dmp
+
+# Keep topology and exported startup configs versioned:
+# - *.gns3
+# - project-files/**/configs/*.cfg
