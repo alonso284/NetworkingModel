@@ -1,3 +1,0 @@
-Sitio,Dominio_STP,Root_Primary,Root_Secondary,VLANs,Notas
-ARC-FSJ,PVST+,ARC-FSJ-CORE01,ARC-FSJ-CORE02,"10,20,30,40,99",CORE01 root primary; CORE02 secondary; uplinks redundantes a access/server switches
-SHL-FSJ,PVST+,SHL-FSJ-CORE01,SHL-FSJ-CORE02,"10,20,30,40,99",CORE01 root primary; CORE02 secondary; uplinks redundantes a access/server switches

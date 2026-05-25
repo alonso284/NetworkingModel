@@ -9,14 +9,14 @@ Bloque_IP,Uso,Descripción
 10.255.250.0/24,Gestión routers ISP,Administración de equipo ISP simulado
 172.20.0.0/16,Tránsitos ARC,"Enlaces routed internos ARC (hub, sites, FW, core, edge)"
 172.21.0.0/16,Tránsitos Shell,"Enlaces routed internos Shell (office, DR, FW, core, edge)"
-203.0.113.0/24,WAN pública simulada ISP-A,Enlaces eBGP por proveedor A
-198.51.100.0/24,WAN pública simulada ISP-B,Enlaces eBGP por proveedor B
+203.0.113.0/24,WAN pública simulada ISP-A,Enlaces BGP por proveedor A
+198.51.100.0/24,WAN pública simulada ISP-B,Enlaces BGP por proveedor B
 100.64.0.0/30 y 100.64.0.4/30,Backbone ISP simulado,Tránsito entre router lado ARC y lado Shell de cada ISP
-10.10.10.0/24,ARC FSJ VLAN IT,Usuarios IT (alambricos) ARC Fort St. John; HSRP VIP .1; DHCP por servidor
-10.10.20.0/24,ARC FSJ VLAN OT,Equipos OT (alambricos) ARC Fort St. John; separado de Enterprise; HSRP VIP .1
-10.10.30.0/24,ARC FSJ VLAN Servers,Servicios (DNS/DHCP/Email/WLC) ARC Fort St. John; HSRP VIP .1
-10.10.40.0/24,ARC FSJ VLAN WiFi,Clientes WiFi ARC Fort St. John; SSID corporativo; HSRP VIP .1; DHCP
-10.20.10.0/24,Shell FSJ VLAN IT,Usuarios IT (alambricos) Shell Fort St. John; HSRP VIP .1; DHCP
-10.20.20.0/24,Shell FSJ VLAN OT,Equipos OT (alambricos) Shell Fort St. John; separado de Enterprise; HSRP VIP .1
-10.20.30.0/24,Shell FSJ VLAN Servers,Servicios (DNS/DHCP/Email/WLC) Shell Fort St. John; HSRP VIP .1
-10.20.40.0/24,Shell FSJ VLAN WiFi,Clientes WiFi Shell Fort St. John; SSID corporativo; HSRP VIP .1; DHCP
+10.10.10.0/24,ARC FSJ VLAN IT,Usuarios IT (alambricos) ARC Fort St. John; HRSP VIP .1; DHCP por servidor
+10.10.20.0/24,ARC FSJ VLAN OT,Equipos OT (alambricos) ARC Fort St. John; separado de Enterprise; HRSP VIP .1
+10.10.30.0/24,ARC FSJ VLAN Servers,Servicios (DNS/DHCP/Email/WLC) ARC Fort St. John; HRSP VIP .1
+10.10.40.0/24,ARC FSJ VLAN WiFi,Clientes WiFi ARC Fort St. John; SSID corporativo; HRSP VIP .1; DHCP
+10.20.10.0/24,Shell FSJ VLAN IT,Usuarios IT (alambricos) Shell Fort St. John; HRSP VIP .1; DHCP
+10.20.20.0/24,Shell FSJ VLAN OT,Equipos OT (alambricos) Shell Fort St. John; separado de Enterprise; HRSP VIP .1
+10.20.30.0/24,Shell FSJ VLAN Servers,Servicios (DNS/DHCP/Email/WLC) Shell Fort St. John; HRSP VIP .1
+10.20.40.0/24,Shell FSJ VLAN WiFi,Clientes WiFi Shell Fort St. John; SSID corporativo; HRSP VIP .1; DHCP

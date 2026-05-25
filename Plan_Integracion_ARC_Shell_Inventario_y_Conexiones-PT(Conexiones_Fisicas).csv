@@ -15,14 +15,14 @@ ARC-ATT-SW01,Fa0/24,access,ARC-ATT-AP01,Port0,access,Wi-Fi,AP local Attachie
 ARC-SUN-RT01,Gi0/1,trunk,ARC-SUN-SW01,Gi0/1,trunk,LAN de sitio,Sunrise router-on-a-stick / uplink
 ARC-GDA-RT01,Gi0/1,trunk,ARC-GDA-SW01,Gi0/1,trunk,LAN de sitio,Greater Dawson router-on-a-stick / uplink
 ARC-SSN-RT01,Gi0/1,trunk,ARC-SSN-SW01,Gi0/1,trunk,LAN de sitio,Septimus/Sundown router-on-a-stick / uplink
-ARC-FSJ-EDGE01,Gi0/1,203.0.113.2/30,ISP-A-ARC01,Gi0/0,203.0.113.1/30,ISP-A,eBGP primario ARC
-ARC-FSJ-EDGE01,Gi0/2,198.51.100.2/30,ISP-B-ARC01,Gi0/0,198.51.100.1/30,ISP-B,eBGP secundario ARC
-ARC-FSJ-EDGE02,Gi0/1,203.0.113.10/30,ISP-A-ARC01,Gi0/1,203.0.113.9/30,ISP-A,eBGP redundante ARC
-ARC-FSJ-EDGE02,Gi0/2,198.51.100.10/30,ISP-B-ARC01,Gi0/1,198.51.100.9/30,ISP-B,eBGP redundante ARC
+ARC-FSJ-EDGE01,Gi0/1,203.0.113.2/30,ISP-A-ARC01,Gi0/0,203.0.113.1/30,ISP-A,BGP primario ARC
+ARC-FSJ-EDGE01,Gi0/2,198.51.100.2/30,ISP-B-ARC01,Gi0/0,198.51.100.1/30,ISP-B,BGP secundario ARC
+ARC-FSJ-EDGE02,Gi0/1,203.0.113.10/30,ISP-A-ARC01,Gi0/1,203.0.113.9/30,ISP-A,BGP redundante ARC
+ARC-FSJ-EDGE02,Gi0/2,198.51.100.10/30,ISP-B-ARC01,Gi0/1,198.51.100.9/30,ISP-B,BGP redundante ARC
 ARC-FSJ-FW01,Tunnel10,IPSec,SHL-FSJ-FW01,Tunnel10,IPSec,VPN lógica,Túnel primario sobre ISP-A con failover a ISP-B
 ARC-FSJ-FW02,Tunnel20,IPSec,SHL-FSJ-FW02,Tunnel20,IPSec,VPN lógica,Túnel secundario / contingencia
 ARC-FSJ-CORE01,Fa0/1,trunk,ARC-FSJ-ACC01,Gi0/1,trunk,Acceso,Uplink acceso FT. St. John
-ARC-FSJ-CORE02,Fa0/1,trunk,ARC-FSJ-ACC01,Gi0/2,trunk,Acceso,Segundo uplink redundante ACC01 a CORE02 (STP/EtherChannel opcional)
+ARC-FSJ-CORE02,Fa0/1,trunk,ARC-FSJ-ACC01,Gi0/2,trunk,Acceso,Segundo uplink redundante ACC01 a CORE02 (Spanning Tree/EtherChannel opcional)
 ARC-FSJ-CORE01,Fa0/2,trunk,ARC-FSJ-ACC02,Gi0/1,trunk,Acceso,Uplink ACC02 a CORE01 (trunk VLANs IT/WiFi)
 ARC-FSJ-CORE02,Fa0/2,trunk,ARC-FSJ-ACC02,Gi0/2,trunk,Acceso,Uplink ACC02 a CORE02 (redundancia)
 ARC-FSJ-CORE01,Fa0/3,trunk,ARC-FSJ-ACC03,Gi0/1,trunk,Acceso,Uplink ACC03 a CORE01 (trunk VLAN OT)
@@ -46,12 +46,12 @@ SHL-FSJ-EDGE01,Se0/0/0,172.21.1.1/30,SHL-DAW-EDGE01,Se0/0/0,172.21.1.2/30,WAN pr
 SHL-DAW-EDGE01,Gi0/0,172.21.254.10/30,SHL-DAW-FW01,Eth0/0,172.21.254.9/30,Enlace perimetral,Site DR firewall
 SHL-DAW-FW01,Eth0/1,172.21.255.9/30,SHL-DAW-CORE01,Gi0/1,172.21.255.10/30,Enlace interno,Site DR core
 SHL-DAW-CORE01,Fa0/1,trunk,SHL-DAW-ACC01,Gi0/1,trunk,Acceso,Uplink acceso sitio DR
-SHL-FSJ-EDGE01,Gi0/1,203.0.113.6/30,ISP-A-SHL01,Gi0/0,203.0.113.5/30,ISP-A,eBGP primario Shell
-SHL-FSJ-EDGE01,Gi0/2,198.51.100.6/30,ISP-B-SHL01,Gi0/0,198.51.100.5/30,ISP-B,eBGP secundario Shell
-SHL-FSJ-EDGE02,Gi0/1,203.0.113.14/30,ISP-A-SHL01,Gi0/1,203.0.113.13/30,ISP-A,eBGP redundante Shell
-SHL-FSJ-EDGE02,Gi0/2,198.51.100.14/30,ISP-B-SHL01,Gi0/1,198.51.100.13/30,ISP-B,eBGP redundante Shell
+SHL-FSJ-EDGE01,Gi0/1,203.0.113.6/30,ISP-A-SHL01,Gi0/0,203.0.113.5/30,ISP-A,BGP primario Shell
+SHL-FSJ-EDGE01,Gi0/2,198.51.100.6/30,ISP-B-SHL01,Gi0/0,198.51.100.5/30,ISP-B,BGP secundario Shell
+SHL-FSJ-EDGE02,Gi0/1,203.0.113.14/30,ISP-A-SHL01,Gi0/1,203.0.113.13/30,ISP-A,BGP redundante Shell
+SHL-FSJ-EDGE02,Gi0/2,198.51.100.14/30,ISP-B-SHL01,Gi0/1,198.51.100.13/30,ISP-B,BGP redundante Shell
 SHL-FSJ-CORE01,Fa0/1,trunk,SHL-FSJ-ACC01,Gi0/1,trunk,Acceso,Uplink acceso Trading & Logistics
-SHL-FSJ-CORE02,Fa0/1,trunk,SHL-FSJ-ACC01,Gi0/2,trunk,Acceso,Segundo uplink redundante ACC01 a CORE02 (STP/EtherChannel opcional)
+SHL-FSJ-CORE02,Fa0/1,trunk,SHL-FSJ-ACC01,Gi0/2,trunk,Acceso,Segundo uplink redundante ACC01 a CORE02 (Spanning Tree/EtherChannel opcional)
 SHL-FSJ-CORE01,Fa0/2,trunk,SHL-FSJ-ACC02,Gi0/1,trunk,Acceso,Uplink ACC02 a CORE01 (trunk VLANs IT/WiFi)
 SHL-FSJ-CORE02,Fa0/2,trunk,SHL-FSJ-ACC02,Gi0/2,trunk,Acceso,Uplink ACC02 a CORE02 (redundancia)
 SHL-FSJ-CORE01,Fa0/3,trunk,SHL-FSJ-ACC03,Gi0/1,trunk,Acceso,Uplink ACC03 a CORE01 (trunk VLAN OT)

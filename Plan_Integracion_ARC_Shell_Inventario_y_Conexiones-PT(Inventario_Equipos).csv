@@ -1,12 +1,12 @@
 Hostname,Empresa,Rol,Ubicación,Marca,Plataforma,Modelo,IP_Administración,Máscara_Mgmt,GW_Mgmt,Notas
-ARC-FSJ-EDGE01,ARC,Hub regional / WAN edge,"Fort St. John, BC",Cisco,ISR G2,2911,10.255.10.1,255.255.255.0,10.255.10.254,"BGP/OSPF edge primario, WAN a ISP-A e ISP-B"
-ARC-FSJ-EDGE02,ARC,Hub regional / WAN edge,"Fort St. John, BC",Cisco,ISR G2,2911,10.255.10.2,255.255.255.0,10.255.10.254,"BGP/OSPF edge secundario, redundancia WAN"
-ARC-FSJ-ACC02,ARC,Access switch,"Fort St. John, BC",Cisco,Catalyst,2960-24TT,10.255.10.32,255.255.255.0,10.255.10.254,"Acceso usuarios (alambrico), uplinks redundantes a CORE01/CORE02; STP access"
+ARC-FSJ-EDGE01,ARC,Hub regional / WAN edge,"Fort St. John, BC",Cisco,ISR G2,2911,10.255.10.1,255.255.255.0,10.255.10.254,"BGP edge primario, WAN a ISP-A e ISP-B"
+ARC-FSJ-EDGE02,ARC,Hub regional / WAN edge,"Fort St. John, BC",Cisco,ISR G2,2911,10.255.10.2,255.255.255.0,10.255.10.254,"BGP edge secundario, redundancia WAN"
+ARC-FSJ-ACC02,ARC,Access switch,"Fort St. John, BC",Cisco,Catalyst,2960-24TT,10.255.10.32,255.255.255.0,10.255.10.254,"Acceso usuarios (alambrico), uplinks redundantes a CORE01/CORE02; Spanning Tree access"
 ARC-FSJ-ACC03,ARC,Access switch,"Fort St. John, BC",Cisco,Catalyst,2960-24TT,10.255.10.33,255.255.255.0,10.255.10.254,Acceso OT (alambrico) separado; uplinks redundantes a CORE01/CORE02; VLAN OT
 ARC-FSJ-FW01,ARC,Firewall perimetral,"Fort St. John, BC",Cisco,ASA,5505,10.255.10.11,255.255.255.0,10.255.10.254,Termina VPN IPSec primaria
 ARC-FSJ-FW02,ARC,Firewall perimetral,"Fort St. John, BC",Cisco,ASA,5505,10.255.10.12,255.255.255.0,10.255.10.254,Termina VPN IPSec secundaria / HA lógica
-ARC-FSJ-CORE01,ARC,Core L3,"Fort St. John, BC",Cisco,Catalyst,3560-24PS,10.255.10.21,255.255.255.0,10.255.10.254,"OSPF área 0, distribución primaria"
-ARC-FSJ-CORE02,ARC,Core L3,"Fort St. John, BC",Cisco,Catalyst,3560-24PS,10.255.10.22,255.255.255.0,10.255.10.254,"OSPF área 0, distribución secundaria"
+ARC-FSJ-CORE01,ARC,Core L3,"Fort St. John, BC",Cisco,Catalyst,3560-24PS,10.255.10.21,255.255.255.0,10.255.10.254,"HRSP gateway redundante, distribucion primaria"
+ARC-FSJ-CORE02,ARC,Core L3,"Fort St. John, BC",Cisco,Catalyst,3560-24PS,10.255.10.22,255.255.255.0,10.255.10.254,"HRSP gateway redundante, distribucion secundaria"
 ARC-FSJ-ACC01,ARC,Access switch,"Fort St. John, BC",Cisco,Catalyst,2960-24TT,10.255.10.31,255.255.255.0,10.255.10.254,Acceso usuarios/OT-DMZ local
 ARC-FSJ-AP01,ARC,Wireless AP,"Fort St. John, BC",Cisco,Aironet / AP-PT,Access Point,10.255.10.41,255.255.255.0,10.255.10.254,Wi-Fi corporativo/operaciones local
 ARC-ATT-RT01,ARC,Router de sitio,"Attachie, BC",Cisco,ISR G2,2911,10.255.11.1,255.255.255.0,10.255.11.254,Conecta sitio Attachie al hub ARC
@@ -29,10 +29,10 @@ SHL-FSJ-EDGE01,Shell,Oficina T&L / WAN edge,"Fort St. John, BC",Cisco,ISR G2,291
 SHL-FSJ-EDGE02,Shell,Oficina T&L / WAN edge,"Fort St. John, BC",Cisco,ISR G2,2911,10.255.20.2,255.255.255.0,10.255.20.254,Entrada secundaria / redundancia WAN
 SHL-FSJ-FW01,Shell,Firewall perimetral,"Fort St. John, BC",Cisco,ASA,5505,10.255.20.11,255.255.255.0,10.255.20.254,Termina VPN IPSec primaria
 SHL-FSJ-FW02,Shell,Firewall perimetral,"Fort St. John, BC",Cisco,ASA,5505,10.255.20.12,255.255.255.0,10.255.20.254,Termina VPN IPSec secundaria / HA lógica
-SHL-FSJ-CORE01,Shell,Core L3,"Fort St. John, BC",Cisco,Catalyst,3560-24PS,10.255.20.21,255.255.255.0,10.255.20.254,"OSPF área 0, distribución primaria"
-SHL-FSJ-CORE02,Shell,Core L3,"Fort St. John, BC",Cisco,Catalyst,3560-24PS,10.255.20.22,255.255.255.0,10.255.20.254,"OSPF área 0, distribución secundaria"
+SHL-FSJ-CORE01,Shell,Core L3,"Fort St. John, BC",Cisco,Catalyst,3560-24PS,10.255.20.21,255.255.255.0,10.255.20.254,"HRSP gateway redundante, distribucion primaria"
+SHL-FSJ-CORE02,Shell,Core L3,"Fort St. John, BC",Cisco,Catalyst,3560-24PS,10.255.20.22,255.255.255.0,10.255.20.254,"HRSP gateway redundante, distribucion secundaria"
 SHL-FSJ-ACC01,Shell,Access switch,"Fort St. John, BC",Cisco,Catalyst,2960-24TT,10.255.20.31,255.255.255.0,10.255.20.254,Acceso usuarios trading/logística
-SHL-FSJ-ACC02,Shell,Access switch,"Fort St. John, BC",Cisco,Catalyst,2960-24TT,10.255.20.32,255.255.255.0,10.255.20.254,Acceso usuarios alambricos; uplinks redundantes a CORE01/CORE02; STP access
+SHL-FSJ-ACC02,Shell,Access switch,"Fort St. John, BC",Cisco,Catalyst,2960-24TT,10.255.20.32,255.255.255.0,10.255.20.254,Acceso usuarios alambricos; uplinks redundantes a CORE01/CORE02; Spanning Tree access
 SHL-FSJ-ACC03,Shell,Access switch,"Fort St. John, BC",Cisco,Catalyst,2960-24TT,10.255.20.33,255.255.255.0,10.255.20.254,Acceso OT alambrico separado; uplinks redundantes a CORE01/CORE02; VLAN OT
 SHL-FSJ-AP01,Shell,Wireless AP,"Fort St. John, BC",Cisco,Aironet / AP-PT,Access Point,10.255.20.41,255.255.255.0,10.255.20.254,Wi-Fi corporativo oficina primaria
 SHL-FSJ-SRV-SW01,Shell,Server / Services switch,"Fort St. John, BC",Cisco,Catalyst,2960-24TT,10.255.20.34,255.255.255.0,10.255.20.254,Switch de servicios (DNS/DHCP/Email/WLC); conectado al core; trunk para VLANs de servicios

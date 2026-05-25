@@ -1,0 +1,6 @@
+Protocolo,Funcion,Tablas_relacionadas,Notas
+Spanning Tree,Prevencion de loops de capa 2 y eleccion de root bridge,Spanning_Tree; Conexiones_Fisicas,PVST+ por sitio con CORE01 como root primary y CORE02 como root secondary
+DHCP,Asignacion dinamica de direccion IP por VLAN,VLANs_y_HRSP; Inventario_Equipos; Esquema_IP,Scopes entregados desde los servidores DNS/DHCP de cada sitio
+HRSP,Gateway virtual redundante para VLANs,VLANs_y_HRSP; Esquema_IP,VIP .1 por VLAN de usuario/servicios y VIP .254 para administracion
+BGP,Enrutamiento entre los edge routers y proveedores ISP,Conexiones_Fisicas; Inventario_Equipos; Esquema_IP,BGP primario/secundario por ISP-A e ISP-B
+WLC,Control centralizado de WLAN y mapeo SSID/VLAN,Inventario_Equipos; Conexiones_Fisicas; VLANs_y_HRSP,WLC conectado por trunk al switch de servicios para VLAN WiFi
