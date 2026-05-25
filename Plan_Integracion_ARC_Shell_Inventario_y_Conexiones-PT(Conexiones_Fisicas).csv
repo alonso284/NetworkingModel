@@ -1,4 +1,4 @@
-Equipo_A,Puerto_A,IP_o_Modo_A,Equipo_B,Puerto_B,IP_o_Modo_B,Tipo_Enlace,Observación
+Equipo_A,Puerto_A,IP_o_Modo_A,Equipo_B,Puerto_B,IP_o_Modo_B,Tipo_Enlace,Observacion
 ARC-FSJ-CORE01,Fa0/23,trunk,ARC-FSJ-CORE02,Fa0/23,trunk,Core interconnect,Troncal L2/L3 para redundancia
 ARC-FSJ-CORE01,Fa0/24,trunk,ARC-FSJ-CORE02,Fa0/24,trunk,Core interconnect,Segundo enlace para EtherChannel/backup
 ARC-FSJ-CORE01,Gi0/1,172.20.255.2/30,ARC-FSJ-FW01,Eth0/1,172.20.255.1/30,Enlace interno,Core primario a FW primario
@@ -19,8 +19,8 @@ ARC-FSJ-EDGE01,Gi0/1,203.0.113.2/30,ISP-A-ARC01,Gi0/0,203.0.113.1/30,ISP-A,BGP p
 ARC-FSJ-EDGE01,Gi0/2,198.51.100.2/30,ISP-B-ARC01,Gi0/0,198.51.100.1/30,ISP-B,BGP secundario ARC
 ARC-FSJ-EDGE02,Gi0/1,203.0.113.10/30,ISP-A-ARC01,Gi0/1,203.0.113.9/30,ISP-A,BGP redundante ARC
 ARC-FSJ-EDGE02,Gi0/2,198.51.100.10/30,ISP-B-ARC01,Gi0/1,198.51.100.9/30,ISP-B,BGP redundante ARC
-ARC-FSJ-FW01,Tunnel10,IPSec,SHL-FSJ-FW01,Tunnel10,IPSec,VPN lógica,Túnel primario sobre ISP-A con failover a ISP-B
-ARC-FSJ-FW02,Tunnel20,IPSec,SHL-FSJ-FW02,Tunnel20,IPSec,VPN lógica,Túnel secundario / contingencia
+ARC-FSJ-FW01,Tunnel10,IPSec,SHL-FSJ-FW01,Tunnel10,IPSec,VPN logica,Tunel primario sobre ISP-A con failover a ISP-B
+ARC-FSJ-FW02,Tunnel20,IPSec,SHL-FSJ-FW02,Tunnel20,IPSec,VPN logica,Tunel secundario / contingencia
 ARC-FSJ-CORE01,Fa0/1,trunk,ARC-FSJ-ACC01,Gi0/1,trunk,Acceso,Uplink acceso FT. St. John
 ARC-FSJ-CORE02,Fa0/1,trunk,ARC-FSJ-ACC01,Gi0/2,trunk,Acceso,Segundo uplink redundante ACC01 a CORE02 (Spanning Tree/EtherChannel opcional)
 ARC-FSJ-CORE01,Fa0/2,trunk,ARC-FSJ-ACC02,Gi0/1,trunk,Acceso,Uplink ACC02 a CORE01 (trunk VLANs IT/WiFi)
@@ -63,5 +63,5 @@ SHL-FSJ-SRV-SW01,Fa0/2,access,SHL-FSJ-SRV-MAIL01,Fa0,access,Servicios,Servidor E
 SHL-FSJ-SRV-SW01,Fa0/3,trunk,SHL-FSJ-WLC01,Port1,trunk,Wi-Fi,WLC conectado al switch de servicios (trunk para VLANs WiFi)
 SHL-FSJ-ACC02,Fa0/1,access,SHL-FSJ-PC01,Fa0,access,Acceso,PC IT alambrico
 SHL-FSJ-ACC03,Fa0/1,access,SHL-FSJ-OT-PLC01,Fa0,access,Acceso,Equipo OT alambrico (VLAN OT)
-ISP-A-ARC01,Se0/0/0,100.64.0.1/30,ISP-A-SHL01,Se0/0/0,100.64.0.2/30,Backbone ISP-A,Tránsito entre extremos del proveedor A
-ISP-B-ARC01,Se0/0/0,100.64.0.5/30,ISP-B-SHL01,Se0/0/0,100.64.0.6/30,Backbone ISP-B,Tránsito entre extremos del proveedor B
+ISP-A-ARC01,Se0/0/0,100.64.0.1/30,ISP-A-SHL01,Se0/0/0,100.64.0.2/30,Backbone ISP-A,Transito entre extremos del proveedor A
+ISP-B-ARC01,Se0/0/0,100.64.0.5/30,ISP-B-SHL01,Se0/0/0,100.64.0.6/30,Backbone ISP-B,Transito entre extremos del proveedor B

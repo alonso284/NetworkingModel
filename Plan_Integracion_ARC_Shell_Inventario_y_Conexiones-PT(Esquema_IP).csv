@@ -1,17 +1,17 @@
-Bloque_IP,Uso,Descripción
-10.255.10.0/24,Gestión ARC hub,Administración de equipo en hub ARC Fort St. John
-10.255.11.0/24,Gestión ARC Attachie,Administración de equipo en sitio Attachie
-10.255.12.0/24,Gestión ARC Sunrise,Administración de equipo en sitio Sunrise
-10.255.13.0/24,Gestión ARC Greater Dawson,Administración de equipo en sitio Greater Dawson
-10.255.14.0/24,Gestión ARC Septimus/Sundown,Administración de equipo en sitio Septimus/Sundown
-10.255.20.0/24,Gestión Shell oficina primaria,Administración de equipo Shell Fort St. John
-10.255.21.0/24,Gestión Shell sitio DR,Administración de equipo Shell Dawson Creek
-10.255.250.0/24,Gestión routers ISP,Administración de equipo ISP simulado
-172.20.0.0/16,Tránsitos ARC,"Enlaces routed internos ARC (hub, sites, FW, core, edge)"
-172.21.0.0/16,Tránsitos Shell,"Enlaces routed internos Shell (office, DR, FW, core, edge)"
-203.0.113.0/24,WAN pública simulada ISP-A,Enlaces BGP por proveedor A
-198.51.100.0/24,WAN pública simulada ISP-B,Enlaces BGP por proveedor B
-100.64.0.0/30 y 100.64.0.4/30,Backbone ISP simulado,Tránsito entre router lado ARC y lado Shell de cada ISP
+Bloque_IP,Uso,Descripcion
+10.255.10.0/24,Gestion ARC hub,Administracion de equipo en hub ARC Fort St. John
+10.255.11.0/24,Gestion ARC Attachie,Administracion de equipo en sitio Attachie
+10.255.12.0/24,Gestion ARC Sunrise,Administracion de equipo en sitio Sunrise
+10.255.13.0/24,Gestion ARC Greater Dawson,Administracion de equipo en sitio Greater Dawson
+10.255.14.0/24,Gestion ARC Septimus/Sundown,Administracion de equipo en sitio Septimus/Sundown
+10.255.20.0/24,Gestion Shell oficina primaria,Administracion de equipo Shell Fort St. John
+10.255.21.0/24,Gestion Shell sitio DR,Administracion de equipo Shell Dawson Creek
+10.255.250.0/24,Gestion routers ISP,Administracion de equipo ISP simulado
+172.20.0.0/16,Transitos ARC,"Enlaces routed internos ARC (hub, sites, FW, core, edge)"
+172.21.0.0/16,Transitos Shell,"Enlaces routed internos Shell (office, DR, FW, core, edge)"
+203.0.113.0/24,WAN publica simulada ISP-A,Enlaces BGP por proveedor A
+198.51.100.0/24,WAN publica simulada ISP-B,Enlaces BGP por proveedor B
+100.64.0.0/30 y 100.64.0.4/30,Backbone ISP simulado,Transito entre router lado ARC y lado Shell de cada ISP
 10.10.10.0/24,ARC FSJ VLAN IT,Usuarios IT (alambricos) ARC Fort St. John; HRSP VIP .1; DHCP por servidor
 10.10.20.0/24,ARC FSJ VLAN OT,Equipos OT (alambricos) ARC Fort St. John; separado de Enterprise; HRSP VIP .1
 10.10.30.0/24,ARC FSJ VLAN Servers,Servicios (DNS/DHCP/Email/WLC) ARC Fort St. John; HRSP VIP .1
