@@ -4,30 +4,22 @@
 # Local editor/assistant state
 .ghost/
 .ghost
+.vscode/
+.idea/
 
-# GNS3 runtime output
-project-files/**/*_log.txt
-project-files/**/*_stdout.txt
-project-files/**/*_lock
-project-files/**/ubridge.log
-project-files/**/qemu.log
-project-files/**/serial*.log
+# Cisco Packet Tracer local/temporary files
+*.bak
+*.tmp
+*.temp
+*.autosave
+*.autosave.*
+*~
 
-# GNS3 captures and snapshots
-project-files/captures/
-project-files/snapshots/
+# Packet captures generated during local testing
 *.pcap
 *.pcapng
 
-# Large local VM/router disk artifacts
-project-files/**/*.qcow2
-project-files/**/*.img
-project-files/**/*.vmdk
-project-files/**/*.iso
-project-files/**/*.bin
-project-files/**/*.nvram
-project-files/**/*.dmp
-
-# Keep topology and exported startup configs versioned:
-# - *.gns3
-# - project-files/**/configs/*.cfg
+# Keep Packet Tracer topology and documentation versioned:
+# - *.pkt
+# - *.pka
+# - *.csv
