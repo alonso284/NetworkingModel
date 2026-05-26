@@ -118,7 +118,7 @@ vlan 99
 ## Spanning Tree
 
 - [x] Enable PVST mode on core and access/server switches.
-- [ ] Fix or verify spanning-tree root priorities:
+- [x] Fix or verify spanning-tree root priorities:
   - `CORE01` should be root primary for VLANs `10,20,30,40,99`.
   - `CORE02` should be root secondary for VLANs `10,20,30,40,99`.
 - [ ] Verify STP with `show spanning-tree vlan 10`, `show spanning-tree vlan 20`, `show spanning-tree vlan 30`, `show spanning-tree vlan 40`, and `show spanning-tree vlan 99`.
@@ -127,16 +127,16 @@ vlan 99
 
 ## Servers, DHCP, DNS, Mail, And WLC
 
-- [ ] Configure ARC DNS/DHCP server IP settings on VLAN 30.
-- [ ] Configure Shell DNS/DHCP server IP settings on VLAN 30.
-- [ ] Configure DHCP pools for user, OT, WiFi, and management/client VLANs as required by the design.
-- [ ] Configure default gateways in DHCP scopes to use the HSRP VIPs.
+- [x] Configure ARC DNS/DHCP server IP settings on VLAN 30.
+- [x] Configure Shell DNS/DHCP server IP settings on VLAN 30.
+- [x] Configure DHCP pools for user, OT, WiFi, and management/client VLANs as required by the design.
+- [x] Configure default gateways in DHCP scopes to use the HSRP VIPs.
 - [ ] Configure DNS records or DNS service entries if required by the project.
 - [ ] Configure mail server service if required by the project.
-- [ ] Configure ARC WLC management/interface settings.
-- [ ] Configure Shell WLC management/interface settings.
-- [ ] Map wireless SSIDs to the correct VLANs.
-- [ ] Verify AP-to-WLC association if using WLC-managed wireless.
+- [x] Configure ARC WLC management/interface settings.
+- [x] Configure Shell WLC management/interface settings.
+- [x] Map wireless SSIDs to the correct VLANs.
+- [x] Verify AP-to-WLC association if using WLC-managed wireless.
 
 ## Firewalls, WAN, VPN, And ISP Edge
 
