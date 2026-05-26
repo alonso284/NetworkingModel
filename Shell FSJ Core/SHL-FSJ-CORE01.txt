@@ -24,7 +24,7 @@ ip routing
 !
 !
 spanning-tree mode pvst
-spanning-tree vlan 10,20,30,40,99 priority 28672
+spanning-tree vlan 10,20,30,40,99 priority 24576
 !
 !
 !
@@ -109,6 +109,7 @@ interface Vlan10
  description Shell IT Gateway
  mac-address 000c.8582.b801
  ip address 10.20.10.2 255.255.255.0
+ ip helper-address 10.20.30.10
  standby 10 ip 10.20.10.1
  standby 10 priority 110
  standby 10 preempt
@@ -117,6 +118,7 @@ interface Vlan20
  description Shell OT Gateway
  mac-address 000c.8582.b802
  ip address 10.20.20.2 255.255.255.0
+ ip helper-address 10.20.30.10
  standby 20 ip 10.20.20.1
  standby 20 priority 110
  standby 20 preempt
@@ -133,6 +135,7 @@ interface Vlan40
  description Shell WIFI Gateway
  mac-address 000c.8582.b804
  ip address 10.20.40.2 255.255.255.0
+ ip helper-address 10.20.30.10
  standby 40 ip 10.20.40.1
  standby 40 priority 110
  standby 40 preempt

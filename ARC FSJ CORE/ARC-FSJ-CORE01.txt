@@ -24,7 +24,7 @@ ip routing
 !
 !
 spanning-tree mode pvst
-spanning-tree vlan 10,20,30,40,99 priority 28672
+spanning-tree vlan 10,20,30,40,99 priority 24576
 !
 !
 !
@@ -111,6 +111,7 @@ interface Vlan10
  description ARC IT Gateway
  mac-address 0004.9a9a.5101
  ip address 10.10.10.2 255.255.255.0
+ ip helper-address 10.10.30.10
  standby 10 ip 10.10.10.1
  standby 10 priority 110
  standby 10 preempt
@@ -119,6 +120,7 @@ interface Vlan20
  description ARC OT Gateway
  mac-address 0004.9a9a.5102
  ip address 10.10.20.2 255.255.255.0
+ ip helper-address 10.10.30.10
  standby 20 ip 10.10.20.1
  standby 20 priority 110
  standby 20 preempt
@@ -135,6 +137,7 @@ interface Vlan40
  description ARC WIFI Gateway
  mac-address 0004.9a9a.5104
  ip address 10.10.40.2 255.255.255.0
+ ip helper-address 10.10.30.10
  standby 40 ip 10.10.40.1
  standby 40 priority 110
  standby 40 preempt
