@@ -1,0 +1,31 @@
+Sitio  , ACL_Nombre   , Aplicada_En, Direccion, Accion, Protocolo, Origen        , Destino       , Puerto_Destino, Observacion
+ARC-FSJ, ACL_VLAN10_IN, Vlan10     , in       , deny  , ip       , 10.10.10.0/24 , 10.10.20.0/24 ,               , IT no accede a OT
+ARC-FSJ, ACL_VLAN10_IN, Vlan10     , in       , deny  , ip       , 10.10.10.0/24 , 10.255.10.0/24,               , IT no accede a MGMT
+ARC-FSJ, ACL_VLAN10_IN, Vlan10     , in       , permit, ip       , 10.10.10.0/24 , any           ,               , IT accede a Servers y WiFi y WAN
+ARC-FSJ, ACL_VLAN20_IN, Vlan20     , in       , permit, udp      , 10.10.20.0/24 , 10.10.30.0/24 ,             53, OT permite DNS hacia Servers
+ARC-FSJ, ACL_VLAN20_IN, Vlan20     , in       , permit, tcp      , 10.10.20.0/24 , 10.10.30.0/24 ,             53, OT permite DNS TCP hacia Servers
+ARC-FSJ, ACL_VLAN20_IN, Vlan20     , in       , permit, udp      , 10.10.20.0/24 , 10.10.30.0/24 ,             67, OT permite DHCP request hacia Servers
+ARC-FSJ, ACL_VLAN20_IN, Vlan20     , in       , permit, udp      , 10.10.20.0/24 , 10.10.30.0/24 ,             68, OT permite DHCP reply hacia Servers
+ARC-FSJ, ACL_VLAN20_IN, Vlan20     , in       , deny  , ip       , 10.10.20.0/24 , 10.10.10.0/24 ,               , OT no accede a IT
+ARC-FSJ, ACL_VLAN20_IN, Vlan20     , in       , deny  , ip       , 10.10.20.0/24 , 10.10.40.0/24 ,               , OT no accede a WiFi
+ARC-FSJ, ACL_VLAN20_IN, Vlan20     , in       , deny  , ip       , 10.10.20.0/24 , 10.255.10.0/24,               , OT no accede a MGMT
+ARC-FSJ, ACL_VLAN20_IN, Vlan20     , in       , permit, ip       , 10.10.20.0/24 , any           ,               , OT permite trafico restante (intra-VLAN y WAN si aplica)
+ARC-FSJ, ACL_VLAN40_IN, Vlan40     , in       , deny  , ip       , 10.10.40.0/24 , 10.10.20.0/24 ,               , WiFi no accede a OT
+ARC-FSJ, ACL_VLAN40_IN, Vlan40     , in       , deny  , ip       , 10.10.40.0/24 , 10.255.10.0/24,               , WiFi no accede a MGMT
+ARC-FSJ, ACL_VLAN40_IN, Vlan40     , in       , permit, ip       , 10.10.40.0/24 , any           ,               , WiFi accede a Servers e IT y WAN
+ARC-FSJ, ACL_VLAN99_IN, Vlan99     , in       , permit, ip       , 10.255.10.0/24, any           ,               , MGMT accede a todo (administracion)
+SHL-FSJ, ACL_VLAN10_IN, Vlan10     , in       , deny  , ip       , 10.20.10.0/24 , 10.20.20.0/24 ,               , IT no accede a OT
+SHL-FSJ, ACL_VLAN10_IN, Vlan10     , in       , deny  , ip       , 10.20.10.0/24 , 10.255.20.0/24,               , IT no accede a MGMT
+SHL-FSJ, ACL_VLAN10_IN, Vlan10     , in       , permit, ip       , 10.20.10.0/24 , any           ,               , IT accede a Servers y WiFi y WAN
+SHL-FSJ, ACL_VLAN20_IN, Vlan20     , in       , permit, udp      , 10.20.20.0/24 , 10.20.30.0/24 ,             53, OT permite DNS hacia Servers
+SHL-FSJ, ACL_VLAN20_IN, Vlan20     , in       , permit, tcp      , 10.20.20.0/24 , 10.20.30.0/24 ,             53, OT permite DNS TCP hacia Servers
+SHL-FSJ, ACL_VLAN20_IN, Vlan20     , in       , permit, udp      , 10.20.20.0/24 , 10.20.30.0/24 ,             67, OT permite DHCP request hacia Servers
+SHL-FSJ, ACL_VLAN20_IN, Vlan20     , in       , permit, udp      , 10.20.20.0/24 , 10.20.30.0/24 ,             68, OT permite DHCP reply hacia Servers
+SHL-FSJ, ACL_VLAN20_IN, Vlan20     , in       , deny  , ip       , 10.20.20.0/24 , 10.20.10.0/24 ,               , OT no accede a IT
+SHL-FSJ, ACL_VLAN20_IN, Vlan20     , in       , deny  , ip       , 10.20.20.0/24 , 10.20.40.0/24 ,               , OT no accede a WiFi
+SHL-FSJ, ACL_VLAN20_IN, Vlan20     , in       , deny  , ip       , 10.20.20.0/24 , 10.255.20.0/24,               , OT no accede a MGMT
+SHL-FSJ, ACL_VLAN20_IN, Vlan20     , in       , permit, ip       , 10.20.20.0/24 , any           ,               , OT permite trafico restante (intra-VLAN y WAN si aplica)
+SHL-FSJ, ACL_VLAN40_IN, Vlan40     , in       , deny  , ip       , 10.20.40.0/24 , 10.20.20.0/24 ,               , WiFi no accede a OT
+SHL-FSJ, ACL_VLAN40_IN, Vlan40     , in       , deny  , ip       , 10.20.40.0/24 , 10.255.20.0/24,               , WiFi no accede a MGMT
+SHL-FSJ, ACL_VLAN40_IN, Vlan40     , in       , permit, ip       , 10.20.40.0/24 , any           ,               , WiFi accede a Servers e IT y WAN
+SHL-FSJ, ACL_VLAN99_IN, Vlan99     , in       , permit, ip       , 10.255.20.0/24, any           ,               , MGMT accede a todo (administracion)

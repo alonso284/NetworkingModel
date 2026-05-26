@@ -63,8 +63,19 @@ Resume los protocolos requeridos por el modelo y relaciona cada protocolo con la
 - Spanning Tree
 - DHCP
 - HRSP
+- OSPF
 - BGP
+- VPNv4
 - WLC
+- ACL
+
+### ACLs Inter-VLAN
+
+`Plan_Integracion_ARC_Shell_Inventario_y_Conexiones-PT(ACLs_Inter_VLAN).csv`
+
+Define las listas de acceso aplicadas en los core switches para segmentacion entre departamentos. Cada fila representa una entrada de ACL e incluye sitio, nombre de ACL, interfaz SVI donde se aplica, direccion, accion, protocolo, origen, destino, puerto destino y observacion.
+
+La politica segmenta OT de Enterprise, protege la VLAN de administracion y permite acceso controlado a servicios DNS/DHCP desde todas las VLANs que lo requieran.
 
 ### Zonas de Color
 
@@ -93,7 +104,9 @@ El alcance de protocolos documentado se limita a los protocolos requeridos para 
 - Spanning Tree para prevencion de loops de Capa 2 y control de root bridge.
 - DHCP para asignacion dinamica de direccionamiento a endpoints.
 - HRSP para gateway redundante por VLAN.
+- OSPF para ruteo interno por dominio y, si se implementa MPLS/VPNv4, para reachability de loopbacks PE dentro del backbone ISP.
 - BGP para ruteo WAN entre routers edge empresariales y routers ISP simulados.
+- VPNv4 como address-family MP-BGP entre routers PE del ISP cuando se simula una L3VPN. No reemplaza la VPN IPSec entre firewalls y no requiere xconnect para este diseno.
 - WLC para control centralizado de WLAN y mapeo SSID/VLAN.
 
 ## Direccionamiento de Administracion

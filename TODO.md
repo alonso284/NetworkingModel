@@ -29,9 +29,9 @@ Status is based on the current Packet Tracer project files, CSV planning files, 
 
 ## VLANs
 
-- [ ] Verify VLANs exist on every ARC-FSJ switch with `show vlan brief`.
-- [ ] Verify VLANs exist on every Shell-FSJ switch with `show vlan brief`.
-- [ ] Add missing VLANs where needed:
+- [x] Verify VLANs exist on every ARC-FSJ switch with `show vlan brief`.
+- [x] Verify VLANs exist on every Shell-FSJ switch with `show vlan brief`.
+- [x] Add missing VLANs where needed:
 
 ```cisco
 vlan 10
@@ -49,9 +49,9 @@ vlan 99
 ## ARC-FSJ Switching
 
 - [x] Configure `ARC-FSJ-CORE01` trunk ports `Fa0/1`, `Fa0/2`, `Fa0/23`, and `Fa0/24`.
-- [ ] Configure or verify `ARC-FSJ-CORE01 Fa0/3` and `Fa0/4` as trunks for `ACC03` and `SRV-SW01`.
+- [x] Configure or verify `ARC-FSJ-CORE01 Fa0/3` and `Fa0/4` as trunks for `ACC03` and `SRV-SW01`.
 - [x] Configure `ARC-FSJ-CORE02` trunk ports `Fa0/1`, `Fa0/2`, `Fa0/23`, and `Fa0/24`.
-- [ ] Configure or verify `ARC-FSJ-CORE02 Fa0/3` and `Fa0/4` as trunks for `ACC03` and `SRV-SW01`.
+- [x] Configure or verify `ARC-FSJ-CORE02 Fa0/3` and `Fa0/4` as trunks for `ACC03` and `SRV-SW01`.
 - [x] Configure `ARC-FSJ-ACC01 Gi0/1` and `Gi0/2` as trunks.
 - [x] Configure `ARC-FSJ-ACC02 Gi0/1` and `Gi0/2` as trunks.
 - [x] Configure `ARC-FSJ-ACC03 Gi0/1` and `Gi0/2` as trunks.
@@ -65,9 +65,9 @@ vlan 99
 ## Shell-FSJ Switching
 
 - [x] Configure `SHL-FSJ-CORE01` trunk ports `Fa0/1`, `Fa0/2`, `Fa0/23`, and `Fa0/24`.
-- [ ] Configure or verify `SHL-FSJ-CORE01 Fa0/3` and `Fa0/4` as trunks for `ACC03` and `SRV-SW01`.
+- [x] Configure or verify `SHL-FSJ-CORE01 Fa0/3` and `Fa0/4` as trunks for `ACC03` and `SRV-SW01`.
 - [x] Configure `SHL-FSJ-CORE02` trunk ports `Fa0/1`, `Fa0/2`, `Fa0/23`, and `Fa0/24`.
-- [ ] Configure or verify `SHL-FSJ-CORE02 Fa0/3` and `Fa0/4` as trunks for `ACC03` and `SRV-SW01`.
+- [x] Configure or verify `SHL-FSJ-CORE02 Fa0/3` and `Fa0/4` as trunks for `ACC03` and `SRV-SW01`.
 - [x] Configure `SHL-FSJ-ACC01 Gi0/1` and `Gi0/2` as trunks.
 - [x] Configure `SHL-FSJ-ACC02 Gi0/1` and `Gi0/2` as trunks.
 - [x] Configure `SHL-FSJ-ACC03 Gi0/1` and `Gi0/2` as trunks.
@@ -152,6 +152,14 @@ vlan 99
   - `ARC-FSJ-FW01 Tunnel10` to `SHL-FSJ-FW01 Tunnel10`
   - `ARC-FSJ-FW02 Tunnel20` to `SHL-FSJ-FW02 Tunnel20`
 - [ ] Configure ACLs/security policies for allowed inter-site traffic.
+- [x] Document inter-VLAN ACL policy in `ACLs_Inter_VLAN.csv`:
+  - VLAN 10 (IT): blocked from OT and MGMT, permitted to Servers/WiFi/WAN.
+  - VLAN 20 (OT): isolated; only DNS/DHCP to Servers allowed; blocked from IT/WiFi/MGMT.
+  - VLAN 40 (WiFi): blocked from OT and MGMT, permitted to Servers/IT/WAN.
+  - VLAN 99 (MGMT): full access (administration).
+  - VLAN 30 (Servers): no ACL (must respond to all permitted clients).
+- [ ] Apply `ACL_VLAN10_IN`, `ACL_VLAN20_IN`, `ACL_VLAN40_IN`, and `ACL_VLAN99_IN` on ARC core switches.
+- [ ] Apply `ACL_VLAN10_IN`, `ACL_VLAN20_IN`, `ACL_VLAN40_IN`, and `ACL_VLAN99_IN` on Shell core switches.
 
 ## Verification
 

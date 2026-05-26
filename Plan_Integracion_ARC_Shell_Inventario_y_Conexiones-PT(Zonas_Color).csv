@@ -1,16 +1,16 @@
-Zona,Color,Hex,Dispositivos,Ubicacion_sugerida,Proposito
-ARC FSJ Core / Distribucion,Azul claro,#B7D7F0,ARC-FSJ-CORE01; ARC-FSJ-CORE02,Centro del bloque ARC FSJ,"Core L3, root Spanning Tree y gateways HRSP"
-ARC FSJ WAN / Firewall,Azul oscuro,#6FA8DC,ARC-FSJ-EDGE01; ARC-FSJ-EDGE02; ARC-FSJ-FW01; ARC-FSJ-FW02,Arriba del bloque ARC FSJ,"Perimetro, VPN y enlaces BGP a ISP"
-ARC FSJ Acceso IT,Verde,#B6D7A8,ARC-FSJ-ACC01; ARC-FSJ-ACC02; ARC-FSJ-PC01; ARC-FSJ-PC02,Abajo izquierda del bloque ARC FSJ,Usuarios alambricos en VLAN IT
-ARC FSJ OT,Naranja,#F9CB9C,ARC-FSJ-ACC03; ARC-FSJ-OT-PLC01,Abajo derecha del bloque ARC FSJ,Segmento OT / PLC
-ARC FSJ Servicios / WLC,Amarillo,#FFE599,ARC-FSJ-SRV-SW01; ARC-FSJ-SRV-DNSDHCP01; ARC-FSJ-SRV-MAIL01; ARC-FSJ-WLC01,Derecha del core ARC FSJ,Servidores DNS/DHCP/Email y control WLAN
-Sitios Remotos ARC,Verde claro,#D9EAD3,ARC-ATT-RT01; ARC-ATT-SW01; ARC-ATT-AP01; ARC-SUN-RT01; ARC-SUN-SW01; ARC-GDA-RT01; ARC-GDA-SW01; ARC-SSN-RT01; ARC-SSN-SW01,Lado izquierdo del bloque ARC,Sitios remotos privados conectados al hub ARC
-Shell FSJ Core / Distribucion,Rojo claro,#F4CCCC,SHL-FSJ-CORE01; SHL-FSJ-CORE02,Centro del bloque Shell FSJ,"Core L3, root Spanning Tree y gateways HRSP"
-Shell FSJ WAN / Firewall,Rojo medio,#EA9999,SHL-FSJ-EDGE01; SHL-FSJ-EDGE02; SHL-FSJ-FW01; SHL-FSJ-FW02,Arriba del bloque Shell FSJ,"Perimetro, VPN y enlaces BGP a ISP"
-Shell FSJ Acceso IT,Verde azulado,#B7E1CD,SHL-FSJ-ACC01; SHL-FSJ-ACC02; SHL-FSJ-PC01,Abajo izquierda del bloque Shell FSJ,Usuarios alambricos en VLAN IT
-Shell FSJ OT,Naranja oscuro,#F6B26B,SHL-FSJ-ACC03; SHL-FSJ-OT-PLC01,Abajo derecha del bloque Shell FSJ,Segmento OT / PLC
-Shell FSJ Servicios / WLC,Amarillo oscuro,#F1C232,SHL-FSJ-SRV-SW01; SHL-FSJ-SRV-DNSDHCP01; SHL-FSJ-SRV-MAIL01; SHL-FSJ-WLC01,Derecha del core Shell FSJ,Servidores DNS/DHCP/Email y control WLAN
-Shell DR Dawson Creek,Lila,#D9D2E9,SHL-DAW-EDGE01; SHL-DAW-FW01; SHL-DAW-CORE01; SHL-DAW-ACC01,Lado derecho del bloque Shell,Sitio alterno / contingencia
-ISP-A,Cian,#A2C4C9,ISP-A-ARC01; ISP-A-SHL01,Parte superior central,Proveedor A y backbone simulado
-ISP-B,Gris,#CCCCCC,ISP-B-ARC01; ISP-B-SHL01,Parte superior central debajo de ISP-A,Proveedor B y backbone simulado
-VPN Logica,Morado,#B4A7D6,Tunnel10; Tunnel20,Entre firewalls ARC y Shell,Tuneles IPSec entre ARC y Shell
+Zona                         , Color          , Hex    , Dispositivos                                                                                                                , Ubicacion_sugerida                    , Proposito
+ARC FSJ Core / Distribucion  , Azul claro     , #B7D7F0, ARC-FSJ-CORE01; ARC-FSJ-CORE02                                                                                              , Centro del bloque ARC FSJ             , "Core L3, root Spanning Tree y gateways HRSP"
+ARC FSJ WAN / Firewall       , Azul oscuro    , #6FA8DC, ARC-FSJ-EDGE01; ARC-FSJ-EDGE02; ARC-FSJ-FW01; ARC-FSJ-FW02                                                                  , Arriba del bloque ARC FSJ             , "Perimetro, VPN y enlaces BGP a ISP"
+ARC FSJ Acceso IT            , Verde          , #B6D7A8, ARC-FSJ-ACC01; ARC-FSJ-ACC02; ARC-FSJ-PC01; ARC-FSJ-PC02                                                                    , Abajo izquierda del bloque ARC FSJ    , Usuarios alambricos en VLAN IT
+ARC FSJ OT                   , Naranja        , #F9CB9C, ARC-FSJ-ACC03; ARC-FSJ-OT-PLC01                                                                                             , Abajo derecha del bloque ARC FSJ      , Segmento OT / PLC
+ARC FSJ Servicios / WLC      , Amarillo       , #FFE599, ARC-FSJ-SRV-SW01; ARC-FSJ-SRV-DNSDHCP01; ARC-FSJ-SRV-MAIL01; ARC-FSJ-WLC01                                                  , Derecha del core ARC FSJ              , Servidores DNS/DHCP/Email y control WLAN
+Sitios Remotos ARC           , Verde claro    , #D9EAD3, ARC-ATT-RT01; ARC-ATT-SW01; ARC-ATT-AP01; ARC-SUN-RT01; ARC-SUN-SW01; ARC-GDA-RT01; ARC-GDA-SW01; ARC-SSN-RT01; ARC-SSN-SW01, Lado izquierdo del bloque ARC         , Sitios remotos privados conectados al hub ARC
+Shell FSJ Core / Distribucion, Rojo claro     , #F4CCCC, SHL-FSJ-CORE01; SHL-FSJ-CORE02                                                                                              , Centro del bloque Shell FSJ           , "Core L3, root Spanning Tree y gateways HRSP"
+Shell FSJ WAN / Firewall     , Rojo medio     , #EA9999, SHL-FSJ-EDGE01; SHL-FSJ-EDGE02; SHL-FSJ-FW01; SHL-FSJ-FW02                                                                  , Arriba del bloque Shell FSJ           , "Perimetro, VPN y enlaces BGP a ISP"
+Shell FSJ Acceso IT          , Verde azulado  , #B7E1CD, SHL-FSJ-ACC01; SHL-FSJ-ACC02; SHL-FSJ-PC01                                                                                  , Abajo izquierda del bloque Shell FSJ  , Usuarios alambricos en VLAN IT
+Shell FSJ OT                 , Naranja oscuro , #F6B26B, SHL-FSJ-ACC03; SHL-FSJ-OT-PLC01                                                                                             , Abajo derecha del bloque Shell FSJ    , Segmento OT / PLC
+Shell FSJ Servicios / WLC    , Amarillo oscuro, #F1C232, SHL-FSJ-SRV-SW01; SHL-FSJ-SRV-DNSDHCP01; SHL-FSJ-SRV-MAIL01; SHL-FSJ-WLC01                                                  , Derecha del core Shell FSJ            , Servidores DNS/DHCP/Email y control WLAN
+Shell DR Dawson Creek        , Lila           , #D9D2E9, SHL-DAW-EDGE01; SHL-DAW-FW01; SHL-DAW-CORE01; SHL-DAW-ACC01                                                                 , Lado derecho del bloque Shell         , Sitio alterno / contingencia
+ISP-A                        , Cian           , #A2C4C9, ISP-A-ARC01; ISP-A-SHL01                                                                                                    , Parte superior central                , Proveedor A y backbone simulado
+ISP-B                        , Gris           , #CCCCCC, ISP-B-ARC01; ISP-B-SHL01                                                                                                    , Parte superior central debajo de ISP-A, Proveedor B y backbone simulado
+VPN Logica                   , Morado         , #B4A7D6, Tunnel10; Tunnel20                                                                                                          , Entre firewalls ARC y Shell           , Tuneles IPSec entre ARC y Shell

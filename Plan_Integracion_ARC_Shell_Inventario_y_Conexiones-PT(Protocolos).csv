@@ -1,6 +1,9 @@
-Protocolo,Funcion,Tablas_relacionadas,Notas
-Spanning Tree,Prevencion de loops de capa 2 y eleccion de root bridge,Spanning_Tree; Conexiones_Fisicas,PVST+ por sitio con CORE01 como root primary y CORE02 como root secondary
-DHCP,Asignacion dinamica de direccion IP por VLAN,VLANs_y_HRSP; Inventario_Equipos; Esquema_IP,Scopes entregados desde los servidores DNS/DHCP de cada sitio
-HRSP,Gateway virtual redundante para VLANs,VLANs_y_HRSP; Esquema_IP,VIP .1 por VLAN de usuario/servicios y VIP .254 para administracion
-BGP,Enrutamiento entre los edge routers y proveedores ISP,Conexiones_Fisicas; Inventario_Equipos; Interfaces_Logicas; Esquema_IP,BGP por enlaces WAN /30; Loopback99 puede usarse como router-id
-WLC,Control centralizado de WLAN y mapeo SSID/VLAN,Inventario_Equipos; Conexiones_Fisicas; VLANs_y_HRSP,WLC conectado por trunk al switch de servicios para VLAN WiFi
+Protocolo    , Funcion                                                                               , Tablas_relacionadas                                                   , Notas
+Spanning Tree, Prevencion de loops de capa 2 y eleccion de root bridge                               , Spanning_Tree; Conexiones_Fisicas                                     , PVST+ por sitio con CORE01 como root primary y CORE02 como root secondary
+DHCP         , Asignacion dinamica de direccion IP por VLAN                                          , VLANs_y_HRSP; Inventario_Equipos; Esquema_IP                          , Scopes entregados desde los servidores DNS/DHCP de cada sitio
+HRSP         , Gateway virtual redundante para VLANs                                                 , VLANs_y_HRSP; Esquema_IP                                              , VIP .1 por VLAN de usuario/servicios y VIP .254 para administracion
+OSPF         , IGP para anunciar SVIs loopbacks y enlaces de transito internos                       , Conexiones_Fisicas; Interfaces_Logicas; Esquema_IP                    , Usar areas separadas por dominio; ARC area 0 interna Shell area 0 interna e ISP area 0 por proveedor si se simula MPLS/VPNv4
+BGP          , Enrutamiento entre los edge routers y proveedores ISP                                 , Conexiones_Fisicas; Inventario_Equipos; Interfaces_Logicas; Esquema_IP, BGP por enlaces WAN /30; Loopback99 puede usarse como router-id
+VPNv4        , MP-BGP address-family vpnv4 para transportar rutas de clientes sobre backbone ISP/MPLS, Conexiones_Fisicas; Interfaces_Logicas; Esquema_IP                    , Aplicar solo en routers PE del ISP si se implementa L3VPN; no extender VLANs ni usar xconnect para este diseno
+WLC          , Control centralizado de WLAN y mapeo SSID/VLAN                                        , Inventario_Equipos; Conexiones_Fisicas; VLANs_y_HRSP                  , WLC conectado por trunk al switch de servicios para VLAN WiFi
+ACL          , Segmentacion inter-VLAN entre departamentos (IT/OT/WiFi/Servers/MGMT)                 , ACLs_Inter_VLAN; VLANs_y_HRSP; Esquema_IP                             , ACLs aplicadas inbound en SVIs de core switches para aislar OT de Enterprise y proteger MGMT
