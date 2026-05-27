@@ -98,6 +98,10 @@ interface FastEthernet0/24
  switchport mode trunk
 !
 interface GigabitEthernet0/1
+ no switchport
+ ip address 172.20.255.6 255.255.255.252
+ duplex auto
+ speed auto
 !
 interface GigabitEthernet0/2
 !
@@ -139,11 +143,11 @@ interface Vlan40
 interface Vlan99
  description ARC MGMT Gateway
  mac-address 000c.cfcb.1105
- ip address 10.255.10.22 255.255.255.0
- standby 99 ip 10.255.10.254
- standby 99 preempt
+ ip address 10.10.255.22 255.255.255.0
+ standby 99 ip 10.10.255.254
 !
 ip classless
+ip route 0.0.0.0 0.0.0.0 172.20.255.5 
 !
 ip flow-export version 9
 !

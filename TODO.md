@@ -96,7 +96,7 @@ vlan 99
   - VLAN 30: `10.20.30.1`
   - VLAN 40: `10.20.40.1`
   - VLAN 99: `10.255.20.254`
-- [ ] Verify HSRP state on all core switches with `show standby brief`.
+- [x] Verify HSRP state on all core switches with `show standby brief`.
 - [ ] Add default/static routing from cores toward firewalls or edge devices if not already configured.
 
 ## Management
@@ -113,7 +113,7 @@ vlan 99
   - `SHL-FSJ-SRV-SW01`: `10.255.20.34/24`
 - [x] Configure ARC access/server switch default gateway as `10.255.10.254`.
 - [x] Configure Shell access/server switch default gateway as `10.255.20.254`.
-- [ ] Verify management reachability by pinging each switch management IP from the local cores.
+- [x] Verify management reachability by pinging each switch management IP from the local cores.
 
 ## Spanning Tree
 
@@ -131,6 +131,7 @@ vlan 99
 - [x] Configure Shell DNS/DHCP server IP settings on VLAN 30.
 - [x] Configure DHCP pools for user, OT, WiFi, and management/client VLANs as required by the design.
 - [x] Configure default gateways in DHCP scopes to use the HSRP VIPs.
+- [x] Configure `ip helper-address` on core SVIs (Vlan10, Vlan20, Vlan40) pointing to DHCP servers.
 - [ ] Configure DNS records or DNS service entries if required by the project.
 - [ ] Configure mail server service if required by the project.
 - [x] Configure ARC WLC management/interface settings.

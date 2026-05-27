@@ -65,5 +65,5 @@ SHL-FSJ-ACC02   , Fa0/1       , access           , SHL-FSJ-PC01         , Fa0   
 SHL-FSJ-ACC03   , Fa0/1       , access           , SHL-FSJ-OT-PLC01     , Fa0         , access           , Acceso           , Equipo OT alambrico (VLAN OT)
 ISP-A-ARC01     , Se0/0/0     , 100.64.0.1/30    , ISP-A-SHL01          , Se0/0/0     , 100.64.0.2/30    , Backbone ISP-A   , Transito entre extremos del proveedor A
 ISP-B-ARC01     , Se0/0/0     , 100.64.0.5/30    , ISP-B-SHL01          , Se0/0/0     , 100.64.0.6/30    , Backbone ISP-B   , Transito entre extremos del proveedor B
-ISP-A-ARC01     , MP-BGP vpnv4, 10.255.250.101/32, ISP-A-SHL01          , MP-BGP vpnv4, 10.255.250.102/32, VPNv4 logica     , Vecindad MP-BGP vpnv4 entre PEs ISP-A usando Loopback0
-ISP-B-ARC01     , MP-BGP vpnv4, 10.255.250.105/32, ISP-B-SHL01          , MP-BGP vpnv4, 10.255.250.106/32, VPNv4 logica     , Vecindad MP-BGP vpnv4 entre PEs ISP-B usando Loopback0
+ISP-A-ARC01     , MP-BGP vpnv4, 10.0.255.101/32, ISP-A-SHL01          , MP-BGP vpnv4, 10.0.255.102/32, VPNv4 logica     , Vecindad MP-BGP vpnv4 entre PEs ISP-A usando Loopback0
+ISP-B-ARC01     , MP-BGP vpnv4, 10.0.255.105/32, ISP-B-SHL01          , MP-BGP vpnv4, 10.0.255.106/32, VPNv4 logica     , Vecindad MP-BGP vpnv4 entre PEs ISP-B usando Loopback0
