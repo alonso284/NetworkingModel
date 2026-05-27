@@ -1,8 +1,10 @@
 Dispositivo    , Proceso, Router_ID     , Area, Interfaz   , Red              , Wildcard        , Tipo   , Notas
 ARC-FSJ-EDGE01 , 1      , 10.10.255.1   , 0   , Loopback99 , 10.10.255.1      , 0.0.0.0         , active , Router-ID / mgmt
+ARC-FSJ-EDGE01 , 1      , 10.10.255.1   , 0   , Gi0/0      , 172.20.254.0     , 0.0.0.15        , active , Segmento WAN transit compartido con EDGE02 y FWs
 ARC-FSJ-EDGE01 , 1      , 10.10.255.1   , 11  , Se0/0/0    , 172.20.1.0       , 0.0.0.3         , active , Enlace WAN a Attachie
 ARC-FSJ-EDGE01 , 1      , 10.10.255.1   , 12  , Se0/0/1    , 172.20.1.4       , 0.0.0.3         , active , Enlace WAN a Sunrise
 ARC-FSJ-EDGE02 , 1      , 10.10.255.2   , 0   , Loopback99 , 10.10.255.2      , 0.0.0.0         , active , Router-ID / mgmt
+ARC-FSJ-EDGE02 , 1      , 10.10.255.2   , 0   , Gi0/0      , 172.20.254.0     , 0.0.0.15        , active , Segmento WAN transit compartido con EDGE01 y FWs
 ARC-FSJ-EDGE02 , 1      , 10.10.255.2   , 13  , Se0/0/0    , 172.20.1.8       , 0.0.0.3         , active , Enlace WAN a Greater Dawson
 ARC-FSJ-EDGE02 , 1      , 10.10.255.2   , 14  , Se0/0/1    , 172.20.1.12      , 0.0.0.3         , active , Enlace WAN a Septimus/Sundown
 ARC-ATT-RT01   , 1      , 10.255.0.11   , 11  , Se0/0/0    , 172.20.1.0       , 0.0.0.3         , active , Enlace WAN a hub
@@ -18,7 +20,9 @@ ARC-SSN-RT01   , 1      , 10.255.0.14   , 14  , Se0/0/0    , 172.20.1.12      , 
 ARC-SSN-RT01   , 1      , 10.255.0.14   , 14  , Loopback99 , 10.255.0.14      , 0.0.0.0         , active , Router-ID / mgmt
 ARC-SSN-RT01   , 1      , 10.255.0.14   , 14  , Gi0/1.99   , 10.14.10.0       , 0.0.0.255       , passive, VLAN Mgmt Septimus
 SHL-FSJ-EDGE01 , 1      , 10.20.255.1   , 0   , Loopback99 , 10.20.255.1      , 0.0.0.0         , active , Router-ID / mgmt
+SHL-FSJ-EDGE01 , 1      , 10.20.255.1   , 0   , Gi0/0      , 172.21.254.0     , 0.0.0.15        , active , Segmento WAN transit compartido con EDGE02 y FWs
 SHL-FSJ-EDGE01 , 1      , 10.20.255.1   , 21  , Se0/0/0    , 172.21.1.0       , 0.0.0.3         , active , Enlace WAN a Dawson Creek
-SHL-FSJ-EDGE02 , 1      , 10.20.255.2   , 0   , Loopback99 , 10.20.255.2      , 0.0.0.0         , active , Router-ID / mgmt (sin sitios remotos)
+SHL-FSJ-EDGE02 , 1      , 10.20.255.2   , 0   , Loopback99 , 10.20.255.2      , 0.0.0.0         , active , Router-ID / mgmt
+SHL-FSJ-EDGE02 , 1      , 10.20.255.2   , 0   , Gi0/0      , 172.21.254.0     , 0.0.0.15        , active , Segmento WAN transit compartido con EDGE01 y FWs
 SHL-DAW-EDGE01 , 1      , 10.21.255.1   , 21  , Se0/0/0    , 172.21.1.0       , 0.0.0.3         , active , Enlace WAN a hub Shell
 SHL-DAW-EDGE01 , 1      , 10.21.255.1   , 21  , Loopback99 , 10.21.255.1      , 0.0.0.0         , active , Router-ID / mgmt
