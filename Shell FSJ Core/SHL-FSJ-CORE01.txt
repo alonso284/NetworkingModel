@@ -143,8 +143,8 @@ interface Vlan40
 interface Vlan99
  description Shell MGMT Gateway
  mac-address 000c.8582.b805
- ip address 10.255.20.21 255.255.255.0
- standby 99 ip 10.255.20.254
+ ip address 10.20.255.21 255.255.255.0
+ standby 99 ip 10.20.255.254
  standby 99 priority 110
  standby 99 preempt
 !
