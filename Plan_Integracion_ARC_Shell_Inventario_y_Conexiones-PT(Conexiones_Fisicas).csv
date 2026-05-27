@@ -3,8 +3,11 @@ ARC-FSJ-CORE01  , Fa0/23      , trunk            , ARC-FSJ-CORE02       , Fa0/23
 ARC-FSJ-CORE01  , Fa0/24      , trunk            , ARC-FSJ-CORE02       , Fa0/24      , trunk            , Core interconnect, Segundo enlace para EtherChannel/backup
 ARC-FSJ-CORE01  , Gi0/1       , 172.20.255.2/30  , ARC-FSJ-FW01         , Eth0/1      , 172.20.255.1/30  , Enlace interno   , Core primario a FW primario
 ARC-FSJ-CORE02  , Gi0/1       , 172.20.255.6/30  , ARC-FSJ-FW02         , Eth0/1      , 172.20.255.5/30  , Enlace interno   , Core secundario a FW secundario
-ARC-FSJ-FW01    , Eth0/0      , 172.20.254.1/30  , ARC-FSJ-EDGE01       , Gi0/0       , 172.20.254.2/30  , Enlace perimetral, FW primario a edge router primario
-ARC-FSJ-FW02    , Eth0/0      , 172.20.254.5/30  , ARC-FSJ-EDGE02       , Gi0/0       , 172.20.254.6/30  , Enlace perimetral, FW secundario a edge router secundario
+ARC-FSJ-FW01    , Eth0/0      , 172.20.254.1/28  , ARC-FSJ-WAN-SW01     , Gi0/2       , access           , Enlace perimetral, FW primario a WAN switch primario
+ARC-FSJ-FW02    , Eth0/0      , 172.20.254.5/28  , ARC-FSJ-WAN-SW02     , Gi0/2       , access           , Enlace perimetral, FW secundario a WAN switch secundario
+ARC-FSJ-EDGE01  , Gi0/0       , 172.20.254.2/28  , ARC-FSJ-WAN-SW01     , Gi0/1       , access           , Enlace perimetral, Edge primario a WAN switch primario
+ARC-FSJ-EDGE02  , Gi0/0       , 172.20.254.6/28  , ARC-FSJ-WAN-SW02     , Gi0/1       , access           , Enlace perimetral, Edge secundario a WAN switch secundario
+ARC-FSJ-WAN-SW01, Fa0/24      , trunk            , ARC-FSJ-WAN-SW02     , Fa0/24      , trunk            , WAN interconnect , Interconexion L2 entre switches WAN para redundancia y trafico inter-sitio
 ARC-FSJ-EDGE01  , Se0/0/0     , 172.20.1.1/30    , ARC-ATT-RT01         , Se0/0/0     , 172.20.1.2/30    , WAN privada      , Attachie hacia hub ARC
 ARC-FSJ-EDGE01  , Se0/0/1     , 172.20.1.5/30    , ARC-SUN-RT01         , Se0/0/0     , 172.20.1.6/30    , WAN privada      , Sunrise hacia hub ARC
 ARC-FSJ-EDGE02  , Se0/0/0     , 172.20.1.9/30    , ARC-GDA-RT01         , Se0/0/0     , 172.20.1.10/30   , WAN privada      , Greater Dawson hacia hub ARC

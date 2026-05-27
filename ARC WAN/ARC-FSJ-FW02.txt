@@ -26,7 +26,7 @@ interface Vlan1
 interface Vlan2
  nameif outside
  security-level 0
- ip address 172.20.254.5 255.255.255.252
+ ip address 172.20.254.5 255.255.255.248
 !
 !
 route outside 0.0.0.0 0.0.0.0 172.20.254.6 1
@@ -46,8 +46,8 @@ ssh timeout 5
 !
 dhcpd auto_config outside
 !
-!
 dhcpd enable inside
+!
 !
 !
 !

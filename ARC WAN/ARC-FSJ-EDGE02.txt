@@ -39,7 +39,8 @@ interface Loopback99
  ip ospf 1 area 0
 !
 interface GigabitEthernet0/0
- ip address 172.20.254.6 255.255.255.252
+ ip address 172.20.254.6 255.255.255.248
+ ip ospf 1 area 0
  duplex auto
  speed auto
 !

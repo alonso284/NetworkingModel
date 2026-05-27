@@ -21,7 +21,7 @@ interface Ethernet0/7
 interface Vlan1
  nameif inside
  security-level 100
- ip address 172.20.255.1 255.255.255.252
+ ip address 172.20.254.1 255.255.255.248
 !
 interface Vlan2
  nameif outside
@@ -46,8 +46,8 @@ ssh timeout 5
 !
 dhcpd auto_config outside
 !
-!
 dhcpd enable inside
+!
 !
 !
 !
