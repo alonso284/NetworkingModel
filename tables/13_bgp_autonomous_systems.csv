@@ -1,0 +1,6 @@
+AS Number, Organization     , Routers in AS                       , Peering Type                 , Description
+    65100, Arctic (ARC)     , ARC-FSJ-EDGE01 / ARC-FSJ-EDGE02     , eBGP to 65001 and 65002      , Arctic customer AS
+    65200, Shell (SHL)      , SHL-FSJ-EDGE01 / SHL-FSJ-EDGE02     , eBGP to 65001 and 65002      , Shell customer AS
+    65001, ISP-A            , ISP-A-01 / ISP-A-ARC01 / ISP-A-SHL01, eBGP to 65100 / 65200 / 65300, Primary ISP (OSPF backbone internal)
+    65002, ISP-B            , ISP-B-01 / ISP-B-ARC01 / ISP-B-SHL01, eBGP to 65100 / 65200        , Secondary ISP (OSPF backbone internal)
+    65300, Internet (INT-CA), INT-CA-EDGE01                       , eBGP to 65001                , Internet/Content provider

@@ -1,0 +1,44 @@
+Hostname        , Role            , Platform, Organization, Site        , Router-ID   , Management IP, Default Gateway
+ARC-FSJ-EDGE01  , WAN Edge Router , C2900   , Arctic      , FSJ         , 10.10.255.1 , 10.10.255.1  , N/A
+ARC-FSJ-EDGE02  , WAN Edge Router , C2900   , Arctic      , FSJ         , 10.10.255.2 , 10.10.255.2  , N/A
+ARC-FSJ-FW01    , Firewall        , ASA     , Arctic      , FSJ         , N/A         , N/A          , 210.10.0.2
+ARC-FSJ-FW02    , Firewall        , ASA     , Arctic      , FSJ         , N/A         , N/A          , 210.10.0.6
+ARC-FSJ-CORE01  , Core L3 Switch  , 3560    , Arctic      , FSJ         , 10.10.255.21, 10.10.255.21 , 172.20.255.1
+ARC-FSJ-CORE02  , Core L3 Switch  , 3560    , Arctic      , FSJ         , 10.10.255.22, 10.10.255.22 , 172.20.255.5
+ARC-FSJ-ACC01   , Access Switch   , 2960    , Arctic      , FSJ         , N/A         , 10.10.255.31 , 10.10.255.254
+ARC-FSJ-ACC02   , Access Switch   , 2960    , Arctic      , FSJ         , N/A         , 10.10.255.32 , 10.10.255.254
+ARC-FSJ-ACC03   , Access Switch   , 2960    , Arctic      , FSJ         , N/A         , 10.10.255.33 , 10.10.255.254
+ARC-FSJ-SRV-SW01, Server Switch   , 2960    , Arctic      , FSJ         , N/A         , 10.10.255.34 , 10.10.255.254
+ARC-FSJ-WAN-SW01, WAN Switch      , 2960    , Arctic      , FSJ         , N/A         , N/A          , N/A
+ARC-FSJ-WAN-SW02, WAN Switch      , 2960    , Arctic      , FSJ         , N/A         , N/A          , N/A
+ARC-ATT-RT01    , Site Router     , C2900   , Arctic      , Attachie    , 10.255.0.11 , 10.255.0.11  , N/A
+ARC-SUN-RT01    , Site Router     , C2900   , Arctic      , Sunrise     , 10.255.0.12 , 10.255.0.12  , N/A
+ARC-GDA-RT01    , Site Router     , C2900   , Arctic      , GDA         , 10.255.0.13 , 10.255.0.13  , N/A
+ARC-SSN-RT01    , Site Router     , C2900   , Arctic      , SSN         , 10.255.0.14 , 10.255.0.14  , N/A
+ARC-ATT-SW01    , Site Switch     , 2960    , Arctic      , Attachie    , N/A         , N/A          , N/A
+ARC-SUN-SW01    , Site Switch     , 2960    , Arctic      , Sunrise     , N/A         , N/A          , N/A
+ARC-GDA-SW01    , Site Switch     , 2960    , Arctic      , GDA         , N/A         , N/A          , N/A
+ARC-SSN-SW01    , Site Switch     , 2960    , Arctic      , SSN         , N/A         , N/A          , N/A
+SHL-FSJ-EDGE01  , WAN Edge Router , C2900   , Shell       , FSJ         , 10.20.255.1 , 10.20.255.1  , N/A
+SHL-FSJ-EDGE02  , WAN Edge Router , C2900   , Shell       , FSJ         , 10.20.255.2 , 10.20.255.2  , N/A
+SHL-FSJ-FW01    , Firewall        , ASA     , Shell       , FSJ         , N/A         , N/A          , 210.20.0.2
+SHL-FSJ-FW02    , Firewall        , ASA     , Shell       , FSJ         , N/A         , N/A          , 210.20.0.6
+SHL-FSJ-CORE01  , Core L3 Switch  , 3560    , Shell       , FSJ         , 10.20.255.21, 10.20.255.21 , 172.21.255.1
+SHL-FSJ-CORE02  , Core L3 Switch  , 3560    , Shell       , FSJ         , 10.20.255.22, 10.20.255.22 , 172.21.255.5
+SHL-FSJ-ACC01   , Access Switch   , 2960    , Shell       , FSJ         , N/A         , 10.20.255.31 , 10.20.255.254
+SHL-FSJ-ACC02   , Access Switch   , 2960    , Shell       , FSJ         , N/A         , 10.20.255.32 , 10.20.255.254
+SHL-FSJ-ACC03   , Access Switch   , 2960    , Shell       , FSJ         , N/A         , 10.20.255.33 , 10.20.255.254
+SHL-FSJ-SRV-SW01, Server Switch   , 2960    , Shell       , FSJ         , N/A         , N/A          , 10.20.255.254
+SHL-FSJ-WAN-SW01, WAN Switch      , 2960    , Shell       , FSJ         , N/A         , N/A          , N/A
+SHL-FSJ-WAN-SW02, WAN Switch      , 2960    , Shell       , FSJ         , N/A         , N/A          , N/A
+SHL-DAW-EDGE01  , Site Edge Router, C2900   , Shell       , Dawson Creek, 10.21.255.1 , 10.21.255.1  , N/A
+SHL-DAW-FW01    , Firewall        , ASA     , Shell       , Dawson Creek, N/A         , N/A          , 172.21.254.2
+SHL-DAW-CORE01  , Core L3 Switch  , 3560    , Shell       , Dawson Creek, N/A         , N/A          , 172.21.255.1
+SHL-DAW-ACC01   , Access Switch   , 2960    , Shell       , Dawson Creek, N/A         , N/A          , N/A
+ISP-A-01        , ISP Core Router , C2900   , ISP-A       , Core        , 10.0.255.102, 10.0.255.102 , N/A
+ISP-A-ARC01     , ISP PE Router   , C2900   , ISP-A       , ARC         , 10.0.255.101, 10.0.255.101 , N/A
+ISP-A-SHL01     , ISP PE Router   , C2900   , ISP-A       , SHL         , 10.0.255.103, 10.0.255.103 , N/A
+ISP-B-01        , ISP Core Router , C2900   , ISP-B       , Core        , 10.0.255.106, 10.0.255.106 , N/A
+ISP-B-ARC01     , ISP PE Router   , C2900   , ISP-B       , ARC         , 10.0.255.105, 10.0.255.105 , N/A
+ISP-B-SHL01     , ISP PE Router   , C2900   , ISP-B       , SHL         , 10.0.255.107, 10.0.255.107 , N/A
+INT-CA-EDGE01   , Internet Edge   , C2900   , Internet    , Canada      , N/A         , N/A          , N/A

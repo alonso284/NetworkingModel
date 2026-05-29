@@ -1,0 +1,15 @@
+Device      , NAT Type     , Object/Rule Name          , Inside (Real) IP  , Outside (Mapped) IP     , Direction      , Description
+ARC-FSJ-FW01, Static       , ARC_EMAIL                 , 10.10.30.32       , 210.10.0.10             , Inside->Outside, Email server NAT
+ARC-FSJ-FW01, Static       , IT_ARC                    , 10.10.10.1        , 210.10.0.9              , Inside->Outside, IT management NAT
+ARC-FSJ-FW01, Dynamic PAT  , OUTSIDE                   , 10.10.0.0/16 (any), Interface (210.10.0.1)  , Inside->Outside, General internet access
+ARC-FSJ-FW02, Static       , ARC_EMAIL                 , 10.10.30.32       , 210.10.0.10             , Inside->Outside, Email server NAT
+ARC-FSJ-FW02, Static       , IT_ARC                    , 10.10.10.1        , 210.10.0.9              , Inside->Outside, IT management NAT
+ARC-FSJ-FW02, Dynamic PAT  , OUTSIDE                   , 10.10.0.0/16 (any), Interface (210.10.0.5)  , Inside->Outside, General internet access
+ARC-FSJ-FW02, NAT Exemption, ARC_INTERNAL->ARC_ATTACHIE, 10.10.0.0/16      , 10.11.0.0/16            , Bidirectional  , Site-to-site no NAT
+ARC-FSJ-FW02, NAT Exemption, ARC_INTERNAL->ARC_SUNRISE , 10.10.0.0/16      , 10.12.0.0/16            , Bidirectional  , Site-to-site no NAT
+ARC-FSJ-FW02, NAT Exemption, ARC_INTERNAL->ARC_GDA     , 10.10.0.0/16      , 10.13.0.0/16            , Bidirectional  , Site-to-site no NAT
+ARC-FSJ-FW02, NAT Exemption, ARC_INTERNAL->ARC_SSN     , 10.10.0.0/16      , 10.14.0.0/16            , Bidirectional  , Site-to-site no NAT
+SHL-FSJ-FW01, Static       , SHELL_EMAIL               , 10.20.30.32       , 210.20.0.10             , Inside->Outside, Email server NAT
+SHL-FSJ-FW01, Dynamic PAT  , OUTSIDE                   , 10.20.0.0/16 (any), Interface (210.20.0.1)  , Inside->Outside, General internet access
+SHL-FSJ-FW02, Dynamic PAT  , OBJ_SHELL_IT              , 10.20.10.0/24     , Interface (210.20.0.5)  , Inside->Outside, IT subnet internet access
+SHL-DAW-FW01, Dynamic PAT  , OUTSIDE                   , 10.20.0.0/16      , Interface (172.21.254.1), Inside->Outside, General internet access

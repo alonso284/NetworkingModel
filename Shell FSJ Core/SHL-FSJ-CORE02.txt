@@ -88,16 +88,24 @@ interface FastEthernet0/21
 interface FastEthernet0/22
 !
 interface FastEthernet0/23
- switchport trunk allowed vlan 10,20,30,40,99
- switchport trunk encapsulation dot1q
- switchport mode trunk
+ no switchport
+ ip address 172.21.255.10 255.255.255.252
+ ip ospf 1 area 0
+ duplex auto
+ speed auto
 !
 interface FastEthernet0/24
- switchport trunk allowed vlan 10,20,30,40,99
- switchport trunk encapsulation dot1q
- switchport mode trunk
+ no switchport
+ ip address 172.21.255.14 255.255.255.252
+ ip ospf 1 area 0
+ duplex auto
+ speed auto
 !
 interface GigabitEthernet0/1
+ no switchport
+ ip address 172.21.255.6 255.255.255.252
+ duplex auto
+ speed auto
 !
 interface GigabitEthernet0/2
 !
@@ -143,7 +151,13 @@ interface Vlan99
  standby 99 ip 10.20.255.254
  standby 99 preempt
 !
+router ospf 1
+ router-id 10.20.255.22
+ log-adjacency-changes
+ redistribute connected subnets 
+!
 ip classless
+ip route 0.0.0.0 0.0.0.0 172.21.255.5 
 !
 ip flow-export version 9
 !

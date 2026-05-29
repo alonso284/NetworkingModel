@@ -1,0 +1,6 @@
+Device        , Pool Name         , Network   , Subnet Mask  , Default Router, DNS Server, Excluded Addresses, Description
+SHL-DAW-CORE01, DAW_CREEK_LAN     , 10.21.10.0, 255.255.255.0, 10.21.10.1    , N/A       , 10.21.10.1        , Dawson Creek LAN pool
+ARC-FSJ-CORE01, N/A (helper relay), N/A       , N/A          , N/A           , N/A       , N/A               , Relays to 10.10.30.10 (DHCP server in VLAN 30)
+ARC-FSJ-CORE02, N/A (helper relay), N/A       , N/A          , N/A           , N/A       , N/A               , Relays to 10.10.30.10 (DHCP server in VLAN 30)
+SHL-FSJ-CORE01, N/A (helper relay), N/A       , N/A          , N/A           , N/A       , N/A               , Relays to 10.20.30.10 (DHCP server in VLAN 30)
+SHL-FSJ-CORE02, N/A (helper relay), N/A       , N/A          , N/A           , N/A       , N/A               , Relays to 10.20.30.10 (DHCP server in VLAN 30)

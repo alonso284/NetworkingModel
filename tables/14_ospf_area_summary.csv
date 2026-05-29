@@ -1,0 +1,10 @@
+OSPF Area   , Organization, ABR(s)                         , Routers in Area                                                  , Networks                                          , Description
+0 (Backbone), Arctic      , ARC-FSJ-EDGE01 / ARC-FSJ-EDGE02, ARC-FSJ-EDGE01 / ARC-FSJ-EDGE02 / ARC-FSJ-CORE01 / ARC-FSJ-CORE02, 210.10.0.0/28 / 172.20.255.8/30 / 172.20.255.12/30, ARC FSJ backbone
+11          , Arctic      , ARC-FSJ-EDGE01                 , ARC-ATT-RT01                                                     , 172.20.1.0/30 / 10.11.10.0/24 / 10.255.0.11/32    , Attachie site
+12          , Arctic      , ARC-FSJ-EDGE01                 , ARC-SUN-RT01                                                     , 172.20.1.4/30 / 10.12.10.0/24 / 10.255.0.12/32    , Sunrise site
+13          , Arctic      , ARC-FSJ-EDGE02                 , ARC-GDA-RT01                                                     , 172.20.1.8/30 / 10.13.10.0/24 / 10.255.0.13/32    , GDA site
+14          , Arctic      , ARC-FSJ-EDGE02                 , ARC-SSN-RT01                                                     , 172.20.1.12/30 / 10.14.10.0/24 / 10.255.0.14/32   , SSN site
+0 (Backbone), Shell       , SHL-FSJ-EDGE01 / SHL-FSJ-EDGE02, SHL-FSJ-EDGE01 / SHL-FSJ-EDGE02 / SHL-FSJ-CORE01 / SHL-FSJ-CORE02, 210.20.0.0/28 / 172.21.255.8/30 / 172.21.255.12/30, SHL FSJ backbone
+21          , Shell       , SHL-FSJ-EDGE01                 , SHL-DAW-EDGE01                                                   , 172.21.1.0/30 / 172.21.254.0/30 / 10.21.255.1/32  , Dawson Creek site
+0 (Backbone), ISP-A       , N/A                            , ISP-A-01 / ISP-A-ARC01 / ISP-A-SHL01                             , 100.64.0.0/30 / 100.64.0.4/30                     , ISP-A internal backbone
+0 (Backbone), ISP-B       , N/A                            , ISP-B-01 / ISP-B-ARC01 / ISP-B-SHL01                             , 200.64.0.0/30 / 200.64.0.4/30                     , ISP-B internal backbone

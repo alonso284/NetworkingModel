@@ -2,6 +2,7 @@ hostname ARC-FSJ-CORE01
 !
 !
 no profinet
+enable secret 5 $1$mERr$hx5rVt7rPNoS4wqbXKX7m0
 !
 !
 !
@@ -12,6 +13,7 @@ ip routing
 !
 !
 !
+username admin secret 5 $1$mERr$aB4R4eRZ3dWPLw7mSYpHF/
 !
 !
 !
@@ -21,6 +23,9 @@ ip routing
 !
 !
 !
+!
+ip ssh version 2
+ip domain-name arc.org
 !
 !
 spanning-tree mode pvst
@@ -88,14 +93,18 @@ interface FastEthernet0/21
 interface FastEthernet0/22
 !
 interface FastEthernet0/23
- switchport trunk allowed vlan 10,20,30,40,99
- switchport trunk encapsulation dot1q
- switchport mode trunk
+ no switchport
+ ip address 172.20.255.9 255.255.255.252
+ ip ospf 1 area 0
+ duplex auto
+ speed auto
 !
 interface FastEthernet0/24
- switchport trunk allowed vlan 10,20,30,40,99
- switchport trunk encapsulation dot1q
- switchport mode trunk
+ no switchport
+ ip address 172.20.255.13 255.255.255.252
+ ip ospf 1 area 0
+ duplex auto
+ speed auto
 !
 interface GigabitEthernet0/1
  no switchport
@@ -151,6 +160,11 @@ interface Vlan99
  ip address 10.10.255.21 255.255.255.0
  standby 99 ip 10.10.255.254
 !
+router ospf 1
+ router-id 10.10.255.21
+ log-adjacency-changes
+ redistribute connected subnets 
+!
 ip classless
 ip route 0.0.0.0 0.0.0.0 172.20.255.1 
 !
@@ -168,7 +182,11 @@ line con 0
 line aux 0
 !
 line vty 0 4
- login
+ login local
+ transport input ssh
+line vty 5 15
+ login local
+ transport input ssh
 !
 !
 !

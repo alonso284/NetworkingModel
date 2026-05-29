@@ -21,17 +21,29 @@ interface Ethernet0/7
 interface Vlan1
  nameif inside
  security-level 100
- ip address 172.20.255.1 255.255.255.248
+ ip address 172.20.255.1 255.255.255.252
 !
 interface Vlan2
  nameif outside
  security-level 0
- ip address 172.20.254.1 255.255.255.252
+ ip address 210.10.0.1 255.255.255.240
 !
+object network ARC_EMAIL
+ host 10.10.30.32
+ nat (inside,outside) static 210.10.0.10
+object network IT_ARC
+ host 10.10.10.1
+ nat (inside,outside) static 210.10.0.9
+object network OUTSIDE
+ subnet 10.10.0.0 255.255.0.0
+ nat (inside,outside) dynamic interface
 !
-route outside 0.0.0.0 0.0.0.0 172.20.254.2 1
 route inside 10.10.0.0 255.255.0.0 172.20.255.2 1
+route outside 0.0.0.0 0.0.0.0 210.10.0.2 1
 !
+access-list OUTSIDE_IN extended permit tcp host 210.20.0.1 host 10.10.10.1 eq 22
+access-list OUTSIDE_IN extended permit tcp host 210.20.0.5 host 10.10.10.1 eq 22
+access-list OUTSIDE_IN extended deny tcp any host 10.10.10.1 eq 22
 access-list OUTSIDE_IN extended permit ip any any
 !
 !
@@ -43,11 +55,6 @@ access-group OUTSIDE_IN in interface outside
 !
 telnet timeout 5
 ssh timeout 5
-!
-dhcpd auto_config outside
-!
-dhcpd enable inside
-!
 !
 !
 !

@@ -1,5 +1,0 @@
-Sitio  , Variante, Root_Primary    , Root_Secondary  , VLANs           , Notas
-ARC-FSJ, PVST+   , ARC-FSJ-CORE01  , ARC-FSJ-CORE02  , "10,20,30,40,99", CORE01 root primary; CORE02 root secondary; uplinks redundantes a switches de acceso/servicios
-ARC-WAN, PVST+   , ARC-FSJ-WAN-SW01, ARC-FSJ-WAN-SW02, transit         , Dominio STP separado para segmento WAN transit entre edges y firewalls
-SHL-FSJ, PVST+   , SHL-FSJ-CORE01  , SHL-FSJ-CORE02  , "10,20,30,40,99", CORE01 root primary; CORE02 root secondary; uplinks redundantes a switches de acceso/servicios
-SHL-WAN, PVST+   , SHL-FSJ-WAN-SW01, SHL-FSJ-WAN-SW02, transit       , Dominio STP separado para segmento WAN transit entre edges y firewalls

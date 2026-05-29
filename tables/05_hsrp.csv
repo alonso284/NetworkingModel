@@ -1,0 +1,21 @@
+Device        , VLAN, Interface, IP Address     , HSRP Group, Virtual IP   , Priority, Preempt, Helper Address, Description
+ARC-FSJ-CORE01,   10, Vlan10   , 10.10.10.2/24  ,         10, 10.10.10.1   , 110     , Yes    , 10.10.30.10   , ARC IT Gateway
+ARC-FSJ-CORE01,   20, Vlan20   , 10.10.20.2/24  ,         20, 10.10.20.1   , 110     , Yes    , 10.10.30.10   , ARC OT Gateway
+ARC-FSJ-CORE01,   30, Vlan30   , 10.10.30.2/24  ,         30, 10.10.30.1   , 110     , Yes    , N/A           , ARC Servers Gateway
+ARC-FSJ-CORE01,   40, Vlan40   , 10.10.40.2/24  ,         40, 10.10.40.1   , 110     , Yes    , 10.10.30.10   , ARC WiFi Gateway
+ARC-FSJ-CORE01,   99, Vlan99   , 10.10.255.21/24,         99, 10.10.255.254, default , No     , N/A           , ARC MGMT Gateway
+ARC-FSJ-CORE02,   10, Vlan10   , 10.10.10.3/24  ,         10, 10.10.10.1   , default , Yes    , 10.10.30.10   , ARC IT Gateway (Standby)
+ARC-FSJ-CORE02,   20, Vlan20   , 10.10.20.3/24  ,         20, 10.10.20.1   , default , Yes    , 10.10.30.10   , ARC OT Gateway (Standby)
+ARC-FSJ-CORE02,   30, Vlan30   , 10.10.30.3/24  ,         30, 10.10.30.1   , default , Yes    , N/A           , ARC Servers Gateway (Standby)
+ARC-FSJ-CORE02,   40, Vlan40   , 10.10.40.3/24  ,         40, 10.10.40.1   , default , Yes    , 10.10.30.10   , ARC WiFi Gateway (Standby)
+ARC-FSJ-CORE02,   99, Vlan99   , 10.10.255.22/24,         99, 10.10.255.254, default , No     , N/A           , ARC MGMT Gateway (Standby)
+SHL-FSJ-CORE01,   10, Vlan10   , 10.20.10.2/24  ,         10, 10.20.10.1   , 110     , Yes    , 10.20.30.10   , Shell IT Gateway
+SHL-FSJ-CORE01,   20, Vlan20   , 10.20.20.2/24  ,         20, 10.20.20.1   , 110     , Yes    , 10.20.30.10   , Shell OT Gateway
+SHL-FSJ-CORE01,   30, Vlan30   , 10.20.30.2/24  ,         30, 10.20.30.1   , 110     , Yes    , N/A           , Shell Servers Gateway
+SHL-FSJ-CORE01,   40, Vlan40   , 10.20.40.2/24  ,         40, 10.20.40.1   , 110     , Yes    , 10.20.30.10   , Shell WiFi Gateway
+SHL-FSJ-CORE01,   99, Vlan99   , 10.20.255.21/24,         99, 10.20.255.254, 110     , Yes    , N/A           , Shell MGMT Gateway
+SHL-FSJ-CORE02,   10, Vlan10   , 10.20.10.3/24  ,         10, 10.20.10.1   , default , Yes    , 10.20.30.10   , Shell IT Gateway (Standby)
+SHL-FSJ-CORE02,   20, Vlan20   , 10.20.20.3/24  ,         20, 10.20.20.1   , default , Yes    , 10.20.30.10   , Shell OT Gateway (Standby)
+SHL-FSJ-CORE02,   30, Vlan30   , 10.20.30.3/24  ,         30, 10.20.30.1   , default , Yes    , N/A           , Shell Servers Gateway (Standby)
+SHL-FSJ-CORE02,   40, Vlan40   , 10.20.40.3/24  ,         40, 10.20.40.1   , default , Yes    , 10.20.30.10   , Shell WiFi Gateway (Standby)
+SHL-FSJ-CORE02,   99, Vlan99   , 10.20.255.22/24,         99, 10.20.255.254, default , Yes    , N/A           , Shell MGMT Gateway (Standby)

@@ -1,0 +1,111 @@
+Device        , Interface      , IP Address   , Subnet, OSPF Area, Description
+ARC-FSJ-EDGE01, Loopback99     , 10.10.255.1  , /32   , 0        , Router-ID
+ARC-FSJ-EDGE01, Gi0/0          , 210.10.0.2   , /28   , 0        , To FW01 outside segment
+ARC-FSJ-EDGE01, Gi0/1          , 203.0.113.2  , /30   , N/A (BGP), To ISP-A-ARC01
+ARC-FSJ-EDGE01, Gi0/2          , 198.51.100.2 , /30   , N/A (BGP), To ISP-B-ARC01
+ARC-FSJ-EDGE01, Se0/0/0        , 172.20.1.1   , /30   , 11       , To ARC-ATT-RT01
+ARC-FSJ-EDGE01, Se0/0/1        , 172.20.1.5   , /30   , 12       , To ARC-SUN-RT01
+ARC-FSJ-EDGE02, Loopback99     , 10.10.255.2  , /32   , 0        , Router-ID
+ARC-FSJ-EDGE02, Gi0/0          , 210.10.0.6   , /28   , 0        , To FW02 outside segment
+ARC-FSJ-EDGE02, Gi0/1          , 203.0.113.6  , /30   , N/A (BGP), To ISP-A-ARC01
+ARC-FSJ-EDGE02, Gi0/2          , 198.51.100.6 , /30   , N/A (BGP), To ISP-B-ARC01
+ARC-FSJ-EDGE02, Se0/0/0        , 172.20.1.9   , /30   , 13       , To ARC-GDA-RT01
+ARC-FSJ-EDGE02, Se0/0/1        , 172.20.1.13  , /30   , 14       , To ARC-SSN-RT01
+ARC-FSJ-FW01  , Vlan1 (inside) , 172.20.255.1 , /30   , N/A      , To CORE01
+ARC-FSJ-FW01  , Vlan2 (outside), 210.10.0.1   , /28   , N/A      , To EDGE01 segment
+ARC-FSJ-FW02  , Vlan1 (inside) , 172.20.255.5 , /30   , N/A      , To CORE02
+ARC-FSJ-FW02  , Vlan2 (outside), 210.10.0.5   , /28   , N/A      , To EDGE02 segment
+ARC-FSJ-CORE01, Fa0/23         , 172.20.255.9 , /30   , 0        , Interconnect to CORE02
+ARC-FSJ-CORE01, Fa0/24         , 172.20.255.13, /30   , 0        , Interconnect to CORE02
+ARC-FSJ-CORE01, Gi0/1          , 172.20.255.2 , /30   , N/A      , To FW01 inside
+ARC-FSJ-CORE01, Vlan10         , 10.10.10.2   , /24   , N/A      , IT VLAN
+ARC-FSJ-CORE01, Vlan20         , 10.10.20.2   , /24   , N/A      , OT VLAN
+ARC-FSJ-CORE01, Vlan30         , 10.10.30.2   , /24   , N/A      , Servers VLAN
+ARC-FSJ-CORE01, Vlan40         , 10.10.40.2   , /24   , N/A      , WiFi VLAN
+ARC-FSJ-CORE01, Vlan99         , 10.10.255.21 , /24   , N/A      , MGMT VLAN
+ARC-FSJ-CORE02, Fa0/23         , 172.20.255.10, /30   , 0        , Interconnect to CORE01
+ARC-FSJ-CORE02, Fa0/24         , 172.20.255.14, /30   , 0        , Interconnect to CORE01
+ARC-FSJ-CORE02, Gi0/1          , 172.20.255.6 , /30   , N/A      , To FW02 inside
+ARC-FSJ-CORE02, Vlan10         , 10.10.10.3   , /24   , N/A      , IT VLAN
+ARC-FSJ-CORE02, Vlan20         , 10.10.20.3   , /24   , N/A      , OT VLAN
+ARC-FSJ-CORE02, Vlan30         , 10.10.30.3   , /24   , N/A      , Servers VLAN
+ARC-FSJ-CORE02, Vlan40         , 10.10.40.3   , /24   , N/A      , WiFi VLAN
+ARC-FSJ-CORE02, Vlan99         , 10.10.255.22 , /24   , N/A      , MGMT VLAN
+ARC-ATT-RT01  , Loopback99     , 10.255.0.11  , /32   , 11       , Router-ID
+ARC-ATT-RT01  , Gi0/1          , 10.11.10.1   , /24   , 11       , Site LAN
+ARC-ATT-RT01  , Gi0/1.99       , 10.11.255.254, /24   , N/A      , Site MGMT (dot1Q 99)
+ARC-ATT-RT01  , Se0/0/0        , 172.20.1.2   , /30   , 11       , WAN to EDGE01
+ARC-SUN-RT01  , Loopback99     , 10.255.0.12  , /32   , 12       , Router-ID
+ARC-SUN-RT01  , Gi0/1          , 10.12.10.1   , /24   , 12       , Site LAN
+ARC-SUN-RT01  , Gi0/1.99       , 10.12.255.254, /24   , N/A      , Site MGMT (dot1Q 99)
+ARC-SUN-RT01  , Se0/0/0        , 172.20.1.6   , /30   , 12       , WAN to EDGE01
+ARC-GDA-RT01  , Loopback99     , 10.255.0.13  , /32   , 13       , Router-ID
+ARC-GDA-RT01  , Gi0/1          , 10.13.10.1   , /24   , 13       , Site LAN
+ARC-GDA-RT01  , Gi0/1.99       , 10.13.255.254, /24   , N/A      , Site MGMT (dot1Q 99)
+ARC-GDA-RT01  , Se0/0/0        , 172.20.1.10  , /30   , 13       , WAN to EDGE02
+ARC-SSN-RT01  , Loopback99     , 10.255.0.14  , /32   , 14       , Router-ID
+ARC-SSN-RT01  , Gi0/1          , 10.14.10.1   , /24   , 14       , Site LAN
+ARC-SSN-RT01  , Gi0/1.99       , 10.14.255.254, /24   , N/A      , Site MGMT (dot1Q 99)
+ARC-SSN-RT01  , Se0/0/0        , 172.20.1.14  , /30   , 14       , WAN to EDGE02
+SHL-FSJ-EDGE01, Loopback99     , 10.20.255.1  , /32   , 0        , Router-ID
+SHL-FSJ-EDGE01, Gi0/0          , 210.20.0.2   , /28   , 0        , To FW01 outside segment
+SHL-FSJ-EDGE01, Gi0/1          , 203.0.114.2  , /30   , N/A (BGP), To ISP-A-SHL01
+SHL-FSJ-EDGE01, Gi0/2          , 198.51.101.2 , /30   , N/A (BGP), To ISP-B-SHL01
+SHL-FSJ-EDGE01, Se0/0/0        , 172.21.1.1   , /30   , 21       , To SHL-DAW-EDGE01
+SHL-FSJ-EDGE02, Loopback99     , 10.20.255.2  , /32   , 0        , Router-ID
+SHL-FSJ-EDGE02, Gi0/0          , 210.20.0.6   , /28   , 0        , To FW02 outside segment
+SHL-FSJ-EDGE02, Gi0/1          , 203.0.114.6  , /30   , N/A (BGP), To ISP-A-SHL01
+SHL-FSJ-EDGE02, Gi0/2          , 198.51.101.6 , /30   , N/A (BGP), To ISP-B-SHL01
+SHL-FSJ-FW01  , Vlan1 (inside) , 172.21.255.1 , /30   , N/A      , To CORE01
+SHL-FSJ-FW01  , Vlan2 (outside), 210.20.0.1   , /28   , N/A      , To EDGE01 segment
+SHL-FSJ-FW02  , Vlan1 (inside) , 172.21.255.5 , /30   , N/A      , To CORE02
+SHL-FSJ-FW02  , Vlan2 (outside), 210.20.0.5   , /28   , N/A      , To EDGE02 segment
+SHL-FSJ-CORE01, Fa0/23         , 172.21.255.9 , /30   , 0        , Interconnect to CORE02
+SHL-FSJ-CORE01, Fa0/24         , 172.21.255.13, /30   , 0        , Interconnect to CORE02
+SHL-FSJ-CORE01, Gi0/1          , 172.21.255.2 , /30   , N/A      , To FW01 inside
+SHL-FSJ-CORE01, Vlan10         , 10.20.10.2   , /24   , N/A      , Shell IT VLAN
+SHL-FSJ-CORE01, Vlan20         , 10.20.20.2   , /24   , N/A      , Shell OT VLAN
+SHL-FSJ-CORE01, Vlan30         , 10.20.30.2   , /24   , N/A      , Shell Servers VLAN
+SHL-FSJ-CORE01, Vlan40         , 10.20.40.2   , /24   , N/A      , Shell WiFi VLAN
+SHL-FSJ-CORE01, Vlan99         , 10.20.255.21 , /24   , N/A      , Shell MGMT VLAN
+SHL-FSJ-CORE02, Fa0/23         , 172.21.255.10, /30   , 0        , Interconnect to CORE01
+SHL-FSJ-CORE02, Fa0/24         , 172.21.255.14, /30   , 0        , Interconnect to CORE01
+SHL-FSJ-CORE02, Gi0/1          , 172.21.255.6 , /30   , N/A      , To FW02 inside
+SHL-FSJ-CORE02, Vlan10         , 10.20.10.3   , /24   , N/A      , Shell IT VLAN
+SHL-FSJ-CORE02, Vlan20         , 10.20.20.3   , /24   , N/A      , Shell OT VLAN
+SHL-FSJ-CORE02, Vlan30         , 10.20.30.3   , /24   , N/A      , Shell Servers VLAN
+SHL-FSJ-CORE02, Vlan40         , 10.20.40.3   , /24   , N/A      , Shell WiFi VLAN
+SHL-FSJ-CORE02, Vlan99         , 10.20.255.22 , /24   , N/A      , Shell MGMT VLAN
+SHL-DAW-EDGE01, Loopback99     , 10.21.255.1  , /32   , 21       , Router-ID
+SHL-DAW-EDGE01, Gi0/0          , 172.21.254.2 , /30   , 21       , To DAW-FW01 outside
+SHL-DAW-EDGE01, Se0/0/0        , 172.21.1.2   , /30   , 21       , WAN to FSJ-EDGE01
+SHL-DAW-FW01  , Vlan1 (inside) , 172.21.255.1 , /30   , N/A      , To DAW-CORE01
+SHL-DAW-FW01  , Vlan2 (outside), 172.21.254.1 , /30   , N/A      , To DAW-EDGE01
+SHL-DAW-CORE01, Fa0/1          , 10.21.10.1   , /24   , N/A      , Dawson Creek LAN
+SHL-DAW-CORE01, Gi0/1          , 172.21.255.2 , /30   , N/A      , To DAW-FW01 inside
+ISP-A-01      , Loopback0      , 10.0.255.102 , /32   , 0        , Router-ID
+ISP-A-01      , Gi0/0          , 203.0.115.1  , /24   , N/A (BGP), To INT-CA-EDGE01
+ISP-A-01      , Se0/0/0        , 100.64.0.5   , /30   , 0        , To ISP-A-SHL01
+ISP-A-01      , Se0/0/1        , 100.64.0.1   , /30   , 0        , To ISP-A-ARC01
+ISP-A-ARC01   , Loopback0      , 10.0.255.101 , /32   , 0        , Router-ID
+ISP-A-ARC01   , Gi0/0          , 203.0.113.1  , /30   , N/A (BGP), To ARC-FSJ-EDGE01
+ISP-A-ARC01   , Gi0/1          , 203.0.113.5  , /30   , N/A (BGP), To ARC-FSJ-EDGE02
+ISP-A-ARC01   , Se0/0/0        , 100.64.0.2   , /30   , 0        , To ISP-A-01
+ISP-A-SHL01   , Loopback0      , 10.0.255.103 , /32   , 0        , Router-ID
+ISP-A-SHL01   , Gi0/0          , 203.0.114.1  , /30   , N/A (BGP), To SHL-FSJ-EDGE01
+ISP-A-SHL01   , Gi0/1          , 203.0.114.5  , /30   , N/A (BGP), To SHL-FSJ-EDGE02
+ISP-A-SHL01   , Se0/0/0        , 100.64.0.6   , /30   , 0        , To ISP-A-01
+ISP-B-01      , Loopback0      , 10.0.255.106 , /32   , 0        , Router-ID
+ISP-B-01      , Se0/0/0        , 200.64.0.5   , /30   , 0        , To ISP-B-SHL01
+ISP-B-01      , Se0/0/1        , 200.64.0.1   , /30   , 0        , To ISP-B-ARC01
+ISP-B-ARC01   , Loopback0      , 10.0.255.105 , /32   , 0        , Router-ID
+ISP-B-ARC01   , Gi0/0          , 198.51.100.1 , /30   , N/A (BGP), To ARC-FSJ-EDGE01
+ISP-B-ARC01   , Gi0/1          , 198.51.100.5 , /30   , N/A (BGP), To ARC-FSJ-EDGE02
+ISP-B-ARC01   , Se0/0/0        , 200.64.0.2   , /30   , 0        , To ISP-B-01
+ISP-B-SHL01   , Loopback0      , 10.0.255.107 , /32   , 0        , Router-ID
+ISP-B-SHL01   , Gi0/0          , 198.51.101.1 , /30   , N/A (BGP), To SHL-FSJ-EDGE01
+ISP-B-SHL01   , Gi0/1          , 198.51.101.5 , /30   , N/A (BGP), To SHL-FSJ-EDGE02
+ISP-B-SHL01   , Se0/0/0        , 200.64.0.6   , /30   , 0        , To ISP-B-01
+INT-CA-EDGE01 , Gi0/0          , 203.0.115.2  , /24   , N/A (BGP), To ISP-A-01
+INT-CA-EDGE01 , Gi0/1          , 3.96.124.1   , /24   , N/A      , Internet segment
+INT-CA-EDGE01 , Gi0/2          , 8.8.8.1      , /24   , N/A      , DNS/Public segment

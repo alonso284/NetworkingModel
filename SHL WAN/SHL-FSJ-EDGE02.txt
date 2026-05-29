@@ -1,0 +1,93 @@
+hostname SHL-FSJ-EDGE02
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2911/K9 sn FTX15241N2A-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface Loopback99
+ ip address 10.20.255.2 255.255.255.255
+ ip ospf 1 area 0
+!
+interface GigabitEthernet0/0
+ ip address 210.20.0.6 255.255.255.240
+ ip ospf 1 area 0
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/1
+ ip address 203.0.114.6 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/2
+ ip address 198.51.101.6 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 1
+ router-id 10.20.255.2
+ log-adjacency-changes
+ redistribute static subnets 
+!
+router bgp 65200
+ bgp log-neighbor-changes
+ no synchronization
+ neighbor 203.0.114.5 remote-as 65001
+ neighbor 198.51.101.5 remote-as 65002
+ network 210.20.0.0 mask 255.255.255.240
+!
+ip classless
+ip route 10.20.0.0 255.255.0.0 210.20.0.5 
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end

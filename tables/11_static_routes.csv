@@ -1,0 +1,25 @@
+Device        , Destination Network, Subnet Mask, Next Hop    , Interface, Description
+ARC-FSJ-EDGE01, 10.10.0.0          , /16        , 210.10.0.1  , N/A      , Internal traffic via FW01
+ARC-FSJ-EDGE02, 10.10.0.0          , /16        , 210.10.0.5  , N/A      , Internal traffic via FW02
+ARC-FSJ-CORE01, 0.0.0.0            , /0         , 172.20.255.1, N/A      , Default via FW01 inside
+ARC-FSJ-CORE02, 0.0.0.0            , /0         , 172.20.255.5, N/A      , Default via FW02 inside
+ARC-FSJ-FW01  , 10.10.0.0          , /16        , 172.20.255.2, inside   , To internal via CORE01
+ARC-FSJ-FW01  , 0.0.0.0            , /0         , 210.10.0.2  , outside  , Default via EDGE01
+ARC-FSJ-FW02  , 10.10.0.0          , /16        , 172.20.255.6, inside   , To internal via CORE02
+ARC-FSJ-FW02  , 10.11.0.0          , /16        , 210.10.0.6  , outside  , Attachie site via EDGE02
+ARC-FSJ-FW02  , 10.12.0.0          , /16        , 210.10.0.6  , outside  , Sunrise site via EDGE02
+ARC-FSJ-FW02  , 10.13.0.0          , /16        , 210.10.0.6  , outside  , GDA site via EDGE02
+ARC-FSJ-FW02  , 10.14.0.0          , /16        , 210.10.0.6  , outside  , SSN site via EDGE02
+ARC-FSJ-FW02  , 0.0.0.0            , /0         , 210.10.0.6  , outside  , Default via EDGE02
+SHL-FSJ-EDGE01, 10.20.0.0          , /16        , 210.20.0.1  , N/A      , Internal traffic via FW01
+SHL-FSJ-EDGE02, 10.20.0.0          , /16        , 210.20.0.5  , N/A      , Internal traffic via FW02
+SHL-FSJ-CORE01, 0.0.0.0            , /0         , 172.21.255.1, N/A      , Default via FW01 inside
+SHL-FSJ-CORE02, 0.0.0.0            , /0         , 172.21.255.5, N/A      , Default via FW02 inside
+SHL-FSJ-FW01  , 10.20.0.0          , /16        , 172.21.255.2, inside   , To internal via CORE01
+SHL-FSJ-FW01  , 0.0.0.0            , /0         , 210.20.0.2  , outside  , Default via EDGE01
+SHL-FSJ-FW02  , 10.20.0.0          , /16        , 172.21.255.6, inside   , To internal via CORE02
+SHL-FSJ-FW02  , 0.0.0.0            , /0         , 210.20.0.6  , outside  , Default via EDGE02
+SHL-DAW-EDGE01, 10.21.0.0          , /16        , 172.21.254.1, N/A      , DAW internal via FW
+SHL-DAW-FW01  , 10.21.0.0          , /16        , 172.21.255.2, inside   , To DAW internal via CORE
+SHL-DAW-FW01  , 0.0.0.0            , /0         , 172.21.254.2, outside  , Default via DAW-EDGE01
+SHL-DAW-CORE01, 0.0.0.0            , /0         , 172.21.255.1, N/A      , Default via DAW-FW01

@@ -1,0 +1,52 @@
+Local Device    , Local Interface, Remote Device   , Remote Interface, Link Type     , Description
+ARC-ATT-SW01    , Gi0/1          , ARC-ATT-RT01    , Gi0/1           , Ethernet      , Site switch to router
+ARC-ATT-RT01    , Se0/0/0        , ARC-FSJ-EDGE01  , Se0/0/0         , Serial WAN    , Attachie to FSJ EDGE01
+ARC-SUN-SW01    , Gi0/1          , ARC-SUN-RT01    , Gi0/1           , Ethernet      , Site switch to router
+ARC-SUN-RT01    , Se0/0/0        , ARC-FSJ-EDGE01  , Se0/0/1         , Serial WAN    , Sunrise to FSJ EDGE01
+ARC-GDA-SW01    , Gi0/1          , ARC-GDA-RT01    , Gi0/1           , Ethernet      , Site switch to router
+ARC-GDA-RT01    , Se0/0/0        , ARC-FSJ-EDGE02  , Se0/0/0         , Serial WAN    , GDA to FSJ EDGE02
+ARC-SSN-SW01    , Gi0/1          , ARC-SSN-RT01    , Gi0/1           , Ethernet      , Site switch to router
+ARC-SSN-RT01    , Se0/0/0        , ARC-FSJ-EDGE02  , Se0/0/1         , Serial WAN    , SSN to FSJ EDGE02
+ARC-FSJ-EDGE01  , Gi0/0          , ARC-FSJ-WAN-SW01, Gi0/1           , Ethernet      , EDGE01 to WAN switch
+ARC-FSJ-EDGE01  , Gi0/1          , ISP-A-ARC01     , Gi0/0           , Ethernet      , EDGE01 to ISP-A
+ARC-FSJ-EDGE01  , Gi0/2          , ISP-B-ARC01     , Gi0/0           , Ethernet      , EDGE01 to ISP-B
+ARC-FSJ-EDGE02  , Gi0/0          , ARC-FSJ-WAN-SW02, Gi0/1           , Ethernet      , EDGE02 to WAN switch
+ARC-FSJ-EDGE02  , Gi0/1          , ISP-A-ARC01     , Gi0/1           , Ethernet      , EDGE02 to ISP-A
+ARC-FSJ-EDGE02  , Gi0/2          , ISP-B-ARC01     , Gi0/1           , Ethernet      , EDGE02 to ISP-B
+ARC-FSJ-WAN-SW01, Fa0/23         , ARC-FSJ-WAN-SW02, Fa0/23          , Ethernet      , WAN switch interconnect 1
+ARC-FSJ-WAN-SW01, Fa0/24         , ARC-FSJ-WAN-SW02, Fa0/24          , Ethernet      , WAN switch interconnect 2
+ARC-FSJ-CORE01  , Fa0/1          , ARC-FSJ-ACC01   , Gi0/1           , Ethernet Trunk, Core1 to Access1
+ARC-FSJ-CORE01  , Fa0/2          , ARC-FSJ-ACC02   , Gi0/1           , Ethernet Trunk, Core1 to Access2
+ARC-FSJ-CORE01  , Fa0/3          , ARC-FSJ-ACC03   , Gi0/1           , Ethernet Trunk, Core1 to Access3
+ARC-FSJ-CORE01  , Fa0/4          , ARC-FSJ-SRV-SW01, Gi0/1           , Ethernet Trunk, Core1 to Server SW
+ARC-FSJ-CORE01  , Fa0/23         , ARC-FSJ-CORE02  , Fa0/23          , Ethernet L3   , Core switch interconnect 1
+ARC-FSJ-CORE01  , Fa0/24         , ARC-FSJ-CORE02  , Fa0/24          , Ethernet L3   , Core switch interconnect 2
+ARC-FSJ-CORE02  , Fa0/1          , ARC-FSJ-ACC01   , Gi0/2           , Ethernet Trunk, Core2 to Access1
+ARC-FSJ-CORE02  , Fa0/2          , ARC-FSJ-ACC02   , Gi0/2           , Ethernet Trunk, Core2 to Access2
+ARC-FSJ-CORE02  , Fa0/3          , ARC-FSJ-ACC03   , Gi0/2           , Ethernet Trunk, Core2 to Access3
+ARC-FSJ-CORE02  , Gi0/2          , ARC-FSJ-SRV-SW01, Gi0/2           , Ethernet Trunk, Core2 to Server SW
+ISP-A-ARC01     , Se0/0/0        , ISP-A-01        , Se0/0/1         , Serial WAN    , ISP-A ARC PE to Core
+ISP-A-01        , Gi0/0          , INT-CA-EDGE01   , Gi0/0           , Ethernet      , ISP-A Core to Internet
+ISP-A-01        , Se0/0/0        , ISP-A-SHL01     , Se0/0/0         , Serial WAN    , ISP-A Core to SHL PE
+ISP-A-SHL01     , Gi0/0          , SHL-FSJ-EDGE01  , Gi0/1           , Ethernet      , ISP-A SHL to SHL EDGE01
+ISP-A-SHL01     , Gi0/1          , SHL-FSJ-EDGE02  , Gi0/1           , Ethernet      , ISP-A SHL to SHL EDGE02
+ISP-B-ARC01     , Se0/0/0        , ISP-B-01        , Se0/0/1         , Serial WAN    , ISP-B ARC PE to Core
+ISP-B-01        , Se0/0/0        , ISP-B-SHL01     , Se0/0/0         , Serial WAN    , ISP-B Core to SHL PE
+ISP-B-SHL01     , Gi0/0          , SHL-FSJ-EDGE01  , Gi0/2           , Ethernet      , ISP-B SHL to SHL EDGE01
+ISP-B-SHL01     , Gi0/1          , SHL-FSJ-EDGE02  , Gi0/2           , Ethernet      , ISP-B SHL to SHL EDGE02
+SHL-FSJ-EDGE01  , Gi0/0          , SHL-FSJ-WAN-SW01, Gi0/1           , Ethernet      , SHL EDGE01 to WAN switch
+SHL-FSJ-EDGE01  , Se0/0/0        , SHL-DAW-EDGE01  , Se0/0/0         , Serial WAN    , SHL FSJ to Dawson Creek
+SHL-FSJ-EDGE02  , Gi0/0          , SHL-FSJ-WAN-SW02, Gi0/1           , Ethernet      , SHL EDGE02 to WAN switch
+SHL-FSJ-WAN-SW01, Fa0/23         , SHL-FSJ-WAN-SW02, Fa0/23          , Ethernet      , WAN switch interconnect 1
+SHL-FSJ-WAN-SW01, Fa0/24         , SHL-FSJ-WAN-SW02, Fa0/24          , Ethernet      , WAN switch interconnect 2
+SHL-FSJ-CORE01  , Fa0/1          , SHL-FSJ-ACC01   , Gi0/1           , Ethernet Trunk, Core1 to Access1
+SHL-FSJ-CORE01  , Fa0/2          , SHL-FSJ-ACC02   , Gi0/1           , Ethernet Trunk, Core1 to Access2
+SHL-FSJ-CORE01  , Fa0/3          , SHL-FSJ-ACC03   , Gi0/1           , Ethernet Trunk, Core1 to Access3
+SHL-FSJ-CORE01  , Fa0/4          , SHL-FSJ-SRV-SW01, Gi0/1           , Ethernet Trunk, Core1 to Server SW
+SHL-FSJ-CORE01  , Fa0/23         , SHL-FSJ-CORE02  , Fa0/23          , Ethernet L3   , Core switch interconnect 1
+SHL-FSJ-CORE01  , Fa0/24         , SHL-FSJ-CORE02  , Fa0/24          , Ethernet L3   , Core switch interconnect 2
+SHL-FSJ-CORE02  , Fa0/1          , SHL-FSJ-ACC01   , Gi0/2           , Ethernet Trunk, Core2 to Access1
+SHL-FSJ-CORE02  , Fa0/2          , SHL-FSJ-ACC02   , Gi0/2           , Ethernet Trunk, Core2 to Access2
+SHL-FSJ-CORE02  , Fa0/3          , SHL-FSJ-ACC03   , Gi0/2           , Ethernet Trunk, Core2 to Access3
+SHL-FSJ-CORE02  , Fa0/4          , SHL-FSJ-SRV-SW01, Gi0/2           , Ethernet Trunk, Core2 to Server SW
+SHL-DAW-CORE01  , Fa0/1          , SHL-DAW-ACC01   , Gi0/1           , Ethernet      , DAW Core to Access

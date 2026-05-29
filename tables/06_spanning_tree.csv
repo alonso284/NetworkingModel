@@ -1,0 +1,17 @@
+Device          , STP Mode, VLAN Priority   , Priority Value, Root Bridge Role, Notes
+ARC-FSJ-CORE01  , PVST    , "10,20,30,40,99",          24576, Primary Root    , Lower priority = root bridge
+ARC-FSJ-CORE02  , PVST    , "10,20,30,40,99",          28672, Secondary Root  , Backup root bridge
+ARC-FSJ-ACC01   , PVST    , default         ,          32769, Non-root        , Access layer
+ARC-FSJ-ACC02   , PVST    , default         ,          32769, Non-root        , Access layer
+ARC-FSJ-ACC03   , PVST    , default         ,          32769, Non-root        , Access layer
+ARC-FSJ-SRV-SW01, PVST    , default         ,          32769, Non-root        , Server layer
+ARC-FSJ-WAN-SW01, PVST    , default         ,          32769, Non-root        , WAN segment
+ARC-FSJ-WAN-SW02, PVST    , default         ,          32769, Non-root        , WAN segment
+SHL-FSJ-CORE01  , PVST    , "10,20,30,40,99",          24576, Primary Root    , Lower priority = root bridge
+SHL-FSJ-CORE02  , PVST    , "10,20,30,40,99",          28672, Secondary Root  , Backup root bridge
+SHL-FSJ-ACC01   , PVST    , default         ,          32769, Non-root        , Access layer
+SHL-FSJ-ACC02   , PVST    , default         ,          32769, Non-root        , Access layer
+SHL-FSJ-ACC03   , PVST    , default         ,          32769, Non-root        , Access layer
+SHL-FSJ-SRV-SW01, PVST    , default         ,          32769, Non-root        , Server layer
+SHL-FSJ-WAN-SW01, PVST    , default         ,          32769, Non-root        , WAN segment
+SHL-FSJ-WAN-SW02, PVST    , default         ,          32769, Non-root        , WAN segment

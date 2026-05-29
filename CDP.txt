@@ -1,0 +1,381 @@
+ARC-ATT-SW01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ARC-ATT-RT01 
+             Gig 0/1          175            R       C2900       Gig 0/1
+ARC-ATT-RT01 
+             Gig 0/1          175            R       C2900       Gig 0/1.99
+
+ARC-ATT-RT01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ARC-ATT-SW01 
+             Gig 0/1          159            S       2960        Gig 0/1
+ARC-FSJ-EDGE01
+             Ser 0/0/0        169            R       C2900       Ser 0/0/0
+
+ARC-SUN-SW01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ARC-SUN-RT01 
+             Gig 0/1          145            R       C2900       Gig 0/1
+ARC-SUN-RT01 
+             Gig 0/1          145            R       C2900       Gig 0/1.99
+
+ARC-SUN-RT01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ARC-SUN-SW01 
+             Gig 0/1          128            S       2960        Gig 0/1
+ARC-FSJ-EDGE01
+             Ser 0/0/0        138            R       C2900       Ser 0/0/1
+
+ARC-GDA-SW01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ARC-GDA-RT01 
+             Gig 0/1          132            R       C2900       Gig 0/1
+ARC-GDA-RT01 
+             Gig 0/1          132            R       C2900       Gig 0/1.99
+
+ARC-GDA-RT01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ARC-GDA-SW01 
+             Gig 0/1          172            S       2960        Gig 0/1
+ARC-FSJ-EDGE02
+             Ser 0/0/0        172            R       C2900       Ser 0/0/0
+
+ARC-SSN-SW01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ARC-SSN-RT01 
+             Gig 0/1          131            R       C2900       Gig 0/1
+ARC-SSN-RT01 
+             Gig 0/1          131            R       C2900       Gig 0/1.99
+
+ARC-SSN-RT01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ARC-SSN-SW01 
+             Gig 0/1          177            S       2960        Gig 0/1
+ARC-FSJ-EDGE02
+             Ser 0/0/0        127            R       C2900       Ser 0/0/1
+
+ARC-FSJ-EDGE01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ARC-FSJ-WAN-SW01
+             Gig 0/0          159            S       2960        Gig 0/1
+ISP-B-ARC01  Gig 0/2          169            R       C2900       Gig 0/0
+ISP-A-ARC01  Gig 0/1          159            R       C2900       Gig 0/0
+ARC-SUN-RT01 
+             Ser 0/0/1        159            R       C2900       Ser 0/0/0
+ARC-ATT-RT01 
+             Ser 0/0/0        159            R       C2900       Ser 0/0/0
+
+ARC-FSJ-EDGE02#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ARC-FSJ-WAN-SW02
+             Gig 0/0          147            S       2960        Gig 0/1
+ISP-A-ARC01  Gig 0/1          147            R       C2900       Gig 0/1
+ISP-B-ARC01  Gig 0/2          157            R       C2900       Gig 0/1
+ARC-SSN-RT01 
+             Ser 0/0/1        156            R       C2900       Ser 0/0/0
+ARC-GDA-RT01 
+             Ser 0/0/0        147            R       C2900       Ser 0/0/0
+
+ARC-FSJ-WAN-SW01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ARC-FSJ-WAN-SW02
+             Fas 0/23         134            S       2960        Fas 0/23
+ARC-FSJ-WAN-SW02
+             Fas 0/24         134            S       2960        Fas 0/24
+ARC-FSJ-EDGE01
+             Gig 0/1          144            R       C2900       Gig 0/0
+
+ARC-FSJ-WAN-SW02#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ARC-FSJ-EDGE02
+             Gig 0/1          175            R       C2900       Gig 0/0
+ARC-FSJ-WAN-SW01
+             Fas 0/23         165            S       2960        Fas 0/23
+ARC-FSJ-WAN-SW01
+             Fas 0/24         165            S       2960        Fas 0/24
+
+ARC-FSJ-CORE01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ARC-FSJ-ACC01
+             Fas 0/1          142            S       2960        Gig 0/1
+ARC-FSJ-ACC03
+             Fas 0/3          142            S       2960        Gig 0/1
+ARC-FSJ-ACC02
+             Fas 0/2          142            S       2960        Gig 0/1
+ARC-FSJ-SRV-SW01
+             Fas 0/4          142            S       2960        Gig 0/1
+ARC-FSJ-CORE02
+             Fas 0/23         142                    3560        Fas 0/23
+ARC-FSJ-CORE02
+             Fas 0/24         142                    3560        Fas 0/24
+
+ARC-FSJ-CORE02#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ARC-FSJ-SRV-SW01
+             Gig 0/2          123            S       2960        Gig 0/2
+ARC-FSJ-ACC02
+             Fas 0/2          123            S       2960        Gig 0/2
+ARC-FSJ-ACC01
+             Fas 0/1          123            S       2960        Gig 0/2
+ARC-FSJ-ACC03
+             Fas 0/3          123            S       2960        Gig 0/2
+ARC-FSJ-CORE01
+             Fas 0/23         123                    3560        Fas 0/23
+ARC-FSJ-CORE01
+             Fas 0/24         123                    3560        Fas 0/24
+
+ARC-FSJ-ACC01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ARC-FSJ-CORE02
+             Gig 0/2          164                    3560        Fas 0/1
+ARC-FSJ-CORE01
+             Gig 0/1          164                    3560        Fas 0/1
+
+ARC-FSJ-ACC02>show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ARC-FSJ-CORE02
+             Gig 0/2          154                    3560        Fas 0/2
+ARC-FSJ-CORE01
+             Gig 0/1          154                    3560        Fas 0/2
+
+ARC-FSJ-ACC03#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ARC-FSJ-CORE01
+             Gig 0/1          142                    3560        Fas 0/3
+ARC-FSJ-CORE02
+             Gig 0/2          142                    3560        Fas 0/3
+
+ARC-FSJ-SRV-SW01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ARC-FSJ-CORE02
+             Gig 0/2          130                    3560        Gig 0/2
+ARC-FSJ-CORE01
+             Gig 0/1          130                    3560        Fas 0/4
+
+ISP-A-ARC01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ARC-FSJ-EDGE02
+             Gig 0/1          129            R       C2900       Gig 0/1
+ARC-FSJ-EDGE01
+             Gig 0/0          129            R       C2900       Gig 0/1
+ISP-A-01     Ser 0/0/0        129            R       C2900       Ser 0/0/1
+
+ISP-A-01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+INT-CA-EDGE01
+             Gig 0/0          169            R       C2900       Gig 0/0
+ISP-A-SHL01  Ser 0/0/0        175            R       C2900       Ser 0/0/0
+ISP-A-ARC01  Ser 0/0/1        169            R       C2900       Ser 0/0/0
+
+ISP-A-SHL01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+SHL-FSJ-EDGE02
+             Gig 0/1          156            R       C2900       Gig 0/1
+SHL-FSJ-EDGE01
+             Gig 0/0          156            R       C2900       Gig 0/1
+ISP-A-01     Ser 0/0/0        166            R       C2900       Ser 0/0/0
+
+ISP-B-ARC01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ARC-FSJ-EDGE02
+             Gig 0/1          154            R       C2900       Gig 0/2
+ARC-FSJ-EDGE01
+             Gig 0/0          154            R       C2900       Gig 0/2
+ISP-B-01     Ser 0/0/0        144            R       C2900       Ser 0/0/1
+
+ISP-B-01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ISP-B-SHL01  Ser 0/0/0        141            R       C2900       Ser 0/0/0
+ISP-B-ARC01  Ser 0/0/1        144            R       C2900       Ser 0/0/0
+
+ISP-B-01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ISP-B-SHL01  Ser 0/0/0        141            R       C2900       Ser 0/0/0
+ISP-B-ARC01  Ser 0/0/1        144            R       C2900       Ser 0/0/0
+
+INT-CA-EDGE01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ISP-A-01     Gig 0/0          172            R       C2900       Gig 0/0
+
+SHL-DAW-ACC01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+SHL-DAW-CORE01
+             Gig 0/1          178                    3560        Fas 0/1
+
+SHL-DAW-CORE01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+SHL-DAW-ACC01
+             Fas 0/1          166            S       2960        Gig 0/1
+
+SHL-DAW-EDGE01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+SHL-FSJ-EDGE01
+             Ser 0/0/0        146            R       C2900       Ser 0/0/0
+
+SHL-FSJ-EDGE01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ISP-A-SHL01  Gig 0/1          135            R       C2900       Gig 0/0
+SHL-FSJ-WAN-SW01
+             Gig 0/0          128            S       2960        Gig 0/1
+ISP-B-SHL01  Gig 0/2          136            R       C2900       Gig 0/0
+SHL-DAW-EDGE01
+             Ser 0/0/0        128            R       C2900       Ser 0/0/0
+
+SHL-FSJ-EDGE02#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+ISP-A-SHL01  Gig 0/1          125            R       C2900       Gig 0/1
+ISP-B-SHL01  Gig 0/2          125            R       C2900       Gig 0/1
+SHL-FSJ-WAN-SW02
+             Gig 0/0          178            S       2960        Gig 0/1
+
+SHL-FSJ-WAN-SW01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+SHL-FSJ-EDGE01
+             Gig 0/1          134            R       C2900       Gig 0/0
+SHL-FSJ-WAN-SW02
+             Fas 0/23         129            S       2960        Fas 0/23
+SHL-FSJ-WAN-SW02
+             Fas 0/24         129            S       2960        Fas 0/24
+
+SHL-FSJ-WAN-SW02#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+SHL-FSJ-EDGE02
+             Gig 0/1          175            R       C2900       Gig 0/0
+SHL-FSJ-WAN-SW01
+             Fas 0/23         175            S       2960        Fas 0/23
+SHL-FSJ-WAN-SW01
+             Fas 0/24         175            S       2960        Fas 0/24
+
+SHL-FSJ-CORE01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+SHL-FSJ-SRV-SW01
+             Fas 0/4          163            S       2960        Gig 0/1
+SHL-FSJ-ACC02
+             Fas 0/2          163            S       2960        Gig 0/1
+SHL-FSJ-ACC03
+             Fas 0/3          163            S       2960        Gig 0/1
+SHL-FSJ-CORE02
+             Fas 0/23         163                    3560        Fas 0/23
+SHL-FSJ-CORE02
+             Fas 0/24         163                    3560        Fas 0/24
+SHL-FSJ-ACC01
+             Fas 0/1          163            S       2960        Gig 0/1
+
+SHL-FSJ-CORE02#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+SHL-FSJ-SRV-SW01
+             Fas 0/4          151            S       2960        Gig 0/2
+SHL-FSJ-CORE01
+             Fas 0/23         151                    3560        Fas 0/23
+SHL-FSJ-CORE01
+             Fas 0/24         151                    3560        Fas 0/24
+SHL-FSJ-ACC03
+             Fas 0/3          151            S       2960        Gig 0/2
+SHL-FSJ-ACC01
+             Fas 0/1          151            S       2960        Gig 0/2
+SHL-FSJ-ACC02
+             Fas 0/2          151            S       2960        Gig 0/2
+
+SHL-FSJ-ACC01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+SHL-FSJ-CORE01
+             Gig 0/1          140                    3560        Fas 0/1
+SHL-FSJ-CORE02
+             Gig 0/2          140                    3560        Fas 0/1
+
+SHL-FSJ-ACC02#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+SHL-FSJ-CORE01
+             Gig 0/1          130                    3560        Fas 0/2
+SHL-FSJ-CORE02
+             Gig 0/2          130                    3560        Fas 0/2
+
+SHL-FSJ-ACC03#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+SHL-FSJ-CORE01
+             Gig 0/1          121                    3560        Fas 0/3
+SHL-FSJ-CORE02
+             Gig 0/2          121                    3560        Fas 0/3
+
+SHL-FSJ-SRV-SW01#show cdp neighbors 
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone
+Device ID    Local Intrfce   Holdtme    Capability   Platform    Port ID
+SHL-FSJ-CORE01
+             Gig 0/1          166                    3560        Fas 0/4
+SHL-FSJ-CORE02
+             Gig 0/2          166                    3560        Fas 0/4

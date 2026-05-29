@@ -1,0 +1,15 @@
+Device      , ACL Name  , Sequence, Action, Protocol, Source       , Destination  , Port    , Direction         , Description
+ARC-FSJ-FW01, OUTSIDE_IN,       10, permit, tcp     , 210.20.0.1/32, 10.10.10.1/32, 22 (SSH), inbound on outside, SHL-FW01 SSH access to ARC IT
+ARC-FSJ-FW01, OUTSIDE_IN,       20, permit, tcp     , 210.20.0.5/32, 10.10.10.1/32, 22 (SSH), inbound on outside, SHL-FW02 SSH access to ARC IT
+ARC-FSJ-FW01, OUTSIDE_IN,       30, deny  , tcp     , any          , any          , 22 (SSH), inbound on outside, Block all other SSH
+ARC-FSJ-FW01, OUTSIDE_IN,       40, permit, ip      , any          , any          , any     , inbound on outside, Allow all other traffic
+ARC-FSJ-FW02, OUTSIDE_IN,       10, permit, tcp     , 210.20.0.1/32, 10.10.10.1/32, 22 (SSH), inbound on outside, SHL-FW01 SSH access to ARC IT
+ARC-FSJ-FW02, OUTSIDE_IN,       20, permit, tcp     , 210.20.0.5/32, 10.10.10.1/32, 22 (SSH), inbound on outside, SHL-FW02 SSH access to ARC IT
+ARC-FSJ-FW02, OUTSIDE_IN,       30, deny  , tcp     , any          , any          , 22 (SSH), inbound on outside, Block all other SSH
+ARC-FSJ-FW02, OUTSIDE_IN,       40, permit, ip      , any          , any          , any     , inbound on outside, Allow all other traffic
+SHL-FSJ-FW01, OUTSIDE_IN,       10, permit, ip      , any          , any          , any     , inbound on outside, Allow all inbound
+SHL-FSJ-FW01, INSIDE_IN ,       10, permit, tcp     , 10.20.10.0/24, 210.10.0.9/32, 22 (SSH), inbound on inside , Shell IT SSH to ARC IT
+SHL-FSJ-FW01, INSIDE_IN ,       20, deny  , tcp     , 10.20.0.0/16 , 210.10.0.9/32, 22 (SSH), inbound on inside , Block other Shell SSH to ARC
+SHL-FSJ-FW01, INSIDE_IN ,       30, permit, ip      , any          , any          , any     , inbound on inside , Allow all other traffic
+SHL-FSJ-FW02, OUTSIDE_IN,       10, permit, ip      , any          , any          , any     , inbound on outside, Allow all inbound
+SHL-DAW-FW01, OUTSIDE_IN,       10, permit, ip      , any          , any          , any     , inbound on outside, Allow all inbound

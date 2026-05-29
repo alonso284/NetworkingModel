@@ -1,0 +1,38 @@
+Switch          , Port  , Mode  , Access VLAN, Trunk Allowed VLANs, Native VLAN, Portfast, Description
+ARC-FSJ-ACC01   , Fa0/24, Access, 40         , N/A                , N/A        , Yes     , WiFi AP port
+ARC-FSJ-ACC01   , Gi0/1 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , Uplink to CORE01
+ARC-FSJ-ACC01   , Gi0/2 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , Uplink to CORE02
+ARC-FSJ-ACC02   , Fa0/1 , Access, 10         , N/A                , N/A        , Yes     , IT workstation
+ARC-FSJ-ACC02   , Fa0/2 , Access, 10         , N/A                , N/A        , Yes     , IT workstation
+ARC-FSJ-ACC02   , Gi0/1 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , Uplink to CORE01
+ARC-FSJ-ACC02   , Gi0/2 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , Uplink to CORE02
+ARC-FSJ-ACC03   , Fa0/1 , Access, 20         , N/A                , N/A        , Yes     , OT device
+ARC-FSJ-ACC03   , Gi0/1 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , Uplink to CORE01
+ARC-FSJ-ACC03   , Gi0/2 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , Uplink to CORE02
+ARC-FSJ-SRV-SW01, Fa0/1 , Access, 30         , N/A                , N/A        , No      , DNS/DHCP Server
+ARC-FSJ-SRV-SW01, Fa0/2 , Access, 30         , N/A                , N/A        , No      , Mail Server
+ARC-FSJ-SRV-SW01, Fa0/3 , Trunk , N/A        , "30,40,99"         , 30         , No      , Special trunk (native 30)
+ARC-FSJ-SRV-SW01, Gi0/1 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , Uplink to CORE01
+ARC-FSJ-SRV-SW01, Gi0/2 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , Uplink to CORE02
+SHL-FSJ-ACC01   , Fa0/24, Access, 40         , N/A                , N/A        , Yes     , WiFi AP port
+SHL-FSJ-ACC01   , Gi0/1 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , Uplink to CORE01
+SHL-FSJ-ACC01   , Gi0/2 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , Uplink to CORE02
+SHL-FSJ-ACC02   , Fa0/1 , Access, 10         , N/A                , N/A        , Yes     , IT workstation
+SHL-FSJ-ACC02   , Gi0/1 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , Uplink to CORE01
+SHL-FSJ-ACC02   , Gi0/2 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , Uplink to CORE02
+SHL-FSJ-ACC03   , Fa0/1 , Access, 20         , N/A                , N/A        , Yes     , OT device
+SHL-FSJ-ACC03   , Gi0/1 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , Uplink to CORE01
+SHL-FSJ-ACC03   , Gi0/2 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , Uplink to CORE02
+SHL-FSJ-SRV-SW01, Fa0/1 , Access, 30         , N/A                , N/A        , No      , DNS/DHCP Server
+SHL-FSJ-SRV-SW01, Fa0/2 , Access, 30         , N/A                , N/A        , No      , Mail Server
+SHL-FSJ-SRV-SW01, Fa0/3 , Trunk , N/A        , "30,40,99"         , 30         , No      , Special trunk (native 30)
+SHL-FSJ-SRV-SW01, Gi0/1 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , Uplink to CORE01
+SHL-FSJ-SRV-SW01, Gi0/2 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , Uplink to CORE02
+ARC-FSJ-CORE01  , Fa0/1 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , To ACC01
+ARC-FSJ-CORE01  , Fa0/2 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , To ACC02
+ARC-FSJ-CORE01  , Fa0/3 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , To ACC03
+ARC-FSJ-CORE01  , Fa0/4 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , To SRV-SW01
+SHL-FSJ-CORE01  , Fa0/1 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , To ACC01
+SHL-FSJ-CORE01  , Fa0/2 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , To ACC02
+SHL-FSJ-CORE01  , Fa0/3 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , To ACC03
+SHL-FSJ-CORE01  , Fa0/4 , Trunk , N/A        , "10,20,30,40,99"   , N/A        , No      , To SRV-SW01

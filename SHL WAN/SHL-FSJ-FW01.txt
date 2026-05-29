@@ -1,0 +1,59 @@
+hostname SHL-FSJ-FW01
+names
+!
+interface Ethernet0/0
+ switchport access vlan 2
+!
+interface Ethernet0/1
+!
+interface Ethernet0/2
+!
+interface Ethernet0/3
+!
+interface Ethernet0/4
+!
+interface Ethernet0/5
+!
+interface Ethernet0/6
+!
+interface Ethernet0/7
+!
+interface Vlan1
+ nameif inside
+ security-level 100
+ ip address 172.21.255.1 255.255.255.252
+!
+interface Vlan2
+ nameif outside
+ security-level 0
+ ip address 210.20.0.1 255.255.255.240
+!
+object network OUTSIDE
+ subnet 10.20.0.0 255.255.0.0
+ nat (inside,outside) dynamic interface
+object network SHELL_EMAIL
+ host 10.20.30.32
+ nat (inside,outside) static 210.20.0.10
+!
+route inside 10.20.0.0 255.255.0.0 172.21.255.2 1
+route outside 0.0.0.0 0.0.0.0 210.20.0.2 1
+!
+access-list OUTSIDE_IN extended permit ip any any
+access-list INSIDE_IN extended permit tcp 10.20.10.0 255.255.255.0 host 210.10.0.9 eq 22
+access-list INSIDE_IN extended deny tcp 10.20.0.0 255.255.0.0 host 210.10.0.9 eq 22
+access-list INSIDE_IN extended permit ip any any
+!
+!
+access-group OUTSIDE_IN in interface outside
+access-group INSIDE_IN in interface inside
+!
+!
+!
+!
+!
+telnet timeout 5
+ssh timeout 5
+!
+!
+!
+!

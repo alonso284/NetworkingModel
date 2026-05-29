@@ -26,12 +26,43 @@ interface Vlan1
 interface Vlan2
  nameif outside
  security-level 0
- ip address 172.20.254.5 255.255.255.248
+ ip address 210.10.0.5 255.255.255.240
 !
+object network ARC_EMAIL
+ host 10.10.30.32
+ nat (inside,outside) static 210.10.0.10
+object network IT_ARC
+ host 10.10.10.1
+ nat (inside,outside) static 210.10.0.9
+object network OUTSIDE
+ subnet 10.10.0.0 255.255.0.0
+ nat (inside,outside) dynamic interface
+object network ARC_ATTACHIE
+ subnet 10.11.0.0 255.255.0.0
+object network ARC_SUNRISE
+ subnet 10.12.0.0 255.255.0.0
+object network ARC_GDA
+ subnet 10.13.0.0 255.255.0.0
+object network ARC_SSN
+ subnet 10.14.0.0 255.255.0.0
+object network ARC_INTERNAL
+ subnet 10.10.0.0 255.255.0.0
 !
-route outside 0.0.0.0 0.0.0.0 172.20.254.6 1
+nat (inside,outside) source static ARC_INTERNAL ARC_INTERNAL destination static ARC_ATTACHIE ARC_ATTACHIE
+nat (inside,outside) source static ARC_INTERNAL ARC_INTERNAL destination static ARC_SUNRISE ARC_SUNRISE
+nat (inside,outside) source static ARC_INTERNAL ARC_INTERNAL destination static ARC_GDA ARC_GDA
+nat (inside,outside) source static ARC_INTERNAL ARC_INTERNAL destination static ARC_SSN ARC_SSN
+!
 route inside 10.10.0.0 255.255.0.0 172.20.255.6 1
+route outside 10.11.0.0 255.255.0.0 210.10.0.6 1
+route outside 10.12.0.0 255.255.0.0 210.10.0.6 1
+route outside 10.13.0.0 255.255.0.0 210.10.0.6 1
+route outside 10.14.0.0 255.255.0.0 210.10.0.6 1
+route outside 0.0.0.0 0.0.0.0 210.10.0.6 1
 !
+access-list OUTSIDE_IN extended permit tcp host 210.20.0.1 host 10.10.10.1 eq 22
+access-list OUTSIDE_IN extended permit tcp host 210.20.0.5 host 10.10.10.1 eq 22
+access-list OUTSIDE_IN extended deny tcp any host 10.10.10.1 eq 22
 access-list OUTSIDE_IN extended permit ip any any
 !
 !
@@ -46,7 +77,6 @@ ssh timeout 5
 !
 dhcpd auto_config outside
 !
-dhcpd enable inside
 !
 !
 !

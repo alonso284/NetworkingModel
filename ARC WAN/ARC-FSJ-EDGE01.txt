@@ -39,7 +39,7 @@ interface Loopback99
  ip ospf 1 area 0
 !
 interface GigabitEthernet0/0
- ip address 172.20.254.2 255.255.255.248
+ ip address 210.10.0.2 255.255.255.240
  ip ospf 1 area 0
  duplex auto
  speed auto
@@ -69,9 +69,17 @@ interface Vlan1
 router ospf 1
  router-id 10.10.255.1
  log-adjacency-changes
+ redistribute static subnets 
+!
+router bgp 65100
+ bgp log-neighbor-changes
+ no synchronization
+ neighbor 203.0.113.1 remote-as 65001
+ neighbor 198.51.100.1 remote-as 65002
+ network 210.10.0.0 mask 255.255.255.240
 !
 ip classless
-ip route 10.10.0.0 255.255.0.0 172.20.254.1 
+ip route 10.10.0.0 255.255.0.0 210.10.0.1 
 !
 ip flow-export version 9
 !
