@@ -1,0 +1,9 @@
+DNS Server   , Organization, Site, Server IP  , Record Name   , Resolved IP , Description
+ARC DNS/DHCP , Arctic      , FSJ , 10.10.30.10, arc.admin     , 210.10.0.9  , ARC IT/admin public address
+ARC DNS/DHCP , Arctic      , FSJ , 10.10.30.10, aws.cloud     , 3.96.124.201, AWS cloud service
+ARC DNS/DHCP , Arctic      , FSJ , 10.10.30.10, google.com    , 8.8.8.8     , Internet resolution
+ARC DNS/DHCP , Arctic      , FSJ , 10.10.30.10, mail.arc.org  , 210.10.0.10 , ARC email public NAT
+ARC DNS/DHCP , Arctic      , FSJ , 10.10.30.10, mail.shell.org, 10.20.30.32 , Shell email reachable over inter-site VPN (NAT-exempt)
+SHL DNS/DHCP , Shell       , FSJ , 10.20.30.10, google.com    , 8.8.8.8     , Internet resolution
+SHL DNS/DHCP , Shell       , FSJ , 10.20.30.10, mail.arc.org  , 10.10.30.32 , ARC email reachable over inter-site VPN (NAT-exempt)
+SHL DNS/DHCP , Shell       , FSJ , 10.20.30.10, mail.shell.org, 210.20.0.10 , Shell email public NAT
