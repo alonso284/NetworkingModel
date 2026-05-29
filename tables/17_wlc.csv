@@ -1,0 +1,3 @@
+WLC          , Organization, Site, WLAN Profile, SSID      , VLAN, Authentication, Encryption, AP Group    , AP Name     , AP MAC        , Description
+ARC-FSJ-WLC01, Arctic      , FSJ , wifi-vlan40 , ARC-WIFI  , 40  , WPA2-PSK      , AES       , default-group, ARC-FSJ-AP01, 000A.4113.A301, Local switching and central authentication
+SHL-FSJ-WLC01, Shell       , FSJ , wifi-vlan40 , SHELL-WIFI, 40  , WPA2-PSK      , AES       , default-group, SHL-FSJ-AP01, 0001.4275.E801, Local switching and central authentication
